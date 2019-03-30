@@ -29,39 +29,59 @@ mental health:
 '''
 
 # reparse into new table:
-mental_health.drop('SCALAR_FACTOR',axis=1,inplace=True)
-mental_health.drop('SCALAR_ID',axis=1,inplace=True)
-mental_health.drop('VECTOR',axis=1,inplace=True)
-mental_health.drop('COORDINATE',axis=1,inplace=True)
-mental_health.drop('STATUS',axis=1,inplace=True)
-mental_health.drop('SYMBOL',axis=1,inplace=True)
-mental_health.drop('TERMINATED',axis=1,inplace=True)
-mental_health.drop('DECIMALS',axis=1,inplace=True)
+# mental_health.drop('SCALAR_FACTOR',axis=1,inplace=True)
+# mental_health.drop('SCALAR_ID',axis=1,inplace=True)
+# mental_health.drop('VECTOR',axis=1,inplace=True)
+# mental_health.drop('COORDINATE',axis=1,inplace=True)
+# mental_health.drop('STATUS',axis=1,inplace=True)
+# mental_health.drop('SYMBOL',axis=1,inplace=True)
+# mental_health.drop('TERMINATED',axis=1,inplace=True)
+# mental_health.drop('DECIMALS',axis=1,inplace=True)
 
-print(mental_health)
-outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'Sex'], columns='Indicators', values='VALUE')
-# outData = outData.dropna();
-outData.drop('Arthritis (15 years and over)', axis=1, inplace=True)
-outData.drop('Asthma', axis=1, inplace=True)
-outData.drop('Breast milk feeding initiation', axis=1, inplace=True)
-outData.drop('Chronic obstructive pulmonary disease (COPD; 35 years and over)', axis=1, inplace=True)
-outData.drop('Contact with a medical doctor in the past 12 months', axis=1, inplace=True)
-outData.drop('Current smoker, daily', axis=1, inplace=True)
-outData.drop('Diabetes', axis=1, inplace=True)
-outData.drop('Exclusive breastfeeding, at least 6 months', axis=1, inplace=True)
-outData.drop('Has a regular healthcare provider', axis=1, inplace=True)
-outData.drop('Heavy drinking', axis=1, inplace=True)
-outData.drop('High blood pressure', axis=1, inplace=True)
-outData.drop('Influenza immunization in the past 12 months', axis=1, inplace=True)
+# #print(mental_health)
+# outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'Sex'], columns='Indicators', values='VALUE')
+# # outData = outData.dropna();
+# outData.drop('Arthritis (15 years and over)', axis=1, inplace=True)
+# outData.drop('Asthma', axis=1, inplace=True)
+# outData.drop('Breast milk feeding initiation', axis=1, inplace=True)
+# outData.drop('Chronic obstructive pulmonary disease (COPD; 35 years and over)', axis=1, inplace=True)
+# outData.drop('Contact with a medical doctor in the past 12 months', axis=1, inplace=True)
+# outData.drop('Current smoker, daily', axis=1, inplace=True)
+# outData.drop('Diabetes', axis=1, inplace=True)
+# outData.drop('Exclusive breastfeeding, at least 6 months', axis=1, inplace=True)
+# outData.drop('Has a regular healthcare provider', axis=1, inplace=True)
+# outData.drop('Heavy drinking', axis=1, inplace=True)
+# outData.drop('High blood pressure', axis=1, inplace=True)
+# outData.drop('Influenza immunization in the past 12 months', axis=1, inplace=True)
 
-outData.interpolate(axis=1);
-# outData1 = pd.merge(data1,data2, on=['REF_DATE', 'GEO', 'Age group'])
-# outData2 = pd.merge(data3, data4, on=['REF_DATE','GEO', 'Age group'])
+# outData.interpolate(axis=1);
+# # outData1 = pd.merge(data1,data2, on=['REF_DATE', 'GEO', 'Age group'])
+# # outData2 = pd.merge(data3, data4, on=['REF_DATE','GEO', 'Age group'])
 
-# outData = pd.merge(outData1, outData2, on=['REF_DATE','GEO', '', 'Age group'])
+# # outData = pd.merge(outData1, outData2, on=['REF_DATE','GEO', '', 'Age group'])
 
-# print(outData.columns.values)
+# # print(outData.columns.values)
 
-outData.to_csv('./datafiles/statscanada/newMH.csv')
+# outData.to_csv('./datafiles/statscanada/newMH.csv')
 
-print(outData)
+# print(outData)
+
+x = pd.DataFrame(columns=['Sex','Prevalence_x','Prevalence_y','Prevalence'])
+maxd=0
+
+for i in range(2000):
+	a = np.random.random_sample()
+	b = np.random.random_sample()
+	c = np.random.random_sample()
+	d = (a * b) + c
+	d = np.clip([d], 0,1)[0] 
+	x = x.append({'Sex':a,'Prevalence_x':b,'Prevalence_y':c,'Prevalence':d}, ignore_index=True)
+	if (d > maxd):
+		maxd = d
+	if (d < 0):
+		print("d: ", d)
+
+x.to_csv('./datafiles/statscanada/random.csv')
+
+print("NMAX D: ", maxd)
+print(x)
