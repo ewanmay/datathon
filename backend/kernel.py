@@ -2,11 +2,38 @@
 import numpy as np
 import pandas as pd
 
-data1 = pd.read_csv('datafiles/fitness.csv')
-data2 = pd.read_csv('datafiles/selfperceivedmentalhealth.csv')
-data3 = pd.read_csv('datafiles/stressors.csv')
-data4 = pd.merge(data1, data2, on=['Year','Sex', 'Geography'])
-data5 = pd.merge(data4, data3, on=['Year','Sex', 'Geography'])
+# Geography,Year,Sex,Activity Category,Prevalence_x,Category,Prevalence_y,Stress Category,Prevalence
+
+def readCsv(src):
+	data = pd.read_csv(src)
+	#Coefficient of Variation,CV Flag,Standard Error,Standard Score,Alberta Prevalence
+	data.drop("Coefficient of Variation", axis=1, inplace=True)
+	data.drop("CV Flag", axis=1, inplace=True)
+	data.drop("Standard Error", axis=1, inplace=True)
+	data.drop("Standard Score", axis=1, inplace=True)
+	data.drop("Alberta Prevalence", axis=1, inplace=True)
+	return data.iloc[::2]
+
+data1 = readCsv('datafiles/fitness.csv')
+data2 = readCsv('datafiles/stressors.csv')
+data3 = readCsv('datafiles/selfperceivedmentalhealth.csv')
+data4 = pd.merge(data1, data2, on=['Geography','Year','Sex'])
+data5 = pd.merge(data4, data3, on=['Geography','Year','Sex'])
+
 print(data5.columns.values)
-data5.to_csv('./datafiles/merged.csv')
-print(data5)
+
+data5.drop("Activity Category", axis=1, inplace=True)
+data5.drop("Stress Category", axis=1, inplace=True)
+data5.drop("Category", axis=1, inplace=True)
+data5.drop("Geography", axis=1, inplace=True)
+data5.drop("Year", axis=1, inplace=True)
+data5['Sex'] = data5['Sex'].map({'MALE': 0.0, 'BOTH': 0.5, 'FEMALE': 1.0})
+# data5['Prevalence_x'] = data5['Prevalence_x'].apply(lambda x: (x-data5['Prevalence_x'].min())/(data5['Prevalence_x'].max()-data5['Prevalence_x'].min()))
+# data5['Prevalence_y'] = data5['Prevalence_y'].apply(lambda x: (x-data5['Prevalence_y'].min())/(data5['Prevalence_y'].max()-data5['Prevalence_y'].min()))
+# data5['Prevalence'] = data5['Prevalence'].apply(lambda x: (x-data5['Prevalence'].min())/(data5['Prevalence'].max()-data5['Prevalence'].min()))
+#data5.drop("Sex", axis=1, inplace=True)
+
+print(data5.columns.values)
+print(data5.dtypes)
+data5.to_csv('./datafiles/merged.csv', index=False)
+#print(data5)
