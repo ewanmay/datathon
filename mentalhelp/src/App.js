@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+  }
+
+  getRequest(address) {
+    axios.get(address).then(res => console.log(res))
+  }
+  
   render() {
+    this.getRequest('http://0.0.0.0:5000/');
     return (
       <div className="App">
         <header className="App-header">
@@ -18,6 +31,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
+            {}
           </a>
         </header>
       </div>
