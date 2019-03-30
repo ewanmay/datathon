@@ -1,0 +1,102 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Nutritional status of the household population",13100336,117-0018,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310033601",1;13,"CURRENT - a cube available to the public and that is current",Occasional,2009-01-01,2017-01-01,6
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+1,Geography,,
+2,Measures,,
+3,Sex,,
+4,"Age group",,
+5,Statistics,,
+6,Characteristics,,
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+1,Canada,[11124],1,,,,
+2,"Ferritin  (µg/L)",,1,,,2;4;5;6;12;14;15;20,
+2,"Vitamin D (nmol/L)",,2,,,3;4;5;6;10;11;16;20,
+2,"Vitamin C (ng/mL)",,3,,,2;7;8;9;11;22,
+2,"Red blood cell folate (nmol/L)",,4,,,3;4;5;6;11;17;18;20,
+2,"Vitamin B12 (pmol/L)",,5,,,3;4;6;12;20;24,
+2,"Parathyroid hormone (pmol/L)",,6,,,2;4;12;20;21;25,
+2,"Creatinine (urine) (mmol/L)",,7,,,3;4;5;6;12;20;23,
+2,"Potassium (urine) (mmol/L)",,8,,,2;7;9;12;20;21,
+2,"Sodium (urine) (mmol/L)",,9,,,2;7;9;12;20;21,
+3,"Both sexes",,1,,,,
+3,Males,,2,1,,,
+3,Females,,3,1,,,
+4,"Ages 3 to 79",,1,,,,
+4,"Ages 6 to 79",,2,,,,
+4,"Ages 3 to 5",,3,10,,19,
+4,"Ages 6 to 11",,4,10,,,
+4,"Ages 12 to 19",,5,10,,,
+4,"Ages 20 to 39",,6,10,,,
+4,"Ages 40 to 59",,7,10,,,
+4,"Ages 60 to 79",,8,10,,,
+4,"Ages 6 to 19",,9,,,,
+4,"Ages 20 to 79",,10,,,,
+5,"Measure of central tendency",,1,,,,
+5,"5th Percentile",,2,,,,
+5,"10th Percentile",,3,,,,
+5,"25th Percentile",,4,,,,
+5,"50th Percentile",,5,,,,
+5,"75th Percentile",,6,,,,
+5,"90th Percentile",,7,,,,
+5,"95th Percentile",,8,,,,
+6,Estimate,,1,,,,
+6,"Low 95% confidence interval, estimate",,2,,,,
+6,"High 95% confidence interval, estimate",,3,,,,
+6,"Updated estimate",,4,,,,
+6,"Updated low 95% confidence interval, updated estimate",,5,,,,
+6,"Updated high 95% confidence interval, updated estimate",,6,,,,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period",..
+"less than the limit of detection",<LOD
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded",0s
+"data quality: excellent",A
+"data quality: very good",B
+"data quality: good",C
+"data quality: acceptable",D
+"use with caution",E
+"too unreliable to be published.",F
+"not applicable",...
+preliminary,p
+revised,r
+"suppressed to meet the confidentiality requirements of the Statistics Act",x
+terminated,t
+
+"Survey Code","Survey Name"
+5071,"Canadian Health Measures Survey"
+
+"Subject Code","Subject Name"
+13,Health
+
+"Note ID",Note
+1,"Source: Canadian Health Measures Survey (CHMS)."
+2,"Not measured for the 2009 reference period."
+3,"2009 data - Total household population aged 6 to 79, except those meeting the exclusion criteria (see the Canadian Health Measures Survey (CHMS) Data User Guide: Cycle 1). Data collected between March 2007 and February 2009."
+4,"2011 data - Total household population aged 3 to 79 except those meeting the exclusion criteria (see the Canadian Health Measures Survey (CHMS) Data User Guide : Cycle 2). Data collected between August 2009 and November 2011."
+5,"2013 data - Total household population aged 3 to 79 except those meeting the exclusion criteria (see the Canadian Health Measures Survey (CHMS) Data User Guide : Cycle 3). Data collected between January 2012 and December 2013."
+6,"2015 data - Total household population aged 3 to 79 except those meeting the exclusion criteria (see the Canadian Health Measures Survey (CHMS) Data User Guide : Cycle 4). Data collected between January 2014 and December 2015."
+7,"Not measured for the 2011 reference period."
+8,"2013 data - Total household population aged 6 to 79 except those meeting the exclusion criteria (see the Canadian Health Measures Survey (CHMS) Data User Guide : Cycle 3). Data collected between January 2012 and December 2013."
+9,"Not measured for the 2015 reference period."
+10,"A change in matrix for vitamin D measurement, from plasma to serum, occured between the 2009-2011 reference periods and the 2013-2015-2017 reference periods. This change of matrix is not related to differences in values among reference periods.  "
+11,"The measure of central tendency is the arithmetic mean."
+12,"The measure of central tendency is the geometric mean."
+13,"Results are substituted by the lower limit of detection divided by 2 in cases where the result is below the lower limit of detection."
+14,"A change in instrumentation and method for ferritin measurement occurred between the 2011-2013 and 2015-2017 reference periods. Uncorrected data from these methods cannot be compared. The standard operating procedures (SOPs) are available upon request. "
+15,"Results corrected for the different ferritin measurement methods used for the 2011 and 2013 reference periods are presented as ""Updated"" characteristics. These corrected results could be compared between reference periods but note that differences in testing methods can still account for differences in the results, even in corrected data."
+16,"A change in instrumentation and method for vitamin D measurement occured between the 2009-2011-2013-2015 and the 2017 reference periods. Uncorrected data from these methods cannot be compared. The standard operating procedures (SOPs) are available upon request. "
+17,"RBC folate measurements are subject to high intra-indivdual biological variation and significant analytical imprecision. The standard operating procedures (SOPs) are available upon request.    "
+18,"A change in instrumentation and method occured between the 2009-2011 reference periods and the 2013-2015-2017 reference periods.  Comparision of the data between reference periods should be done with caution.  RBC folate results from immunoassays cannot be compared to population based studies which used microbiological assays. The standard operating procedures (SOPs) are available upon request. "
+19,"The sample size for 3 to 5 year olds produces reliable national estimates for both sexes combined only."
+20,"2017 data - Total household population aged 3 to 79 except those meeting the exclusion criteria (see the Canadian Health Measures Survey (CHMS) Data User Guide : Cycle 5). Data collected between January 2016 and December 2017."
+21,"Not measured for the 2013 reference period."
+22,"Not measured for the 2017 reference period."
+23,"A change in reference laboratory, instrumenation and method for urinary creatinine measurement occurred between the 2009 and 2011-2013-2015-2017 reference periods. Uncorrected data from these methods cannot be compared. The standard operating procedures (SOPs) are available upon request. "
+24,"A change in instrumentation and method for vitamin B12 measurement occurred between the 2013 and 2015 reference periods. Uncorrected data from these methods cannot be compared. The standard operating procedures (SOPs) are available upon request. "
+25,"A change in instrumentation and method for parathyroid horomone measurement occurred between the 2011 and 2017 reference periods. Uncorrected data from these methods cannot be compared. The standard operating procedures (SOPs) are available upon request. "
+
+"Correction ID","Correction Date","Correction Note"
+
