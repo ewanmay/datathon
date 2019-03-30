@@ -3,7 +3,7 @@
 # -- this is the main logic for processing the data
 # below is just a test to make sure machine learning predictions work 
 # run ` python core.py `
-# make sure you pip install keras, numpy and tensorflow
+# make sure you pip install keras, numpy, pillow and tensorflow
 
 from keras.applications import mobilenet_v2
 from keras.preprocessing import image

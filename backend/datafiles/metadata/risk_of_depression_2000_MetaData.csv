@@ -1,0 +1,291 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Risk of depression, by age group and sex, household population aged 12 and over, Canada, provinces, territories, health regions (January 2000 boundaries) and peer groups",13100553,105-0005,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310055301",1;2;3;8;9;22;70,"ARCHIVED -  a cube publicly available but no longer being updated","Every 2 years",2000-01-01,2000-01-01,5
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+1,Geography,4;8;9,
+2,"Age group",,
+3,Sex,,
+4,"Risk level of depression",2;3,
+5,Characteristics,4;5;6;7;21,
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+1,Canada,00,1,,,,
+1,"Newfoundland and Labrador",10,2,1,,10,
+1,"Health and Community Services St. John's Region, Newfoundland and Labrador (Peer group H)",1001,3,2,,,
+1,"Health and Community Services Eastern Region, Newfoundland and Labrador (Peer group D)",1002,4,2,,,
+1,"Health and Community Services Central Region, Newfoundland and Labrador (Peer group D)",1003,5,2,,,
+1,"Health and Community Services Western Region, Newfoundland and Labrador (Peer group D)",1004,6,2,,,
+1,"Grenfell Regional Health Services Board, Newfoundland and Labrador (Peer group D)",1005,7,2,,,
+1,"Health Labrador Corporation, Newfoundland and Labrador (Peer group F)",1006,8,2,,,
+1,"Prince Edward Island",11,9,1,,11;12,
+1,"Urban Health Region, Prince Edward Island (Peer group I)",1101,10,9,,,
+1,"Rural Health Region, Prince Edward Island (Peer group E)",1102,11,9,,,
+1,"Nova Scotia",12,12,1,,13,
+1,"Zone 1, Nova Scotia (Peer group E)",1201,13,12,,,
+1,"Zone 2, Nova Scotia (Peer group E)",1202,14,12,,,
+1,"Zone 3, Nova Scotia (Peer group H)",1203,15,12,,,
+1,"Zone 4, Nova Scotia (Peer group H)",1204,16,12,,,
+1,"Zone 5, Nova Scotia (Peer group D)",1205,17,12,,,
+1,"Zone 6, Nova Scotia (Peer group I)",1206,18,12,,,
+1,"New Brunswick",13,19,1,,,
+1,"Region 1, New Brunswick (Peer group I)",1301,20,19,,,
+1,"Region 2, New Brunswick (Peer group H)",1302,21,19,,,
+1,"Region 3, New Brunswick (Peer group I)",1303,22,19,,,
+1,"Region 4, New Brunswick (Peer group H)",1304,23,19,,,
+1,"Region 5, New Brunswick (Peer group D)",1305,24,19,,,
+1,"Region 6, New Brunswick (Peer group D)",1306,25,19,,,
+1,"Region 7, New Brunswick (Peer group D)",1307,26,19,,,
+1,Québec,24,27,1,,,
+1,"Région du Bas-Saint-Laurent, Québec (Peer group H)",2401,28,27,,,
+1,"Région du Saguenay-Lac-Saint-Jean, Québec (Peer group H)",2402,29,27,,,
+1,"Région de Québec, Québec (Peer group H)",2403,30,27,,,
+1,"Région de la Mauricie et Centre-du-Québec, Québec (Peer group H)",2404,31,27,,,
+1,"Région de l'Estrie, Québec (Peer group H)",2405,32,27,,,
+1,"Région de Montréal-Centre, Québec (Peer group A)",2406,33,27,,,
+1,"Région de l'Outaouais, Québec (Peer group H)",2407,34,27,,,
+1,"Région de l'Abitibi-Témiscamingue, Québec (Peer group H)",2408,35,27,,,
+1,"Région de la Côte-Nord, Québec (Peer group H)",2409,36,27,,,
+1,"Région du Nord-du-Québec, Québec (Peer group F)",2410,37,27,,,
+1,"Région de la Gaspésie-Îles-de-la-Madeleine, Québec (Peer group D)",2411,38,27,,,
+1,"Région de la Chaudière-Appalaches, Québec (Peer group H)",2412,39,27,,,
+1,"Région de Laval, Québec (Peer group I)",2413,40,27,,,
+1,"Région de Lanaudière, Québec (Peer group I)",2414,41,27,,,
+1,"Région des Laurentides, Québec (Peer group H)",2415,42,27,,,
+1,"Région de la Montérégie, Québec (Peer group H)",2416,43,27,,,
+1,"Région du Nunavik, Québec (Peer group C)",2417,44,27,,,
+1,"Région des Terres-Cries-de-la-Baie-James, Québec (Peer group C)",2418,45,27,,,
+1,"Ontario by District Health Council",35,46,1,,14,
+1,"Champlain District Health Council, Ontario",3501,47,46,,,
+1,"Quinte-Kingston and Rideau District Health Council, Ontario",3502,48,46,,,
+1,"Durham-Haliburton-Kawartha and Pine Ridge District Health Council, Ontario",3503,49,46,,,
+1,"Toronto District Health Council, Ontario",3504,50,46,,,
+1,"Simcoe-York District Health Council, Ontario",3505,51,46,,,
+1,"Halton-Peel District Health Council, Ontario",3506,52,46,,,
+1,"Waterloo-Wellington-Dufferin District Health Council, Ontario",3507,53,46,,,
+1,"Hamilton-Wentworth District Health Council, Ontario",3508,54,46,,,
+1,"Niagara District Health Council, Ontario",3509,55,46,,,
+1,"Grand River District Health Council, Ontario",3510,56,46,,,
+1,"Thames Valley District Health Council, Ontario",3511,57,46,,,
+1,"Essex-Kent and Lambton District Health Council, Ontario",3512,58,46,,,
+1,"Grey-Bruce-Huron and Perth District Health Council, Ontario",3513,59,46,,,
+1,"Muskoka-Nipissing and Parry Sound District Health Council, Ontario",3514,60,46,,,
+1,"Algoma-Cochrane-Manitoulin and Sudbury District Health Council, Ontario",3515,61,46,,,
+1,"Northwestern Ontario District Health Council, Ontario",3516,62,46,,,
+1,"Ontario by Health Unit",35,63,1,,4;14,
+1,"Algoma Public Health Unit, Ontario (Peer group H)",3526,64,63,,,
+1,"Brant Public Health Unit, Ontario (Peer group I)",3527,65,63,,4,
+1,"Durham Public Health Unit, Ontario (Peer group J)",3530,66,63,,,
+1,"Elgin-St Thomas Public Health Unit, Ontario (Peer group I)",3531,67,63,,,
+1,"Bruce-Grey-Owen Sound Public Health Unit, Ontario (Peer group I)",3533,68,63,,,
+1,"Haldimand-Norfolk Public Health Unit, Ontario (Peer group I)",3534,69,63,,,
+1,"Haliburton-Kawartha-Pine Ridge Public Health Unit, Ontario (Peer group I)",3535,70,63,,,
+1,"Halton Public Health Unit, Ontario (Peer group J)",3536,71,63,,,
+1,"Hamilton Public Health Unit, Ontario (Peer group H)",3537,72,63,,,
+1,"Hastings and Prince Edward Public Health Unit, Ontario (Peer group I)",3538,73,63,,,
+1,"Huron Public Health Unit, Ontario (Peer group G)",3539,74,63,,,
+1,"Kent-Chatham Public Health Unit, Ontario (Peer group I)",3540,75,63,,,
+1,"Kingston-Frontenac-Lennox and Addington Public Health Unit, Ontario (Peer group I)",3541,76,63,,,
+1,"Lambton Public Health Unit, Ontario (Peer group I)",3542,77,63,,,
+1,"Leeds-Grenville-Lanark Public Health Unit, Ontario (Peer group I)",3543,78,63,,,
+1,"Middlesex-London Public Health Unit, Ontario (Peer group I)",3544,79,63,,,
+1,"Muskoka-Parry Sound Public Health Unit, Ontario (Peer group E)",3545,80,63,,,
+1,"Niagara Public Health Unit, Ontario (Peer group I)",3546,81,63,,,
+1,"North Bay Public Health Unit, Ontario (Peer group H)",3547,82,63,,,
+1,"Northwestern Public Health Unit, Ontario (Peer group G)",3549,83,63,,,
+1,"Ottawa Public Health Unit, Ontario (Peer group B)",3551,84,63,,,
+1,"Oxford Public Health Unit, Ontario (Peer group I)",3552,85,63,,,
+1,"Peel Public Health Unit, Ontario (Peer group B)",3553,86,63,,,
+1,"Perth Public Health Unit, Ontario (Peer group G)",3554,87,63,,,
+1,"Peterborough Public Health Unit, Ontario (Peer group I)",3555,88,63,,,
+1,"Porcupine Public Health Unit, Ontario (Peer group H)",3556,89,63,,,
+1,"Renfrew Public Health Unit, Ontario (Peer group G)",3557,90,63,,,
+1,"Eastern Ontario Public Health Unit, Ontario (Peer group I)",3558,91,63,,,
+1,"Simcoe Public Health Unit, Ontario (Peer group J)",3560,92,63,,,
+1,"Sudbury Public Health Unit, Ontario (Peer group H)",3561,93,63,,,
+1,"Thunder Bay Public Health Unit, Ontario (Peer group I)",3562,94,63,,,
+1,"Timiskaming Public Health Unit, Ontario (Peer group E)",3563,95,63,,,
+1,"Waterloo Public Health Unit, Ontario (Peer group I)",3565,96,63,,,
+1,"Wellington-Dufferin-Guelph Public Health Unit, Ontario (Peer group J)",3566,97,63,,,
+1,"Windsor-Essex Public Health Unit, Ontario (Peer group I)",3568,98,63,,,
+1,"York Public Health Unit, Ontario (Peer group B)",3570,99,63,,,
+1,"Toronto Public Health Unit, Ontario (Peer group A)",3595,100,63,,,
+1,Manitoba,46,101,1,,,
+1,"Winnipeg, Manitoba (Peer group H)",4610,102,101,,,
+1,"Brandon, Manitoba (Peer group I)",4615,103,101,,,
+1,"North Eastman, Manitoba (Peer group G)",4620,104,101,,,
+1,"South Eastman, Manitoba (Peer group G)",4625,105,101,,,
+1,"Interlake, Manitoba (Peer group G)",4630,106,101,,,
+1,"Central, Manitoba (Peer group G)",4640,107,101,,,
+1,"Marquette, Manitoba (Peer group E)",4650,108,101,,,
+1,"South Westman, Manitoba (Peer group E)",4655,109,101,,,
+1,"Parkland, Manitoba (Peer group E)",4660,110,101,,,
+1,"Norman, Manitoba (Peer group F)",4670,111,101,,,
+1,"Burntwood and Churchill, Manitoba (Peer group C)","4680, 4690",112,101,,15,
+1,"Burntwood, Manitoba (Peer group C)",4680,113,112,,,
+1,"Churchill, Manitoba (Peer group F)",4690,114,112,,,
+1,Saskatchewan,47,115,1,,16,
+1,"Weyburn Service Area, Saskatchewan (Peer group G)",4701,116,115,,,
+1,"Moose Jaw Service Area, Saskatchewan (Peer group E)",4702,117,115,,,
+1,"Swift Current Service Area, Saskatchewan (Peer group G)",4703,118,115,,,
+1,"Regina Service Area, Saskatchewan (Peer group I)",4704,119,115,,,
+1,"Yorkton Service Area, Saskatchewan (Peer group E)",4705,120,115,,,
+1,"Saskatoon Service Area, Saskatchewan (Peer group I)",4706,121,115,,,
+1,"Rosetown Service Area, Saskatchewan (Peer group G)",4707,122,115,,,
+1,"Melfort Service Area, Saskatchewan (Peer group E)",4708,123,115,,,
+1,"Prince Albert Service Area, Saskatchewan (Peer group E)",4709,124,115,,,
+1,"North Battleford Service Area, Saskatchewan (Peer group E)",4710,125,115,,,
+1,"Northern Health Services Branch, Saskatchewan (Peer group C)",4711,126,115,,,
+1,Alberta,48,127,1,,17,
+1,"Chinook Regional Health Authority, Alberta (Peer group G)",4801,128,127,,,
+1,"Palliser Health Authority, Alberta (Peer group G)",4802,129,127,,,
+1,"Headwaters Health Authority, Alberta (Peer group J)",4803,130,127,,,
+1,"Calgary Regional Health Authority, Alberta (Peer group B)",4804,131,127,,,
+1,"Health Authority #5, Alberta (Peer group G)",4805,132,127,,,
+1,"David Thompson Regional Health Authority, Alberta (Peer group G)",4806,133,127,,,
+1,"East Central Health Authority, Alberta (Peer group G)",4807,134,127,,,
+1,"Westview Regional Health Authority, Alberta (Peer group J)",4808,135,127,,,
+1,"Crossroads Regional Health Authority, Alberta (Peer group G)",4809,136,127,,,
+1,"Capital Health Authority, Alberta (Peer group B)",4810,137,127,,,
+1,"Aspen Regional Health Authority, Alberta (Peer group G)",4811,138,127,,,
+1,"Lakeland Regional Health Authority, Alberta (Peer group G)",4812,139,127,,,
+1,"Mistahia Regional Health Authority, Alberta (Peer group F)",4813,140,127,,,
+1,"Peace Regional Health Authority, Alberta (Peer group G)",4814,141,127,,,
+1,"Keeweetinok Lakes Regional Health Authority, Alberta (Peer group F)",4815,142,127,,,
+1,"Northern Lights Regional Health Authority, Alberta (Peer group F)",4816,143,127,,,
+1,"Northwestern Regional Health Authority, Alberta (Peer group F)",4817,144,127,,,
+1,"British Columbia",59,145,1,,18;19;20,
+1,"East Kootenay, British Columbia (Peer group G) (January 2000)",5901T,146,145,t,,
+1,"West Kootenay-Boundary, British Columbia (Peer group I) (January 2000)",5902T,147,145,t,,
+1,"North Okanagan, British Columbia (Peer group I) (January 2000)",5903T,148,145,t,,
+1,"South Okanagan Similkameen, British Columbia (Peer group I) (January 2000)",5904T,149,145,t,,
+1,"Thompson, British Columbia (Peer group I) (January 2000)",5905T,150,145,t,,
+1,"Fraser Valley, British Columbia (Peer group I) (January 2000)",5906T,151,145,t,,
+1,"South Fraser Valley, British Columbia (Peer group B) (January 2000)",5907T,152,145,t,,
+1,"Burnaby/Simon Fraser, British Columbia (January 2000)",5922T,153,145,t,,
+1,"Burnaby, British Columbia (Peer group A) (January 2000)",5917T,154,153,t,,
+1,"Simon Fraser, British Columbia (Peer group B) (January 2000)",5908T,155,153,t,,
+1,"Coast Garibaldi, British Columbia (Peer group J) (January 2000)",5909T,156,145,t,,
+1,"Central Vancouver Island, British Columbia (Peer group I) (January 2000)",5910T,157,145,t,,
+1,"Upper Island/Central Coast, British Columbia (Peer group J) (January 2000)",5911T,158,145,t,,
+1,"Cariboo, British Columbia (Peer group F) (January 2000)",5912T,159,145,t,,
+1,"North West, British Columbia (Peer group F) (January 2000)",5913T,160,145,t,,
+1,"Peace Liard, British Columbia (Peer group F) (January 2000)",5914T,161,145,t,,
+1,"Northern Interior, British Columbia (Peer group F) (January 2000)",5915T,162,145,t,,
+1,"Vancouver/Richmond, British Columbia (January 2000)",5921T,163,145,t,,
+1,"Vancouver, British Columbia (Peer group A) (January 2000)",5916T,164,163,t,,
+1,"Richmond, British Columbia (Peer group A) (January 2000)",5919T,165,163,t,,
+1,"North Shore, British Columbia (Peer group B) (January 2000)",5918T,166,145,t,,
+1,"Capital, British Columbia (Peer group I) (January 2000)",5920T,167,145,t,,
+1,Yukon,60,168,1,,,
+1,"Yukon (Peer group F)",6001,169,168,,,
+1,"Northwest Territories",61,170,1,,,
+1,"Northwest Territories (Peer group F)",6101,171,170,,,
+1,Nunavut,62,172,1,,,
+1,"Nunavut (Peer group C)",6201,173,172,,,
+1,"Peer group A",A,174,1,,,
+1,"Peer group B",B,175,1,,,
+1,"Peer group C",C,176,1,,,
+1,"Peer group D",D,177,1,,,
+1,"Peer group E",E,178,1,,,
+1,"Peer group F",F,179,1,,,
+1,"Peer group G",G,180,1,,,
+1,"Peer group H",H,181,1,,,
+1,"Peer group I",I,182,1,,,
+1,"Peer group J",J,183,1,,,
+1,"East Kootenay, British Columbia (June 2002)",5911,184,145,,,
+1,"Kootenay Boundary, British Columbia (June 2002)",5912,185,145,,,
+1,"Okanagan, British Columbia (June 2002)",5913,186,145,,,
+1,"Thompson Cariboo, British Columbia (June 2002)",5914,187,145,,,
+1,"Fraser Valley, British Columbia (June 2002)",5921,188,145,,,
+1,"Simon Fraser, British Columbia (June 2002)",5922,189,145,,,
+1,"South Fraser, British Columbia (June 2002)",5923,190,145,,,
+1,"Richmond, British Columbia (June 2002)",5931,191,145,,,
+1,"Vancouver, British Columbia (June 2002)",5932,192,145,,,
+1,"North Shore/Coast Garibaldi, British Columbia (June 2002)",5933,193,145,,,
+1,"South Vancouver Island, British Columbia (June 2002)",5941,194,145,,,
+1,"Central Vancouver Island, British Columbia (June 2002)",5942,195,145,,,
+1,"North Vancouver Island, British Columbia (June 2002)",5943,196,145,,,
+1,"Northwest, British Columbia (June 2002)",5951,197,145,,,
+1,"Northern Interior, British Columbia (June 2002)",5952,198,145,,,
+1,"Northeast, British Columbia (June 2002)",5953,199,145,,,
+2,"Total, 12 years and over",,1,,,,
+2,"12-19 years",,2,1,,,
+2,"12-14 years",,3,2,,,
+2,"15-19 years",,4,2,,,
+2,"20-34 years",,5,1,,,
+2,"20-24 years",,6,5,,,
+2,"25-34 years",,7,5,,,
+2,"35-44 years",,8,1,,,
+2,"45-64 years",,9,1,,,
+2,"45-54 years",,10,9,,,
+2,"55-64 years",,11,9,,,
+2,"65 years and over",,12,1,,,
+2,"65-74 years",,13,12,,,
+2,"75 years and over",,14,12,,,
+3,"Both sexes",,1,,,,
+3,Males,,2,1,,,
+3,Females,,3,1,,,
+4,"Total population for the variable risk of depression",,1,,,,
+4,"No risk of depression",,2,1,,,
+4,"Possible risk of depression",,3,1,,,
+4,"Probable risk of depression",,4,1,,,
+4,"Risk of depression, not stated",,5,1,,,
+5,"Number of persons",,1,,,,
+5,"Low 95% confidence interval -  number of persons",,2,,,,
+5,"High 95% confidence interval - number of persons",,3,,,,
+5,"Coefficient of variation for number of persons",,4,,,,
+5,Percent,,5,,,,
+5,"Low 95% confidence interval - percent",,6,,,,
+5,"High 95% confidence interval - percent",,7,,,,
+5,"Coefficient of variation for percent",,8,,,,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period",..
+"less than the limit of detection",<LOD
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded",0s
+"data quality: excellent",A
+"data quality: very good",B
+"data quality: good",C
+"data quality: acceptable",D
+"use with caution",E
+"too unreliable to be published.",F
+"not applicable",...
+preliminary,p
+revised,r
+"suppressed to meet the confidentiality requirements of the Statistics Act",x
+terminated,t
+
+"Survey Code","Survey Name"
+3226,"Canadian Community Health Survey - Annual Component"
+
+"Subject Code","Subject Name"
+13,Health
+
+"Note ID",Note
+1,"Source: Statistics Canada, Canadian Community Health Survey, 2000/01"
+2,"Population aged 12 and over who show symptoms of depression, based on their responses to a set of questions that establishes the probability of suffering a ""major depressive episode""."
+3,"The measure of depression is derived from a set of questions on mental health that involves thoughts and feelings about various subjects."
+4,"The totals for Ontario and Saskatchewan exclude data from one or more health regions that did not select this indicator as one of their optional survey modules.  Interpret with caution."
+5,"Bootstrapping techniques were used to produce the coefficient of variation (CV) and 95% confidence intervals (CIs)."
+6,"Data with a coefficient of variation (CV) from 16.6% to 33.3% are identified by an (E) and should be interpreted with caution."
+7,"Data with a coefficient of variation (CV) greater than 33.3% were suppressed (F) due to extreme sampling variability."
+8,"Health regions are defined by provincial governments as the areas of responsibility for regional health boards (i.e., legislated) or as regions of interest to health care authorities."
+9,"A ""peer group"" is a grouping of health regions that have similar social and economic characteristics."
+10,"In Newfoundland and Labrador, health regions are generally referred to as Health and Community Services (HCS) regions."
+11,"In Prince Edward Island, the two health regions divide the province into urban and rural components."
+12,"Prince Edward Island has defined these health regions for statistical purposes only; they bear no resemblance to the boundaries of the five actual administrative health regions."
+13,"In Nova Scotia, health regions are known as ""health zones"" and relate to the province's administrative health region boundaries."
+14,"In Ontario, Public Health Units (PHU) administer health promotion and disease prevention programs, and  District Health Councils (DHC) are advisory, health planning organizations."
+15,"Because of the small population of Churchill, Manitoba (population: 1,110 in 1996), the Canadian Community Health Survey only collects data for the aggregation of Burntwood/Churchill (regions 4680, 4690)."
+16,"In Saskatchewan, ""service areas"" (SA) have been created from groupings of the 33 health districts."
+17,"In Alberta, health regions are referred to as Health Authorities (HA) or Regional Health Authorities (RHA)."
+18,"In 2002, the British Columbia Ministry of Health revised the health region boundaries, changing from 20 health regions to 16 health service delivery areas (HSDA)."
+19,"British Columbia's HSDAs are identified with the reference date as part of the health region name; the old health regions are identified with ""T"" following the code."
+20,"Data calculated for British Columbia HSDAs will differ from previously released health region data (where boundaries remain unchanged) due to revised population estimates."
+21,"The following standard symbols are used in Statistics Canada publications: (..) for figures not available for a specific reference period and (...) for figures not applicable."
+22,"The table (105-0005) was archived due to a change in geography.  More recent data are in table (105-0205)."
+70,"In 2002, the British Columbia Ministry of Health changed the health region boundaries from 20 health regions to 16 health service delivery areas. The new regions are coded from 5911 to 5953 and are also identified with the reference date as part of the health region name."
+
+"Correction ID","Correction Date","Correction Note"
+

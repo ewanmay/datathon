@@ -1,0 +1,84 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Average satisfaction with life and with selected domains of life by age group and sex",13100106,121-0003,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310010601",1;2;3;9,"CURRENT - a cube available to the public and that is current",Occasional,2016-01-01,2016-01-01,4
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+1,Geography,,
+2,"Age group",,
+3,Sex,,
+4,"Satisfaction with life and with selected domains of life",2,
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+1,Canada,[11124],1,,,,
+1,"Atlantic provinces",[1],2,1,,4,
+1,"Newfoundland and Labrador",[10],3,2,,,
+1,"Prince Edward Island",[11],4,2,,,
+1,"Nova Scotia",[12],5,2,,,
+1,"New Brunswick",[13],6,2,,,
+1,Quebec,[24],7,1,,,
+1,Ontario,[35],8,1,,,
+1,"Prairie provinces",[4],9,1,,5,
+1,Manitoba,[46],10,9,,,
+1,Saskatchewan,[47],11,9,,,
+1,Alberta,[48],12,9,,,
+1,"British Columbia",[59],13,1,,,
+2,"Total, 15 years and over",,1,,,,
+2,"15 to 24 years",,2,1,,,
+2,"25 to 54 years",,3,1,,,
+2,"25 to 34 years",,4,3,,,
+2,"35 to 44 years",,5,3,,,
+2,"45 to 54 years",,6,3,,,
+2,"55 to 64 years",,7,1,,,
+2,"65 years and over",,8,1,,,
+2,"65 to 74 years",,9,8,,,
+2,"75 years and over",,10,8,,,
+3,"Both sexes",,1,,,,
+3,Males,,2,1,,,
+3,Females,,3,1,,,
+4,"Life as a whole",,1,,,,
+4,"Standard of living",,2,,,,
+4,Health,,3,,,,
+4,"Achievement in life",,4,,,,
+4,"Personal relationships",,5,,,,
+4,"Personal appearance",,6,,,6,
+4,"Feelings of safety",,7,,,,
+4,"Feeling part of the community",,8,,,,
+4,"Free time",,9,,,7,
+4,"Quality of local environment",,10,,,8,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period",..
+"less than the limit of detection",<LOD
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded",0s
+"data quality: excellent",A
+"data quality: very good",B
+"data quality: good",C
+"data quality: acceptable",D
+"use with caution",E
+"too unreliable to be published.",F
+"not applicable",...
+preliminary,p
+revised,r
+"suppressed to meet the confidentiality requirements of the Statistics Act",x
+terminated,t
+
+"Survey Code","Survey Name"
+5221,"General Social Survey : Canadians at Work and Home"
+
+"Subject Code","Subject Name"
+13,Health
+
+"Note ID",Note
+1,"Source: Statistics Canada, General Social Survey, 2016, Canadians at Work and Home."
+2,"Satisfaction with life as a whole and with domains of life are personal subjective assessments of global and specific well-being. Respondents were asked to base their ratings on a scale of of 0 to 10, where zero means ""very dissatisfied"" and 10 means ""very satisfied""."
+3,"Average life satisfaction is the mean score based on a scale from 0 to 10."
+4,"The Atlantic provinces include Newfoundland and Labrador, Prince Edward Island, Nova Scotia, and New Brunswick."
+5,"The Prairie provinces include Manitoba, Saskatchewan and Alberta."
+6,"Personal appearance refers to weight, height or features. Please see question DOS_Q05, ""On a scale from 0 to 10, where 0 means you feel ""Not at all satisfied"" and 10 means you are ""Completely satisfied"": How satisfied are you with your personal appearance, such as your weight, height, or features?""."
+7,"Free time refers to the amount of time one has to do the things one likes doing. Please see question DOS_Q08, ""On a scale from 0 to 10, where 0 means you feel ""Not at all satisfied"" and 10 means you are ""Completely satisfied"": How satisfied are you with the amount of time you have to do the things that you like doing?""."
+8,"Quality of local environment refers to access to green space and air or water quality."
+9,"On January 16, 2018, all geography and age group values were corrected for 2016."
+
+"Correction ID","Correction Date","Correction Note"
+1007,2018-01-16,"<p>  On January 16, 2018, all geography and age group values were corrected for 2016.<br></p>"
+
