@@ -69,7 +69,7 @@ mental health:
 x = pd.DataFrame(columns=['Sex','Prevalence_x','Prevalence_y','Prevalence'])
 maxd=0
 
-for i in range(2000):
+for i in range(20000):
 	a = np.random.random_sample()
 	b = np.random.random_sample()
 	c = np.random.random_sample()
