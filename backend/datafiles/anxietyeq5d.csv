@@ -1,0 +1,271 @@
+Geography,Year,Sex,Variable Name,Response,Percent,Standard Error,Standard Score,Alberta Percent
+Alberta,2014,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,63.0,0.9,0.0,63.0
+Alberta,2014,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,24.200000000000003,0.8,0.0,24.200000000000003
+Alberta,2014,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,9.600000000000001,0.6000000000000001,0.0,9.600000000000001
+Alberta,2014,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.9000000000000001,0.30000000000000004,0.0,1.9000000000000001
+Alberta,2014,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.2000000000000002,0.2,0.0,1.2000000000000002
+Alberta,2014,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,60.6,1.2000000000000002,0.0,60.6
+Alberta,2014,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,24.900000000000002,1.1,0.0,24.900000000000002
+Alberta,2014,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,11.100000000000001,0.8,0.0,11.100000000000001
+Alberta,2014,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.0,0.30000000000000004,0.0,2.0
+Alberta,2014,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.4000000000000001,0.30000000000000004,0.0,1.4000000000000001
+Alberta,2014,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,65.60000000000001,1.3,0.0,65.60000000000001
+Alberta,2014,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,23.5,1.2000000000000002,0.0,23.5
+Alberta,2014,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,8.1,0.7000000000000001,0.0,8.1
+Alberta,2014,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.8,0.4,0.0,1.8
+Alberta,2014,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.9,0.2,0.0,0.9
+Alberta,2015,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,59.800000000000004,1.4000000000000001,0.0,59.800000000000004
+Alberta,2015,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,25.3,1.2000000000000002,0.0,25.3
+Alberta,2015,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,11.200000000000001,0.9,0.0,11.200000000000001
+Alberta,2015,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.7,0.6000000000000001,0.0,2.7
+Alberta,2015,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.1,0.30000000000000004,0.0,1.1
+Alberta,2015,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,55.900000000000006,1.9000000000000001,0.0,55.900000000000006
+Alberta,2015,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,25.6,1.5,0.0,25.6
+Alberta,2015,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,13.9,1.4000000000000001,0.0,13.9
+Alberta,2015,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,3.3000000000000003,1.0,0.0,3.3000000000000003
+Alberta,2015,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.2000000000000002,0.4,0.0,1.2000000000000002
+Alberta,2015,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,63.6,2.1,0.0,63.6
+Alberta,2015,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,25.1,1.9000000000000001,0.0,25.1
+Alberta,2015,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,8.4,1.0,0.0,8.4
+Alberta,2015,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.1,0.7000000000000001,0.0,2.1
+Alberta,2015,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.8,0.4,0.0,0.8
+Alberta,2016,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,53.1,1.7000000000000002,0.0,53.1
+Alberta,2016,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,28.1,1.5,0.0,28.1
+Alberta,2016,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,15.3,1.4000000000000001,0.0,15.3
+Alberta,2016,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.3000000000000003,0.4,0.0,2.3000000000000003
+Alberta,2016,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.3,0.4,0.0,1.3
+Alberta,2016,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,49.300000000000004,2.0,0.0,49.300000000000004
+Alberta,2016,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,31.0,1.9000000000000001,0.0,31.0
+Alberta,2016,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,15.200000000000001,1.4000000000000001,0.0,15.200000000000001
+Alberta,2016,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.9000000000000004,0.6000000000000001,0.0,2.9000000000000004
+Alberta,2016,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.6,0.8,0.0,1.6
+Alberta,2016,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,57.0,2.7,0.0,57.0
+Alberta,2016,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,25.200000000000003,2.4000000000000004,0.0,25.200000000000003
+Alberta,2016,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,15.3,2.3000000000000003,0.0,15.3
+Alberta,2016,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.6,0.6000000000000001,0.0,1.6
+Alberta,2016,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.9,0.30000000000000004,0.0,0.9
+Z1 - South Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,61.7,2.3000000000000003,-0.578326708,63.0
+Z1 - South Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,24.700000000000003,2.0,0.22738932320000002,24.200000000000003
+Z1 - South Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,9.3,1.2000000000000002,-0.30018720600000004,9.600000000000001
+Z1 - South Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.8000000000000003,0.8,1.2028925041000003,1.9000000000000001
+Z1 - South Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.5,0.6000000000000001,0.45275404770000005,1.2000000000000002
+Z1 - South Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,57.6,3.2,-0.9195749950000001,60.6
+Z1 - South Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,25.700000000000003,2.9000000000000004,0.26462709630000003,24.900000000000002
+Z1 - South Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,12.0,1.9000000000000001,0.4782480054,11.100000000000001
+Z1 - South Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.9000000000000004,0.9,1.0780986957,2.0
+Z1 - South Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.8,0.9,0.38458032550000004,1.4000000000000001
+Z1 - South Zone,2014,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,65.9,3.2,0.1043483563,65.60000000000001
+Z1 - South Zone,2014,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,23.700000000000003,2.8000000000000003,0.0553873839,23.5
+Z1 - South Zone,2014,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,6.4,1.4000000000000001,-1.139782808,8.1
+Z1 - South Zone,2014,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.8000000000000003,1.3,0.7123325798000001,1.8
+Z1 - South Zone,2014,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.2000000000000002,0.9,0.2637930737,0.9
+Z1 - South Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,53.900000000000006,3.4000000000000004,-1.6953135140000002,59.800000000000004
+Z1 - South Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,28.700000000000003,3.1,1.0767178838,25.3
+Z1 - South Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,10.0,1.8,-0.6308639590000001,11.200000000000001
+Z1 - South Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,4.5,1.6,1.1800482595000001,2.7
+Z1 - South Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,2.8000000000000003,1.4000000000000001,1.2508441771000003,1.1
+Z1 - South Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,51.400000000000006,4.6000000000000005,-0.988800325,55.900000000000006
+Z1 - South Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,26.6,3.8000000000000003,0.2716267399,25.6
+Z1 - South Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,12.5,2.8000000000000003,-0.53063633,13.9
+Z1 - South Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,6.4,2.8000000000000003,1.1297411536000002,3.3000000000000003
+Z1 - South Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,3.1,2.5,0.740304331,1.2000000000000002
+Z1 - South Zone,2015,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,56.5,5.1000000000000005,-1.390594753,63.6
+Z1 - South Zone,2015,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,30.8,4.9,1.1553285775000002,25.1
+Z1 - South Zone,2015,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,7.6000000000000005,2.3000000000000003,-0.36222886000000004,8.4
+Z1 - South Zone,2015,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.6,1.3,0.40229759940000004,2.1
+Z1 - South Zone,2015,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,2.5,1.3,1.3004488735,0.8
+Z1 - South Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,52.6,5.4,-0.100377962,53.1
+Z1 - South Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,26.8,5.1000000000000005,-0.255017993,28.1
+Z1 - South Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,11.4,3.5,-1.126080591,15.3
+Z1 - South Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,6.5,3.0,1.4354864696,2.3000000000000003
+Z1 - South Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,2.7,2.2,0.6751230622000001,1.3
+Z1 - South Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,52.5,7.2,0.44464110040000004,49.300000000000004
+Z1 - South Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,23.900000000000002,6.300000000000001,-1.1311069950000001,31.0
+Z1 - South Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,10.3,4.6000000000000005,-1.065546553,15.200000000000001
+Z1 - South Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,8.3,4.9,1.1098907046000002,2.9000000000000004
+Z1 - South Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,4.9,4.0,0.8260293112,1.6
+Z1 - South Zone,2016,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,52.7,8.200000000000001,-0.527452939,57.0
+Z1 - South Zone,2016,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,30.1,8.0,0.6196582343000001,25.200000000000003
+Z1 - South Zone,2016,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,12.5,5.300000000000001,-0.525494462,15.3
+Z1 - South Zone,2016,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,4.4,2.9000000000000004,0.9892569957,1.6
+Z1 - South Zone,2016,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.2,0.2,-3.3368097480000003,0.9
+Z2 - Calgary Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,65.60000000000001,1.6,1.6406332454,63.0
+Z2 - Calgary Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,23.3,1.4000000000000001,-0.6538086330000001,24.200000000000003
+Z2 - Calgary Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,8.4,0.9,-1.4555029810000002,9.600000000000001
+Z2 - Calgary Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.1,0.5,0.43125921460000005,1.9000000000000001
+Z2 - Calgary Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.6000000000000001,0.2,-3.161417513,1.2000000000000002
+Z2 - Calgary Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,65.60000000000001,2.1,2.3399866277,60.6
+Z2 - Calgary Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,22.1,1.9000000000000001,-1.484420217,24.900000000000002
+Z2 - Calgary Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,9.700000000000001,1.3,-1.099611826,11.100000000000001
+Z2 - Calgary Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.8,0.6000000000000001,-0.294458508,2.0
+Z2 - Calgary Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.8,0.30000000000000004,-1.9124989490000002,1.4000000000000001
+Z2 - Calgary Zone,2014,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,65.7,2.4000000000000004,0.0509596107,65.60000000000001
+Z2 - Calgary Zone,2014,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,24.6,2.2,0.4808176286,23.5
+Z2 - Calgary Zone,2014,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,6.9,1.1,-1.031956614,8.1
+Z2 - Calgary Zone,2014,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.5,0.9,0.7213478057,1.8
+Z2 - Calgary Zone,2014,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.30000000000000004,0.2,-3.135412505,0.9
+Z2 - Calgary Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,62.300000000000004,2.5,1.0188720602,59.800000000000004
+Z2 - Calgary Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,24.6,2.1,-0.32674072000000004,25.3
+Z2 - Calgary Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,10.100000000000001,1.3,-0.822306187,11.200000000000001
+Z2 - Calgary Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.1,1.2000000000000002,-0.483634094,2.7
+Z2 - Calgary Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.9,0.4,-0.508000504,1.1
+Z2 - Calgary Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,59.900000000000006,3.3000000000000003,1.1837291116000002,55.900000000000006
+Z2 - Calgary Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,21.8,2.4000000000000004,-1.6042285630000002,25.6
+Z2 - Calgary Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,12.9,1.9000000000000001,-0.513063239,13.9
+Z2 - Calgary Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,4.0,2.4000000000000004,0.2868043117,3.3000000000000003
+Z2 - Calgary Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.4000000000000001,0.7000000000000001,0.24475583090000003,1.2000000000000002
+Z2 - Calgary Zone,2015,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,64.7,3.6,0.31450508420000006,63.6
+Z2 - Calgary Zone,2015,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,27.5,3.5,0.6853806820000001,25.1
+Z2 - Calgary Zone,2015,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,7.300000000000001,1.6,-0.6822709010000001,8.4
+Z2 - Calgary Zone,2015,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,0.2,0.1,-12.43879191,2.1
+Z2 - Calgary Zone,2015,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.2,0.2,-3.268171446,0.8
+Z2 - Calgary Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,54.7,3.4000000000000004,0.441101576,53.1
+Z2 - Calgary Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,28.700000000000003,3.2,0.20790573850000002,28.1
+Z2 - Calgary Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,14.700000000000001,2.9000000000000004,-0.21283828500000002,15.3
+Z2 - Calgary Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.5,0.5,-1.7672528390000002,2.3000000000000003
+Z2 - Calgary Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.5,0.2,-3.4965945630000004,1.3
+Z2 - Calgary Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,52.1,4.1000000000000005,0.6936027496000001,49.300000000000004
+Z2 - Calgary Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,29.0,3.7,-0.526653148,31.0
+Z2 - Calgary Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,16.0,3.1,0.2566396932,15.200000000000001
+Z2 - Calgary Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.4000000000000004,0.8,-0.6531588720000001,2.9000000000000004
+Z2 - Calgary Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.5,0.30000000000000004,-4.240479763,1.6
+Z2 - Calgary Zone,2016,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,57.1,5.6000000000000005,0.0280938079,57.0
+Z2 - Calgary Zone,2016,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,28.5,5.2,0.6380556123000001,25.200000000000003
+Z2 - Calgary Zone,2016,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,13.3,4.800000000000001,-0.415672042,15.3
+Z2 - Calgary Zone,2016,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,0.5,0.5,-2.3390020940000005,1.6
+Z2 - Calgary Zone,2016,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.5,0.4,-1.174437363,0.9
+Z3 - Central Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,63.2,2.3000000000000003,0.0679979413,63.0
+Z3 - Central Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,24.1,2.0,-0.045601285,24.200000000000003
+Z3 - Central Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,10.5,1.5,0.5401783737,9.600000000000001
+Z3 - Central Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.3,0.5,-1.3292153660000001,1.9000000000000001
+Z3 - Central Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.0,0.5,-0.470592145,1.2000000000000002
+Z3 - Central Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,62.900000000000006,3.0,0.767863387,60.6
+Z3 - Central Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,24.900000000000002,2.7,0.0131668324,24.900000000000002
+Z3 - Central Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,9.4,2.0,-0.8767096600000001,11.100000000000001
+Z3 - Central Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.9000000000000001,0.9,-0.040556789,2.0
+Z3 - Central Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.9,0.7000000000000001,-0.891463811,1.4000000000000001
+Z3 - Central Zone,2014,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,63.400000000000006,3.4000000000000004,-0.6417460090000001,65.60000000000001
+Z3 - Central Zone,2014,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,23.3,3.0,-0.081711421,23.5
+Z3 - Central Zone,2014,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,11.600000000000001,2.3000000000000003,1.5455273358,8.1
+Z3 - Central Zone,2014,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,0.5,0.30000000000000004,-4.2852632690000005,1.8
+Z3 - Central Zone,2014,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.1,0.7000000000000001,0.2121034622,0.9
+Z3 - Central Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,61.0,3.6,0.33781952300000007,59.800000000000004
+Z3 - Central Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,26.5,3.1,0.37431919750000003,25.3
+Z3 - Central Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,8.8,1.6,-1.511839893,11.200000000000001
+Z3 - Central Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.8,1.0,-0.834766721,2.7
+Z3 - Central Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.9000000000000001,1.5,0.6156625714000001,1.1
+Z3 - Central Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,53.2,4.4,-0.628286921,55.900000000000006
+Z3 - Central Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,32.1,4.3,1.5216565629,25.6
+Z3 - Central Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,11.4,2.0,-1.2872548270000002,13.9
+Z3 - Central Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,3.0,2.0,-0.155526434,3.3000000000000003
+Z3 - Central Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.30000000000000004,0.2,-5.046094049,1.2000000000000002
+Z3 - Central Zone,2015,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,68.60000000000001,5.300000000000001,0.9580662862,63.6
+Z3 - Central Zone,2015,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,21.0,4.2,-0.981555595,25.1
+Z3 - Central Zone,2015,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,6.2,2.4000000000000004,-0.9071539670000001,8.4
+Z3 - Central Zone,2015,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,0.6000000000000001,0.4,-3.191643963,2.1
+Z3 - Central Zone,2015,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,3.5,2.8000000000000003,0.9444839188,0.8
+Z3 - Central Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,51.900000000000006,3.3000000000000003,-0.368409101,53.1
+Z3 - Central Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,27.700000000000003,3.0,-0.11119968300000001,28.1
+Z3 - Central Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,18.400000000000002,2.9000000000000004,1.0680888983,15.3
+Z3 - Central Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.6,0.7000000000000001,-1.055704389,2.3000000000000003
+Z3 - Central Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.4,0.2,-4.03359675,1.3
+Z3 - Central Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,45.0,4.1000000000000005,-1.055866058,49.300000000000004
+Z3 - Central Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,37.2,4.4,1.4200041088000002,31.0
+Z3 - Central Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,14.9,2.6,-0.10039386700000001,15.200000000000001
+Z3 - Central Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.0,0.8,-1.015465457,2.9000000000000004
+Z3 - Central Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.8,0.4,-1.8742220440000001,1.6
+Z3 - Central Zone,2016,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,58.800000000000004,5.2,0.34445150040000005,57.0
+Z3 - Central Zone,2016,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,18.3,3.4000000000000004,-2.019288468,25.200000000000003
+Z3 - Central Zone,2016,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,21.8,5.1000000000000005,1.2765795511000002,15.3
+Z3 - Central Zone,2016,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.1,1.0,-0.508417539,1.6
+Z3 - Central Zone,2016,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.0,18.400000000000002,-0.049282068,0.9
+Z4 - Edmonton Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,58.400000000000006,1.9000000000000001,-2.4625272290000004,63.0
+Z4 - Edmonton Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,26.900000000000002,1.7000000000000002,1.594514453,24.200000000000003
+Z4 - Edmonton Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,11.100000000000001,1.2000000000000002,1.1911099296,9.600000000000001
+Z4 - Edmonton Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.9000000000000001,0.5,-0.10898033900000001,1.9000000000000001
+Z4 - Edmonton Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.7000000000000002,0.5,0.9541110917,1.2000000000000002
+Z4 - Edmonton Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,53.5,2.6,-2.777653631,60.6
+Z4 - Edmonton Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,28.6,2.3000000000000003,1.620623857,24.900000000000002
+Z4 - Edmonton Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,13.3,1.9000000000000001,1.1728430256000002,11.100000000000001
+Z4 - Edmonton Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.3000000000000003,0.8,0.4145520233,2.0
+Z4 - Edmonton Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,2.3000000000000003,0.9,0.9297003932,1.4000000000000001
+Z4 - Edmonton Zone,2014,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,63.800000000000004,2.7,-0.6747009150000001,65.60000000000001
+Z4 - Edmonton Zone,2014,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,25.1,2.5,0.6184339373000001,23.5
+Z4 - Edmonton Zone,2014,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,8.700000000000001,1.6,0.39784433120000007,8.1
+Z4 - Edmonton Zone,2014,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.4000000000000001,0.5,-0.8401528420000001,1.8
+Z4 - Edmonton Zone,2014,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.1,0.5,0.26574890770000004,0.9
+Z4 - Edmonton Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,57.800000000000004,2.7,-0.7246833030000001,59.800000000000004
+Z4 - Edmonton Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,25.700000000000003,2.4000000000000004,0.1632017959,25.3
+Z4 - Edmonton Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,12.3,2.0,0.5620021555,11.200000000000001
+Z4 - Edmonton Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,3.8000000000000003,1.3,0.9051962666000001,2.7
+Z4 - Edmonton Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.4,0.2,-3.838721467,1.1
+Z4 - Edmonton Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,53.1,3.6,-0.804619741,55.900000000000006
+Z4 - Edmonton Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,26.6,3.0,0.34069292810000007,25.6
+Z4 - Edmonton Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,17.3,3.5,0.9627218978000001,13.9
+Z4 - Edmonton Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.5,1.0,-0.7689129600000001,3.3000000000000003
+Z4 - Edmonton Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.5,0.30000000000000004,-2.2987207460000003,1.2000000000000002
+Z4 - Edmonton Zone,2015,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,62.5,4.1000000000000005,-0.26649896100000003,63.6
+Z4 - Edmonton Zone,2015,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,24.900000000000002,3.7,-0.061032162,25.1
+Z4 - Edmonton Zone,2015,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,7.300000000000001,1.7000000000000002,-0.6310555640000001,8.4
+Z4 - Edmonton Zone,2015,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,5.1000000000000005,2.3000000000000003,1.3320456888,2.1
+Z4 - Edmonton Zone,2015,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.2,0.2,-3.784056001,0.8
+Z4 - Edmonton Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,49.400000000000006,2.4000000000000004,-1.549292031,53.1
+Z4 - Edmonton Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,30.1,2.2,0.9456859692,28.1
+Z4 - Edmonton Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,15.9,2.0,0.2884470909,15.3
+Z4 - Edmonton Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.5,0.8,0.2889584832,2.3000000000000003
+Z4 - Edmonton Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,2.1,1.1,0.7766128974000001,1.3
+Z4 - Edmonton Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,45.6,2.8000000000000003,-1.307498271,49.300000000000004
+Z4 - Edmonton Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,34.2,3.1,1.037917203,31.0
+Z4 - Edmonton Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,14.8,2.0,-0.188717037,15.200000000000001
+Z4 - Edmonton Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.5,0.8,-0.579523072,2.9000000000000004
+Z4 - Edmonton Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,2.9000000000000004,2.1,0.6014857248000001,1.6
+Z4 - Edmonton Zone,2016,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,53.1,3.8000000000000003,-1.013368972,57.0
+Z4 - Edmonton Zone,2016,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,26.1,2.9000000000000004,0.33201118450000006,25.200000000000003
+Z4 - Edmonton Zone,2016,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,16.900000000000002,3.5,0.4418132584,15.3
+Z4 - Edmonton Zone,2016,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.5,1.4000000000000001,0.6408911279000001,1.6
+Z4 - Edmonton Zone,2016,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.3,0.6000000000000001,0.7904785120000001,0.9
+Z5 - North Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,67.3,2.0,2.1862802433,63.0
+Z5 - North Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,20.6,1.6,-2.297054311,24.200000000000003
+Z5 - North Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,9.1,1.2000000000000002,-0.470448655,9.600000000000001
+Z5 - North Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.4000000000000001,0.7000000000000001,-0.7418532350000001,1.9000000000000001
+Z5 - North Zone,2014,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.7000000000000002,0.5,0.9889130367000001,1.2000000000000002
+Z5 - North Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,64.5,2.5,1.6079683627,60.6
+Z5 - North Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,22.8,2.0,-1.05386508,24.900000000000002
+Z5 - North Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,10.4,1.7000000000000002,-0.41880784400000004,11.100000000000001
+Z5 - North Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,0.7000000000000001,0.4,-3.100104834,2.0
+Z5 - North Zone,2014,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.5,0.7000000000000001,0.1504963873,1.4000000000000001
+Z5 - North Zone,2014,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,69.8,3.0,1.406534592,65.60000000000001
+Z5 - North Zone,2014,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,18.6,2.4000000000000004,-2.03948638,23.5
+Z5 - North Zone,2014,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,7.800000000000001,1.8,-0.137606758,8.1
+Z5 - North Zone,2014,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.9000000000000001,1.3,0.0747038632,1.8
+Z5 - North Zone,2014,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.8,0.7000000000000001,1.2232476387000002,0.9
+Z5 - North Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,59.7,3.0,-0.030041276,59.800000000000004
+Z5 - North Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,23.200000000000003,2.4000000000000004,-0.9027109640000001,25.3
+Z5 - North Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,14.4,2.4000000000000004,1.3666557179,11.200000000000001
+Z5 - North Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.1,0.4,-3.883146915,2.7
+Z5 - North Zone,2015,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.6,0.7000000000000001,0.7070729423000001,1.1
+Z5 - North Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,56.7,3.8000000000000003,0.1929480595,55.900000000000006
+Z5 - North Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,28.1,3.4000000000000004,0.7276429373000001,25.6
+Z5 - North Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,11.3,1.9000000000000001,-1.354362788,13.9
+Z5 - North Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.5,0.7000000000000001,-2.669132066,3.3000000000000003
+Z5 - North Zone,2015,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,2.4000000000000004,1.4000000000000001,0.8616199257,1.2000000000000002
+Z5 - North Zone,2015,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,62.5,4.6000000000000005,-0.224292496,63.6
+Z5 - North Zone,2015,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,18.6,3.2,-2.055393668,25.1
+Z5 - North Zone,2015,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,17.400000000000002,4.2,2.1231620281,8.4
+Z5 - North Zone,2015,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,0.7000000000000001,0.5,-2.8644867790000004,2.1
+Z5 - North Zone,2015,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.7000000000000001,0.5,-0.1876181,0.8
+Z5 - North Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are not anxious or depressed,61.7,3.6,2.3652081094,53.1
+Z5 - North Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,20.0,2.6,-3.069711878,28.1
+Z5 - North Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,14.600000000000001,3.0,-0.228680914,15.3
+Z5 - North Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are severely anxious or depressed,2.4000000000000004,0.9,0.15917111820000002,2.3000000000000003
+Z5 - North Zone,2016,BOTH,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,1.3,1.0,-0.004868632,1.3
+Z5 - North Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,53.800000000000004,4.5,0.9891405632,49.300000000000004
+Z5 - North Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,25.700000000000003,4.0,-1.3060137250000001,31.0
+Z5 - North Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,16.7,3.6,0.41372202020000004,15.200000000000001
+Z5 - North Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,3.4000000000000004,1.7000000000000002,0.27584822400000003,2.9000000000000004
+Z5 - North Zone,2016,FEMALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,0.4,0.2,-5.154872475,1.6
+Z5 - North Zone,2016,MALE,Anxiety or Depression (EQ5D),You are not anxious or depressed,70.0,5.5,2.3738171004,57.0
+Z5 - North Zone,2016,MALE,Anxiety or Depression (EQ5D),You are slightly anxious or depressed,14.100000000000001,3.1,-3.6063252180000003,25.200000000000003
+Z5 - North Zone,2016,MALE,Anxiety or Depression (EQ5D),You are moderately anxious or depressed,12.4,4.800000000000001,-0.6027104140000001,15.3
+Z5 - North Zone,2016,MALE,Anxiety or Depression (EQ5D),You are severely anxious or depressed,1.3,0.8,-0.3538276570000001,1.6
+Z5 - North Zone,2016,MALE,Anxiety or Depression (EQ5D),You are extremely anxious or depressed,2.1,2.1,0.5889040425000001,0.9
