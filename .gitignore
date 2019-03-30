@@ -1,1 +1,4 @@
 /mentalhelp/node_modules
+
+# backend
+/__pycache__
