@@ -18,7 +18,10 @@ const mapStateToProps = ({ prediction }) => {
     lifeSatisfaction,
     moodStability,
     lifeStress,
-    bloodPressure
+    bloodPressure,
+    improvementStrings,
+    currentRating,
+    potentialRating
   } = prediction;
   return {
     sex,
@@ -35,7 +38,10 @@ const mapStateToProps = ({ prediction }) => {
     moodStability,
     fruitVegetableConsumption,
     bloodPressure,
-    formError
+    formError,
+    improvementStrings,
+    currentRating,
+    potentialRating
   };
 };
 const mapDispatchToProps = dispatch => {
@@ -54,7 +60,8 @@ const mapDispatchToProps = dispatch => {
     heightChanged,
     lifeStressChanged,
     bloodPressureChanged,
-    formSubmit
+    formSubmit,
+    closeModal
   } = predictionActions;
   return {
     sexChanged: sex => {
@@ -101,6 +108,9 @@ const mapDispatchToProps = dispatch => {
     },
     submitForm: form => {
       dispatch(formSubmit(form));
+    },
+    closeModal: () => {
+      dispatch(closeModal());
     }
   };
 };
