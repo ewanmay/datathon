@@ -1,6 +1,6 @@
 import Input from "./input";
 import React from "react";
-import TextInput from './text-input'
+import TextInput from "./text-input";
 import SliderInput from "./slider";
 const InputScreenPage = ({
   sex,
@@ -30,23 +30,24 @@ const InputScreenPage = ({
   lifeSatisfactionChanged,
   weightChanged,
   heightChanged,
-  lifeStressChanged
+  lifeStressChanged,
+  submitForm
 }) => {
-  console.log(communalBelonging, "jsx")
   return (
     <div className="row">
       <div className="col-sm-2 side-spacer" />
 
       <div className="col-sm-8 page">
-      
-      <TextInput
+        <TextInput
           onChange={heightChanged}
           question={"Please enter your height in centimeters:"}
+          placeHolder={"i.e 152"}
           value={height}
         />
         <TextInput
           onChange={weightChanged}
           question={"Please enter your weight in kilograms:"}
+          placeHolder={"i.e 56"}
           value={weight}
         />
 
@@ -69,19 +70,10 @@ const InputScreenPage = ({
           question={"Please select your age:"}
           renderedButton={smokingHabits}
         />
-        
-
-        <Input
-          selection={physicalActivityChanged}
-          question={"How much are you exercising a week?"}
-          labels={["More than 150 minutes a week", "Less than 60 minutes a day"]}
-          renderedButton={physicalActivity}
-        />
-
         <Input
           selection={fruitVegetableConsumptionChanged}
-          labels={["Under 18", "Over 18"]}
-          question={"Please select your age:"}
+          labels={["1", "2", "3", "4", "5"]}
+          question={"How many times do you eat fruit and vegetables a day?"}
           renderedButton={fruitVegetableConsumption}
         />
         <SliderInput
@@ -119,12 +111,51 @@ const InputScreenPage = ({
           value={moodStability}
         />
 
-        <Input
+        <SliderInput
           selection={physicalActivityChanged}
           question={"How much are you exercising a week?"}
-          labels={["More than 150 minutes a week", "Less than 60 minutes a day"]}
-          renderedButton={physicalActivity}
+          value={physicalActivity}
         />
+        <div className="button-container">
+          <button
+            type="button"
+            className="btn btn-outline-primary active"
+            key={123123123}
+            onClick={() => {
+              console.log({
+                sex,
+                age,
+                height,
+                weight,
+                perceivedHealth,
+                perceivedMentalHealth,
+                physicalActivity,
+                smokingHabits,
+                communalBelonging,
+                lifeSatisfaction,
+                lifeStress,
+                moodStability,
+                fruitVegetableConsumption
+              })
+              submitForm({
+              sex,
+              age,
+              height,
+              weight,
+              perceivedHealth,
+              perceivedMentalHealth,
+              physicalActivity,
+              smokingHabits,
+              communalBelonging,
+              lifeSatisfaction,
+              lifeStress,
+              moodStability,
+              fruitVegetableConsumption
+            })}}
+          >
+            Submit
+          </button>
+        </div>
       </div>
       <div className="col-sm-2 side-spacer" />
     </div>

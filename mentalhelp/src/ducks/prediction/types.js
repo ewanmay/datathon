@@ -11,4 +11,5 @@ export const LIFE_SATISFACTION_CHANGED = "life_satisfaction_changed";
 export const MOOD_STABILITY_CHANGED = "mood_stability_changed";
 export const LIFE_STRESS_CHANGED = "life_stress_changed";
 export const FRUIT_VEGETABLE_CONSUMPTION_CHANGED = "fruit_vegetable_consumption_changed";
-export const SUBMISSION_FAILURE = "submission_failure";
+export const FORM_SUBMIT_FAILURE = "form_submit_failure";
+export const FORM_SUBMIT_SUCCESS = "form_submit_success"

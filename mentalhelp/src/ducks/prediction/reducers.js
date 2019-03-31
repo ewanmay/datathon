@@ -19,7 +19,7 @@ export const initialFormState = {
   age: "",
   height: "",
   weight: "",
-  physicalActivity: "",
+  physicalActivity: 0,
   smokingHabits: "",
   communalBelonging: 0,
   lifeSatisfaction: 0,

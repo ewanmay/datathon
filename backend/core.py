@@ -58,3 +58,9 @@ def classify(img_path='testimg.jpg'):
 	# (one such list for each sample in the batch)
 	return decode_predictions(preds, top=3)[0]
 # Predicted: [(u'n02504013', u'Indian_elephant', 0.82658225), (u'n01871265', u'tusker', 0.1122357), (u'n02504458', u'African_elephant', 0.061040461)]
+
+def compute(newPatient):
+	return model.predict(newPatient)[0,0], reverse(newPatient)
+
+
+

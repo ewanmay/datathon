@@ -1,7 +1,8 @@
 #kernel.py -- this will handle the process
 import numpy as np
 import pandas as pd
-
+from normalize_input import normalize, names
+from core import compute
 # Geography,Year,Sex,Activity Category,Prevalence_x,Category,Prevalence_y,Stress Category,Prevalence
 
 def readCsv(src):
@@ -37,3 +38,20 @@ print(data5.columns.values)
 print(data5.dtypes)
 data5.to_csv('./datafiles/merged.csv', index=False)
 #print(data5)
+
+def mentalHelp(request):
+	arr = {}
+    for n in names:
+    	arr.update(n,request.get[n])
+
+    newPatient = normalize( Series(arr) )
+    print('\n\n#################\n\nnormalized:\n', newPatient)
+
+    prediction, reccomendation = compute(newPatient)
+
+    print('\nprediction:\n', prediction)
+    print('\nreccomendation:\n', reccomendation)
+
+    # format result
+
+    return result, reccomendation
