@@ -67,7 +67,7 @@ const InputScreenPage = ({
         <Input
           selection={smokingHabitsChanged}
           labels={["Daily", "Occasional", "Never"]}
-          question={"Please select your age:"}
+          question={"Please select your smoking habits:"}
           renderedButton={smokingHabits}
         />
         <Input

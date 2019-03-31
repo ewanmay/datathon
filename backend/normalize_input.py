@@ -5,6 +5,7 @@ import pandas as pd
 
 from core import ref
 from trainer import avg_values
+from core import getPrediction
 
 names = ('sex','age','weight','height','smoker','fruit','blood_pressure','health','stress','activity','belonging')
 
@@ -21,39 +22,43 @@ def normalize(s):
 	sex = s['sex']
 
 # age is read in 2 steps -> 0 / 1 -> minor / adult
-	age = s['age']
+	age = 0 if s['age'] == 'Under 18' else 1
 
-	BMI = s['weight']
-	BMI /= s['height']**2
+	BMI = int(s['weight'])
+	BMI /= (int(s['height'])/100)**2
 	
 	avg_values[ref["Body mass index, adjusted self-reported, adult (18 years and over), obese"]]
 	avg_values[ref["Body mass index, adjusted self-reported, adult (18 years and over), overweight"]]
 	avg_values[ref["Body mass index, self-reported, youth (12 to 17 years old), overweight or obese"]]
 	
-	BMI_obese = norm((age * BMI) / 40)
-	BMI_overw = norm((age * BMI**2) / 1600)
+	BMI_obese = norm((age * BMI))
+	BMI_overw = norm((age * BMI))
 	BMI_youth = norm((1 - age) * BMI)
 	
-	smoker = s['smoker'] # fuck
+	smoker = 0 if s['smokingHabits'] == "Never" else 1 
 
-	fruit = s['fruit'] # fuck
+	fruit = int(s['fruitVegetableConsumption'])/5.
 
-	high_bp = s['blood_pressure']
+	high_bp = avg_values[ref["High blood pressure"]]#s['blood_pressure']	#TODO
 
-	health = s['health'] / 100.
+	health = s['perceivedHealth'] / 100.
 
-	stress = s['stress'] / 100.
+	stress = s['lifeStress'] / 100.
 
-	active = s['activity'] / 100.
+	active = s['physicalActivity'] / 100. if age == 1 else avg_values[ref["Self-reported physical activity, 150 minutes per week, adult (18 years and over)"]]
 
-	active_yg = s['activity'] / 100.
+	mood_dis = s['moodStability'] / 100.
 
-	belong = s['belonging'] / 100.
+	satisfaction = s['lifeSatisfaction'] / 100.
+
+	active_yg = s['physicalActivity'] / 100. if age == 0 else avg_values[ref["Self-reported physical activity, average 60 minutes per day, youth (12 to 17 years old)"]]
+
+	belong = s['communalBelonging'] / 100.
 
 	infoList = [BMI_obese, BMI_overw, BMI_youth, smoker, fruit, high_bp, satisfaction, mood_dis, health, stress, active, active_yg, belong]
 	cols = list(ref.values())
 
-	return pd.Series(infoList,cols)
+	return (infoList)
 
 	# smoker = avg_values[ref["Current smoker, daily or occasional"]]
 

@@ -113,8 +113,8 @@ export const physicalActivityChanged = input => async dispatch => {
 export const formSubmit = form => async dispatch => {
   console.log(form);
   let errorMessage = "";
-  errorMessage = !form.weight.isNaN() ? "Weight is not a number" : "";
-  errorMessage = !form.height.isNaN() ? "Height is not a number" : "";
+  errorMessage = !Number.isNaN(parseInt(form.weight,10)) ? "Weight is not a number" : "";
+  errorMessage = !Number.isNaN(parseInt(form.height,10)) ? "Height is not a number" : "";
   errorMessage = !form.communalBelonging > 0 ? "Please select a communal belonging rating above 0" : "";
   errorMessage = !form.lifeSatisfaction > 0 ? "Please select a life satisfaction rating above 0" : "";
   errorMessage = !form.lifeStress > 0 ? "Please select a life stress rating above 0" : "";
@@ -125,13 +125,16 @@ export const formSubmit = form => async dispatch => {
   errorMessage = !form.age.length > 0 ? "Please select an age category" : "";
   errorMessage = !form.smokingHabits.length > 0 ? "Please select a smoking habits category" : "";
   errorMessage = !form.sex.length > 0 ? "Please select a gender" : "";
-
+ 
   
 
-  // axios.post('/api/submit', body: form)
-  // dispatch({
-    // type: FORM_SUBMIT_SUCCESS
-  // })
+  axios.post('http://127.0.0.1:5000/predict', {form}).then((result) => {
+    console.log(result);
+    console.log(result.data.response[0])
+  });
+  dispatch({
+    type: FORM_SUBMIT_SUCCESS
+  })
 }
 
 export default {

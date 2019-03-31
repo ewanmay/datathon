@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 from normalize_input import normalize, names
-from core import compute
+from core import getPrediction
 # Geography,Year,Sex,Activity Category,Prevalence_x,Category,Prevalence_y,Stress Category,Prevalence
 
 def readCsv(src):
@@ -40,18 +40,17 @@ data5.to_csv('./datafiles/merged.csv', index=False)
 #print(data5)
 
 def mentalHelp(request):
-	arr = {}
-    for n in names:
-    	arr.update(n,request.get[n])
+	print(request)
 
-    newPatient = normalize( Series(arr) )
-    print('\n\n#################\n\nnormalized:\n', newPatient)
+	newPatient = normalize( (request) )
+	print('\n\n#################\n\nnormalized:\n', newPatient)
 
-    prediction, reccomendation = compute(newPatient)
+	prediction, reccomendation = getPrediction(np.array([newPatient]))
 
-    print('\nprediction:\n', prediction)
-    print('\nreccomendation:\n', reccomendation)
+	#print('\nprediction:\n', prediction)
+	#print('\nreccomendation:\n', reccomendation)
 
-    # format result
-
-    return result, reccomendation
+	# format result
+	toret = np.concatenate([[[prediction]], reccomendation], axis=1)
+	print(toret)
+	return toret

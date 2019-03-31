@@ -5,11 +5,11 @@
 # run ` python core.py `
 # make sure you pip install keras, numpy, pillow and tensorflow
 
-from keras.applications import mobilenet_v2
-from keras.preprocessing import image
-from keras.applications.mobilenet_v2 import preprocess_input, decode_predictions
+from keras.models import model_from_json
 import tensorflow as tf
+import keras
 import numpy as np
+import keras.backend as K
 
 from keras.backend.tensorflow_backend import set_session
 
@@ -28,7 +28,42 @@ ref = {
 	"Self-reported physical activity, average 60 minutes per day, youth (12 to 17 years old)":11,
 	"Sense of belonging to local community, somewhat strong or very strong":12
 }
+def _compute_gradients(tensor, var_list):
+  grads = tf.gradients(tensor, var_list)
+  return [grad if grad is not None else tf.zeros_like(var)
+		  for var, grad in zip(var_list, grads)]
 
+def reverse(inputArr, inputPlaceholder):
+	loss = 1-K.mean(model.layers[-1].output)
+	#print(inputArr.dtype)
+	grads = _compute_gradients(loss, [inputPlaceholder])[0]
+	grads /= (K.sqrt(K.mean(K.square(grads)))+ 1e-5) #yikes
+
+	iterate = K.function([inputPlaceholder],[loss,grads])
+
+	step = 0.3
+
+	inputArrNew = inputArr.copy()
+	loss_val, grads_val = (0,0)
+
+	for i in range(30):
+		loss_val, grads_val = iterate([inputArrNew])
+		for ind in range(0,13):
+			if ind in [0,1,2,12,6,7]:
+				continue
+			inputArrNew[0,ind] -= grads_val[0][ind] * step
+		print("iter:",i,np.mean(loss_val))
+
+	print("Before:")
+	print(inputArr,"->",model.predict(inputArr))
+
+
+	print("After:")
+	print(inputArrNew,"->",model.predict(inputArrNew))
+
+	loss_val, grads_val = iterate([inputArr])
+	print(-grads_val)
+	return inputArrNew-inputArr
 config = tf.ConfigProto(
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
     # device_count = {'GPU': 1}
@@ -37,30 +72,32 @@ config.gpu_options.allow_growth = True
 session = tf.Session(config=config)
 set_session(session)
 
-model = mobilenet_v2.MobileNetV2(input_shape=None, alpha=1.0, depth_multiplier=1, include_top=True, weights='imagenet', input_tensor=None, pooling=None, classes=1000)
+json_file = open('model.json', 'r')
+loaded_model_json = json_file.read()
+json_file.close()
+model = model_from_json(loaded_model_json)
+# load weights into new model
+model.load_weights("model.h5")
+opt = keras.optimizers.Adam(lr=0.00003)
+model.compile(loss='mean_squared_error', optimizer=opt)
 model._make_predict_function()
+print("Loaded model from disk")
 graph = tf.get_default_graph()
 
 varhello = 'Hello World from core!'
 
-def classify(img_path='testimg.jpg'):
+def getPrediction(inputData):
 	#return varhello
-	
-	img = image.load_img(img_path, target_size=(224, 224))
-	x = image.img_to_array(img)
-	x = np.expand_dims(x, axis=0)
-	x = preprocess_input(x)
 
-	with graph.as_default():
-		preds = model.predict(x)
+	#with graph.as_default():
+	preds = model.predict(inputData)
 	
 	# decode the results into a list of tuples (class, description, probability)
 	# (one such list for each sample in the batch)
-	return decode_predictions(preds, top=3)[0]
-# Predicted: [(u'n02504013', u'Indian_elephant', 0.82658225), (u'n01871265', u'tusker', 0.1122357), (u'n02504458', u'African_elephant', 0.061040461)]
+	global graph
+	with graph.as_default():
+		return (preds[0,0], reverse(inputData, model.input))
 
-def compute(newPatient):
-	return model.predict(newPatient)[0,0], reverse(newPatient)
 
 
 
