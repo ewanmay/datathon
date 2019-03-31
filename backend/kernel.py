@@ -19,8 +19,6 @@ def str_recc(inputData):
 
 	if inputData[ref["Current smoker, daily or occasional"]] < -0.2:
 		tips.append("Smoke Less!")
-	elif inputData[ref["Current smoker, daily or occasional"]] > 0.2:
-		tips.append("Smoke More!")
 
 	if inputData[ref["Fruit and vegetable consumption, 5 times or more per day"]] < -0.2:
 		tips.append("Eat Fruit and Veggies Less!")
@@ -28,13 +26,11 @@ def str_recc(inputData):
 		tips.append("Eat Fruit and Veggies More!")
 
 	if inputData[ref["High blood pressure"]] < -0.2:
-		tips.append("Lower your blood pressure by doing more...!")
+		tips.append("Lower your blood pressure!")
 	elif inputData[ref["High blood pressure"]] > 0.2:
-		tips.append("Increase you blood pressure by doing more...!")
+		tips.append("Increase your blood pressure!")
 
-	if inputData[ref["Perceived health, very good or excellent"]] < -0.2:
-		tips.append("You don't need to worry about being so healthy you know...")
-	elif inputData[ref["Perceived health, very good or excellent"]] > 0.2:
+	if inputData[ref["Perceived health, very good or excellent"]] > 0.2:
 		tips.append("Improve your overall health!!!")
 
 	if inputData[ref["Perceived life stress, most days quite a bit or extremely stressful"]] < -0.2:

@@ -62,9 +62,9 @@ def reverse(inputArr, inputPlaceholder):
 	print("After:")
 	print(inputArrNew,"->",model.predict(inputArrNew))
 
-	# loss_val, grads_val = iterate([inputArr])
-	# print("Gradients:")
-	# print(-grads_val)
+	loss_val, grads_val = iterate([inputArr])
+	print("Gradients:")
+	print(-grads_val)
 	return [model.predict(inputArr)[0,0], model.predict(inputArrNew)[0,0]], (inputArrNew-inputArr)
 config = tf.ConfigProto(
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)

@@ -44,24 +44,24 @@ def normalize(s):
 	
 	smoker = 1 - s['smokingHabits']/2.
 
-	fruit = (int(s['fruitVegetableConsumption'])+1)/5.
+	fruit = (int(s['fruitVegetableConsumption'])+1)/4.
 
 	highArr = s['bloodPressure'].split(',')	#TODO
 	high_bp = ((int(highArr[0])-120)/(20) + (int(highArr[1])-80)/(10))/2
 
-	health = s['perceivedHealth'] / 5.
+	health = s['perceivedHealth'] / 4.
 
-	stress = s['lifeStress'] / 5.
+	stress = s['lifeStress'] / 4.
 
-	active = s['physicalActivity'] / 5. if age == 1 else avg_values[ref["Self-reported physical activity, 150 minutes per week, adult (18 years and over)"]]
+	active = s['physicalActivity'] / 4. if age == 1 else avg_values[ref["Self-reported physical activity, 150 minutes per week, adult (18 years and over)"]]
 
-	mood_dis = 1- s['moodStability'] / 5.
+	mood_dis = 1- s['moodStability'] / 4.
 
-	satisfaction = s['lifeSatisfaction'] / 5.
+	satisfaction = s['lifeSatisfaction'] / 4.
 
-	active_yg = s['physicalActivity'] / 5. if age == 0 else avg_values[ref["Self-reported physical activity, average 60 minutes per day, youth (12 to 17 years old)"]]
+	active_yg = s['physicalActivity'] / 4. if age == 0 else avg_values[ref["Self-reported physical activity, average 60 minutes per day, youth (12 to 17 years old)"]]
 
-	belong = s['communalBelonging'] / 5.
+	belong = s['communalBelonging'] / 4.
 
 	infoList = [BMI_obese, BMI_overw, BMI_youth, smoker, fruit, high_bp, satisfaction, mood_dis, health, stress, active, active_yg, belong]
 	cols = list(ref.values())
