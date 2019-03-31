@@ -20,19 +20,19 @@ import {
 export const initialFormState = {
   sex: 0,
   age: 0,
-  bloodPressure: "",
-  height: "",
-  weight: "",
-  fruitVegetableConsumption: 0,
-  smokingHabits: 0,
+  bloodPressure: "130,80",
+  height: "152",
+  weight: "59",
+  fruitVegetableConsumption: 2,
+  smokingHabits: 2,
   formError: "",
-  communalBelonging: 0,
-  lifeSatisfaction: 0,
-  lifeStress: 0,
-  moodStability: 0,
-  perceivedHealth: 0,
-  perceivedMentalHealth: 0,
-  physicalActivity: 0
+  communalBelonging: 2,
+  lifeSatisfaction: 2,
+  lifeStress: 2,
+  moodStability: 2,
+  perceivedHealth: 2,
+  perceivedMentalHealth: 2,
+  physicalActivity: 2
 };
 
 const formReducer = (state = initialFormState, action) => {

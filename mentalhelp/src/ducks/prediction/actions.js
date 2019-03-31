@@ -136,9 +136,7 @@ export const formSubmit = form => async dispatch => {
     ? "Please select a life stress rating above 0"
     : !form.perceivedHealth > 0
     ? "Please select a perceived health rating above 0"
-    : !form.perceivedMentalHealth > 0
-    ? "Please select a perceived mental health rating above 0"
-    : !form.perceivedMentalHealth > 0
+    : !form.physicalActivity > 0
     ? "Please select a physical activity rating above 0"
     : !form.moodStability > 0
     ? "Please select a mood stability rating greater than 0"
@@ -151,9 +149,9 @@ export const formSubmit = form => async dispatch => {
     });
   } else {
     axios.post("http://127.0.0.1:5000/predict", { form }).then(result => {
-      console.log(result.data.prediction);
-      alert(result.data.reccomendation);
-      alert(result.data.str_recc);
+      console.log(result.data.prediction); // [0.56, 0.78]
+      console.log(result.data.reccomendation);  // [+0.3, -0.2, +0.02, -0.9...]
+      console.log(result.data.str_recc);  // ["Eat more!", "Lower your blood pressure!"]
 
       dispatch({
         type: FORM_SUBMIT_SUCCESS,

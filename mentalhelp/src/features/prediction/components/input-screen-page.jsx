@@ -54,14 +54,14 @@ const InputScreenPage = ({
 
         <TextInput
           onChange={bloodPressureChanged}
-          question={"Please enter your blood pressure:"}
+          question={"Please enter your blood pressure (systolic, diastolic):"}
           placeHolder={"i.e 130,80"}
           value={bloodPressure}
         />
 
         <Input
           selection={sexChanged}
-          labels={["Female", "Male", "Other"]}
+          labels={["Female", "Other", "Male"]}
           question={"Please enter your gender"}
           renderedButton={sex}
         />
@@ -69,73 +69,61 @@ const InputScreenPage = ({
         <Input
           selection={ageChanged}
           labels={["Under 18", "Over 18"]}
-          question={"Please select your age:"}
+          question={"Please select your age group:"}
           renderedButton={age}
         />
         <Input
           selection={smokingHabitsChanged}
           labels={["Daily", "Occasional", "Never"]}
-          question={"Please select your smoking habits:"}
+          question={"Please select how often you smoke:"}
           renderedButton={smokingHabits}
         />
         <Input
           selection={fruitVegetableConsumptionChanged}
           labels={["1", "2", "3", "4", "5+"]}
-          question={"How many times do you eat fruit and vegetables a day?"}
+          question={"How many servings of fruits and vegetables do you eat a day on average?"}
           renderedButton={fruitVegetableConsumption}
         />
-        <SliderInput
-          selection={perceivedMentalHealthChanged}
-          question={"How are you feeling today?"}
-          value={perceivedMentalHealth}
-          step={0}
-        />
 
-        <SliderInput
+        <Input
           selection={perceivedHealthChanged}
-          question={"How is your overall health today?"}
-          value={perceivedHealth}
-          step={1}
-          unit={'/100'}
+          question={"How healthy would you rate your current lifestyle?"}
+          labels={["Very unhealthy", "Slightly unhealthy", "Average", "Somewhat Healthy", "Very Healthy"]}
+          renderedButton={perceivedHealth}
         />
 
-        <SliderInput
+        <Input
           selection={lifeStressChanged}
-          question={"How would you rate your stress levels?"}
-          value={lifeStress}
-          step={1}
-          unit={'/100'}
+          question={"How would you rate your average stress level?"}
+          labels={["Very calm", "Slightly calm", "Average", "Somewhat stressful", "Very stressful"]}
+          renderedButton={lifeStress}
         />
 
-        <SliderInput
+        <Input
           selection={lifeSatisfactionChanged}
           question={"How would you rate your general satisfaction in life?"}
-          value={lifeSatisfaction}
-          step={1}
-          unit={'/100'}
+          labels={["Very Unatisfying", "Slightly Unsatisfying", "Average", "Somewhat Satisfying", "Very Satisfying"]}
+          renderedButton={lifeSatisfaction}
         />
-        <SliderInput
+        <Input
           selection={communalBelongingChanged}
-          question={"How would you rate your communal belonging?"}
-          value={communalBelonging}
-          step={1}
-          unit={'/100'}
+          question={"How well do you think you fit in with your community?"}
+          labels={["Don't fit all", "Kind of don't fit in", "Neutral", "Somewhat fit in", "Fit in great"]}
+          renderedButton={communalBelonging}
         />
 
-        <SliderInput
+        <Input
           selection={moodStabilityChanged}
           question={"How would you rate your mood stability?"}
-          value={moodStability}
-          step={1}
-          unit={'/100'}
+          labels={["Very Unstable", "Somewhat Unstable", "Neutral", "Fairly Stable", "Very Stable"]}
+          renderedButton={moodStability}
         />
 
-        <SliderInput
+        <Input
           selection={physicalActivityChanged}
-          question={"How much are you exercising a week?"}
-          value={physicalActivity}
-          step={20}
-          unit={' minutes a week'}
+          question={"How much do you exercise a week?"}
+          labels={["30 minutes", "60 minutes", "90 minutes", "120 minutes", "150 minutes"]}
+          renderedButton={physicalActivity}
         />
         <div className="submission">
           <div className="button-container">
