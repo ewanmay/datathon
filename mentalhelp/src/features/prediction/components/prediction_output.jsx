@@ -7,51 +7,39 @@ const modalBoi = ({
   modalOpen,
   modalClose
 }) => {
-  let current_place = "left: " + currentRating + "%;";
-  let potential_place = "left: " + potentialRating + "%;";
+  let current_place = Math.trunc(currentRating *100);
+  let potential_place = Math.trunc(potentialRating *100);
   
   console.log(modalOpen);
-  if (modalOpen) {
+  if (true) {
+    const strings = improvementStrings.map(string => {
+      return (
+        <h5>
+        {string}
+        </h5>)
+    })
     return (
-      <div classNameName="modal fade" zIndex='1' tabIndex="-1" role="dialog">
-        <div classNameName="modal-dialog" role="document">
-          <div classNameName="modal-content">
-            <div classNameName="modal-header">
-              <h5 classNameName="modal-title">Your Results</h5>
-              <button
-                type="button"
-                classNameName="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div classNameName="modal-body">
-              <SliderInput
-                selection={() => {}}
-                question={"Your current mental health rating:"}
-                value={currentRating}
-                step={1}
-                unit={"/100"}
-              />
-            </div>
-            <div classNameName="modal-footer">
-              <button type="button" classNameName="btn btn-primary">
-                Save changes
-              </button>
-              <button
-                type="button"
-                classNameName="btn btn-secondary"
-                data-dismiss="modal"
-                onClick={() => modalClose()}
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div className="d-block full-w ">
+              <h5 className="title">Your Results</h5>
+              <div>
+                  <h4>What's Your Potential?</h4>
+                  <div className="full-w position-relative big-boi contyBoi">
+                  <hr className="position-absolute middle bigHR" />
+                    <div role="tooltip" className="position-absolute custom-tooltip topC" style={{left:100.0*currentRating+'%'}}>
+                      <div className="tooltip-arrow"></div>
+                      <div className="tooltip-inner">You are Here {current_place}/100</div>
+                    </div>
+                  
+                    <div role="tooltip" className="position-absolute custom-tooltip botC" style={{left:100.0*potentialRating+'%'}}>
+                      <div className="tooltip-arrow"></div>
+                      <div className="tooltip-inner">You Could be Here {potential_place}/100</div>
+                    </div>
+                  </div>
+                  <h4>To get there, try:...</h4>
+                  {strings}
+              </div>
+                
+              </div>
     );
   } else {
     return <div />;

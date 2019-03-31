@@ -67,15 +67,39 @@
     opacity: 1;
     position: relative;
 }
-
 .custom-tooltip .tooltip-inner {
-  background: #0088cc;
+  min-width: 200px;
+  background: transparent;
+  color: black;
+  text-align:left;
+  border-left: 2px solid black ;
 }
 
-.custom-tooltip.top .tooltip-arrow {
+.topC{
+  position: absolute;
+  top: 0;
   border-top-color: #0088cc;
 }
 
-.custom-tooltip.bottom .tooltip-arrow {
+.botC{
+  position: absolute;
+  top: 35px;
   border-bottom-color: #0088cc;
+}
+
+.modal {
+  z-index: 1005;
+}
+.contyBoi {
+  height: 80px;
+  width: 50vw;
+  background-color: #aaa;
+}
+.middle {
+  top:32%;
+  width: 100%;
+
+}
+.bigHR {
+  border: 2px solid black;
 }
