@@ -1,6 +1,14 @@
 export const AGE_CHANGED = "age_changed";
 export const SEX_CHANGED = "sex_changed";
+export const WEIGHT_CHANGED = "weight_changed";
+export const HEIGHT_CHANGED = "height_changed";
+export const SMOKING_HABITS_CHANGED = "smoking_habits_changed";
+export const COMMUNAL_BELONGING_CHANGED = "communal_belonging_changed";
 export const PERCEIVED_HEALTH_CHANGED = "perceived_health_changed";
 export const PERCEIVED_MENTAL_HEALTH_CHANGED = "perceived_mental_health_changed";
 export const PHYSICAL_ACTIVITY_CHANGED = "physical_activity_changed";
+export const LIFE_SATISFACTION_CHANGED = "life_satisfaction_changed";
+export const MOOD_STABILITY_CHANGED = "mood_stability_changed";
+export const LIFE_STRESS_CHANGED = "life_stress_changed";
+export const FRUIT_VEGETABLE_CONSUMPTION_CHANGED = "fruit_vegetable_consumption_changed";
 export const SUBMISSION_FAILURE = "submission_failure";

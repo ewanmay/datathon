@@ -82,47 +82,12 @@ percents = outData.drop(index='Number', level='UOM')
 # withNutri = pd.merge(percents,nutList,on=['REF_DATE','GEO', 'Sex'])
 # withNutri = withNutri.dropna(axis='index')
 
-
-# outData = outData[:,0:13] + outData[:,14:-1] + outData[:,14]
-# outData.interpolate(axis=1);
-
-# outData.drop('REF_DATE', axis=1, inplace=True)
-
-# outData1 = pd.merge(data1,data2, on=['REF_DATE', 'GEO', 'Age group'])
-# outData2 = pd.merge(data3, data4, on=['REF_DATE','GEO', 'Age group'])
-
-# outData = pd.merge(outData1, outData2, on=['REF_DATE','GEO', '', 'Age group'])
-
-# names = outData.columns.tolist()
-# names.remove('Perceived mental health, fair or poor')
-# names.remove('Perceived mental health, very good or excellent')
-# outData = outData[ [names, ['Perceived mental health, fair or poor' ,'Perceived mental health, very good or excellent']]]
 percents.to_csv('./datafiles/statscanada/newMH_percents.csv')
 numbers.to_csv('./datafiles/statscanada/newMH_numbers.csv')
 nutList.to_csv('./datafiles/statscanada/newMH_nutrition.csv')
 
 print(percents)
 
-'''
-0 	REF_DATE,
-1 	GEO,
-2 	Age group,
-3 	Sex,
-4 	UOM_ID,
-5   "Body mass index, adjusted self-reported, adult (18 years and over), obese",
-6   "Body mass index, adjusted self-reported, adult (18 years and over), overweight",
-7   "Body mass index, self-reported, youth (12 to 17 years old), overweight or obese",
-8   "Current smoker, daily or occasional",
-9   "Fruit and vegetable consumption, 5 times or more per day",
-10  "Life satisfaction, satisfied or very satisfied",
-11   Mood disorder,
-12  "Perceived health, very good or excellent",
-13  "Perceived life stress, most days quite a bit or extremely stressful",
-14  "Perceived mental health, very good or excellent",
-15  "Self-reported physical activity, 150 minutes per week, adult (18 years and over)",
-16  "Self-reported physical activity, average 60 minutes per day, youth (12 to 17 years old)",
-17  "Sense of belonging to local community, somewhat strong or very strong"
-'''
 
 # x = pd.DataFrame(columns=['Sex','Prevalence_x','Prevalence_y','Prevalence'])
 # maxd=0

@@ -7,6 +7,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+.slider-input-container {
+  padding: 20px 0 20px 0
+}
+
+
+.slider-container {
+  padding: 20px 0 0 0
+}
 
 .App-header {
   background-color: #282c34;
@@ -31,7 +39,7 @@
 }
 
 .page {
-  height: 100vh
+  height: auto
 }
 
 .button-container {

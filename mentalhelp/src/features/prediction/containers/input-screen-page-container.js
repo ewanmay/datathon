@@ -8,14 +8,32 @@ const mapStateToProps = ({ prediction }) => {
     age,
     perceivedHealth,
     perceivedMentalHealth,
-    physicalActivity
+    physicalActivity,
+    height,
+    weight,
+    smokingHabits,
+    communalBelonging,
+    fruitVegetableConsumption,
+    lifeSatisfaction,
+    moodStability,
+    lifeStress,
+    bloodPressure
   } = prediction;
+  console.log(communalBelonging)
   return {
     sex,
     age,
+    height,
+    weight,
     perceivedHealth,
     perceivedMentalHealth,
-    physicalActivity
+    physicalActivity,
+    smokingHabits,
+    communalBelonging,
+    lifeSatisfaction,
+    lifeStress,
+    moodStability,
+    fruitVegetableConsumption
   };
 };
 const mapDispatchToProps = dispatch => {
@@ -24,7 +42,16 @@ const mapDispatchToProps = dispatch => {
     ageChanged,
     perceivedHealthChanged,
     perceivedMentalHealthChanged,
-    physicalActivityChanged
+    physicalActivityChanged,
+    smokingHabitsChanged,
+    fruitVegetableConsumptionChanged,
+    communalBelongingChanged,
+    moodStabilityChanged,
+    lifeSatisfactionChanged,
+    weightChanged,
+    heightChanged,
+    lifeStressChanged,
+    bloodPressureChanged
   } = predictionActions;
   return {
     sexChanged: sex => {
@@ -41,7 +68,35 @@ const mapDispatchToProps = dispatch => {
     },
     physicalActivityChanged: physicalActivity => {
       dispatch(physicalActivityChanged(physicalActivity));
+    },
+    smokingHabitsChanged: metric => {
+      dispatch(smokingHabitsChanged(metric))
+    },
+    fruitVegetableConsumptionChanged: metric => {
+      dispatch(fruitVegetableConsumptionChanged(metric))
+    },
+    communalBelongingChanged: metric => {
+      dispatch(communalBelongingChanged(metric))
+    },
+    lifeSatisfactionChanged: metric => {
+      dispatch(lifeSatisfactionChanged(metric))
+    },
+    moodStabilityChanged: metric => {
+      dispatch(moodStabilityChanged(metric))
+    },
+    lifeStressChanged: metric => {
+      dispatch(lifeStressChanged(metric))
+    },
+    heightChanged: metric => {
+      dispatch(heightChanged(metric))
+    },    
+    weightChanged: metric => {
+      dispatch(weightChanged(metric))
+    },
+    bloodPressureChanged: metric => {
+      dispatch(bloodPressureChanged(metric))
     }
+
   };
 };
 
