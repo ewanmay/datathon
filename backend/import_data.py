@@ -54,7 +54,12 @@ outData.drop('Heavy drinking', axis=1, inplace=True)
 outData.drop('High blood pressure', axis=1, inplace=True)
 outData.drop('Influenza immunization in the past 12 months', axis=1, inplace=True)
 
+outData.drop("Perceived mental health, fair or poor", axis=1,inplace=True)
+outData.drop("Perceived health, fair or poor", axis=1,inplace=True)
+
 outData = outData.dropna(axis=0);
+
+#outData = outData[:,0:13] + outData[:,14:-1] + outData[:,14]
 # outData.interpolate(axis=1);
 
 # outData.drop('REF_DATE', axis=1, inplace=True)
@@ -71,6 +76,27 @@ outData = outData.dropna(axis=0);
 outData.to_csv('./datafiles/statscanada/newMH.csv')
 
 print(outData)
+
+'''
+0 	REF_DATE,
+1 	GEO,
+2 	Age group,
+3 	Sex,
+4 	UOM_ID,
+5   "Body mass index, adjusted self-reported, adult (18 years and over), obese",
+6   "Body mass index, adjusted self-reported, adult (18 years and over), overweight",
+7   "Body mass index, self-reported, youth (12 to 17 years old), overweight or obese",
+8   "Current smoker, daily or occasional",
+9   "Fruit and vegetable consumption, 5 times or more per day",
+10  "Life satisfaction, satisfied or very satisfied",
+11   Mood disorder,
+12  "Perceived health, very good or excellent",
+13  "Perceived life stress, most days quite a bit or extremely stressful",
+14  "Perceived mental health, very good or excellent",
+15  "Self-reported physical activity, 150 minutes per week, adult (18 years and over)",
+16  "Self-reported physical activity, average 60 minutes per day, youth (12 to 17 years old)",
+17  "Sense of belonging to local community, somewhat strong or very strong"
+'''
 
 # x = pd.DataFrame(columns=['Sex','Prevalence_x','Prevalence_y','Prevalence'])
 # maxd=0
