@@ -58,7 +58,9 @@ outData.drop("Perceived mental health, fair or poor", axis=1,inplace=True)
 outData.drop("Perceived health, fair or poor", axis=1,inplace=True)
 
 outData = outData.dropna(axis=0);
-outData = outData.drop(index='Number', level='UOM')
+
+numbers = outData.drop(index='Percent', level='UOM')
+percents = outData.drop(index='Number', level='UOM')
 
 # outData = outData[:,0:13] + outData[:,14:-1] + outData[:,14]
 # outData.interpolate(axis=1);
@@ -74,9 +76,10 @@ outData = outData.drop(index='Number', level='UOM')
 # names.remove('Perceived mental health, fair or poor')
 # names.remove('Perceived mental health, very good or excellent')
 # outData = outData[ [names, ['Perceived mental health, fair or poor' ,'Perceived mental health, very good or excellent']]]
-outData.to_csv('./datafiles/statscanada/newMH.csv')
+percents.to_csv('./datafiles/statscanada/newMH_percents.csv')
+numbers.to_csv('./datafiles/statscanada/newMH_numbers.csv')
 
-print(outData)
+# print(percents)
 
 '''
 0 	REF_DATE,
