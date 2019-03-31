@@ -7,53 +7,44 @@ const modalBoi = ({
   modalOpen,
   modalClose
 }) => {
-	let current_place = "left: " + currentRating + '%;';
-	let potential_place = "left: " + potentialRating + '%;';
-
   if (modalOpen) {
     return (
-      <div class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Your Results</h5>
+      <div className="modal" tabIndex="-1" role="dialog">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Your Results</h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
 				<h4>What's Your Potential?</h4>
-				<div class="full-w container-fluid">
-					<div role="tooltip" class="tooltip top custom-tooltip " style={current_place}>
-						<div class="tooltip-arrow"></div>
-						<div class="tooltip-inner">You are Here</div>
+				<div className="full-w container-fluid">
+					<div role="tooltip" className="tooltip top custom-tooltip " style={{left:currentRating+'%'}}>
+						<div className="tooltip-arrow"></div>
+						<div className="tooltip-inner">You are Here</div>
 					</div>
 					<hr />
-					<div role="tooltip" class="tooltip bottom custom-tooltip " style={potential_place}>
-						<div class="tooltip-arrow"></div>
-						<div class="tooltip-inner">You Could be Here</div>
+					<div role="tooltip" className="tooltip bottom custom-tooltip " style={{left:potentialRating+'%'}}>
+						<div className="tooltip-arrow"></div>
+						<div className="tooltip-inner">You Could be Here</div>
 					</div>
 				</div>
-              <SliderInput
-                selection={() => {}}
-                question={"Your current mental health rating:"}
-                value={currentRating}
-                step={1}
-                unit={"/100"}
-              />
+             
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">
+            <div className="modal-footer">
+              <button type="button" className="btn btn-primary">
                 Save changes
               </button>
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
 								data-dismiss="modal"
 								onClick={() => modalClose()}
               >

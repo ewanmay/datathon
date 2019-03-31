@@ -31,7 +31,7 @@ const input = ({ selection, labels, question, renderedButton }) => {
   return (
     <div className="input-container">
       <div className="input-question-text">{question}</div>
-      <div class="d-flex justify-content-between">
+      <div className="d-flex justify-content-between">
       {buttons}
     </div>
     </div>
