@@ -175,12 +175,14 @@ export const formSubmit = form => async dispatch => {
       console.log(result.data.prediction); // [0.56, 0.78]
       console.log(result.data.reccomendation);  // [+0.3, -0.2, +0.02, -0.9...]
       console.log(result.data.str_recc);  // ["Eat more!", "Lower your blood pressure!"]
+      console.log(result.data.prediction)
+      const pred = JSON.parse(result.data.prediction)
       dispatch({
         type: UPDATE_MODAL_INFO,
         payload: {
           improvementStrings: result.data.str_recc,
-          currentRating: result.data.prediction[0],
-          potentialRating: result.data.prediction[1]
+          currentRating: pred[0],
+          potentialRating: pred[1]
         }
       });
       dispatch({

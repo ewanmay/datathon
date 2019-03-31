@@ -43,16 +43,11 @@ const InputScreenPage = ({
   submitForm,
   modalClose
 }) => {
+  console.log(currentRating, potentialRating)
   return (
+    <div className="modal-layer">
     <div className="row">
   
-    <Modal
-          modalClose={modalClose}
-          modalOpen={modalOpen}
-          improvementStrings={improvementStrings}
-          currentRating={currentRating}
-          potentialRating={potentialRating}
-        />
       <div className="col-sm-2 side-spacer" />
 
       <div className="col-sm-8 page">
@@ -142,6 +137,8 @@ const InputScreenPage = ({
           labels={["30 minutes", "60 minutes", "90 minutes", "120 minutes", "150 minutes"]}
           renderedButton={physicalActivity}
         />
+
+
         <div className="submission">
           <div className="button-container">
             <button
@@ -170,11 +167,19 @@ const InputScreenPage = ({
               Submit
             </button>
 
+        <Modal
+          modalClose={modalClose}
+          modalOpen={modalOpen}
+          improvementStrings={improvementStrings}
+          currentRating={currentRating}
+          potentialRating={potentialRating}
+        />
             <div className="form-error">{formError}</div>
           </div>
         </div>
       </div>
       <div className="col-sm-2 side-spacer" />
+    </div>
     </div>
   );
 };
