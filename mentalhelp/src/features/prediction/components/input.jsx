@@ -2,7 +2,7 @@ import React from "react";
 
 const input = ({ selection, labels, question, renderedButton }) => {
   const buttons = labels.map((label, index) => {
-    if (renderedButton && renderedButton == label) {
+    if (renderedButton == index) {
       return (
         <div className="button-container">
           <button
@@ -20,7 +20,7 @@ const input = ({ selection, labels, question, renderedButton }) => {
           <button
             type="button"
             className="btn btn-outline-primary"
-            onClick={() => selection(label)}
+            onClick={() => selection(index)}
           >
             {label}
           </button>

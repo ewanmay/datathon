@@ -10,6 +10,7 @@ const mapStateToProps = ({ prediction }) => {
     perceivedMentalHealth,
     physicalActivity,
     height,
+    formError,
     weight,
     smokingHabits,
     communalBelonging,
@@ -19,7 +20,6 @@ const mapStateToProps = ({ prediction }) => {
     lifeStress,
     bloodPressure
   } = prediction;
-  console.log(communalBelonging)
   return {
     sex,
     age,
@@ -33,7 +33,9 @@ const mapStateToProps = ({ prediction }) => {
     lifeSatisfaction,
     lifeStress,
     moodStability,
-    fruitVegetableConsumption
+    fruitVegetableConsumption,
+    bloodPressure,
+    formError
   };
 };
 const mapDispatchToProps = dispatch => {
@@ -71,36 +73,35 @@ const mapDispatchToProps = dispatch => {
       dispatch(physicalActivityChanged(physicalActivity));
     },
     smokingHabitsChanged: metric => {
-      dispatch(smokingHabitsChanged(metric))
+      dispatch(smokingHabitsChanged(metric));
     },
     fruitVegetableConsumptionChanged: metric => {
-      dispatch(fruitVegetableConsumptionChanged(metric))
+      dispatch(fruitVegetableConsumptionChanged(metric));
     },
     communalBelongingChanged: metric => {
-      dispatch(communalBelongingChanged(metric))
+      dispatch(communalBelongingChanged(metric));
     },
     lifeSatisfactionChanged: metric => {
-      dispatch(lifeSatisfactionChanged(metric))
+      dispatch(lifeSatisfactionChanged(metric));
     },
     moodStabilityChanged: metric => {
-      dispatch(moodStabilityChanged(metric))
+      dispatch(moodStabilityChanged(metric));
     },
     lifeStressChanged: metric => {
-      dispatch(lifeStressChanged(metric))
+      dispatch(lifeStressChanged(metric));
     },
     heightChanged: metric => {
-      dispatch(heightChanged(metric))
-    },    
+      dispatch(heightChanged(metric));
+    },
     weightChanged: metric => {
-      dispatch(weightChanged(metric))
+      dispatch(weightChanged(metric));
     },
     bloodPressureChanged: metric => {
-      dispatch(bloodPressureChanged(metric))
+      dispatch(bloodPressureChanged(metric));
     },
     submitForm: form => {
-      dispatch(formSubmit(form))
+      dispatch(formSubmit(form));
     }
-
   };
 };
 

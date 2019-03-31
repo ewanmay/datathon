@@ -17,6 +17,7 @@ const InputScreenPage = ({
   moodStability,
   fruitVegetableConsumption,
   bloodPressure,
+  formError,
   bloodPressureChanged,
   sexChanged,
   ageChanged,
@@ -51,6 +52,13 @@ const InputScreenPage = ({
           value={weight}
         />
 
+        <TextInput
+          onChange={bloodPressureChanged}
+          question={"Please enter your blood pressure:"}
+          placeHolder={"i.e 130,80"}
+          value={bloodPressure}
+        />
+
         <Input
           selection={sexChanged}
           labels={["Female", "Male", "Other"]}
@@ -72,7 +80,7 @@ const InputScreenPage = ({
         />
         <Input
           selection={fruitVegetableConsumptionChanged}
-          labels={["1", "2", "3", "4", "5"]}
+          labels={["1", "2", "3", "4", "5+"]}
           question={"How many times do you eat fruit and vegetables a day?"}
           renderedButton={fruitVegetableConsumption}
         />
@@ -80,81 +88,85 @@ const InputScreenPage = ({
           selection={perceivedMentalHealthChanged}
           question={"How are you feeling today?"}
           value={perceivedMentalHealth}
+          step={0}
         />
 
         <SliderInput
           selection={perceivedHealthChanged}
           question={"How is your overall health today?"}
           value={perceivedHealth}
+          step={1}
+          unit={'/100'}
         />
 
         <SliderInput
           selection={lifeStressChanged}
           question={"How would you rate your stress levels?"}
           value={lifeStress}
+          step={1}
+          unit={'/100'}
         />
 
         <SliderInput
           selection={lifeSatisfactionChanged}
-          question={"How would you rate your general satisfaction?"}
+          question={"How would you rate your general satisfaction in life?"}
           value={lifeSatisfaction}
+          step={1}
+          unit={'/100'}
         />
         <SliderInput
           selection={communalBelongingChanged}
           question={"How would you rate your communal belonging?"}
           value={communalBelonging}
+          step={1}
+          unit={'/100'}
         />
 
         <SliderInput
           selection={moodStabilityChanged}
           question={"How would you rate your mood stability?"}
           value={moodStability}
+          step={1}
+          unit={'/100'}
         />
 
         <SliderInput
           selection={physicalActivityChanged}
           question={"How much are you exercising a week?"}
           value={physicalActivity}
+          step={20}
+          unit={' minutes a week'}
         />
-        <div className="button-container">
-          <button
-            type="button"
-            className="btn btn-outline-primary active"
-            key={123123123}
-            onClick={() => {
-              console.log({
-                sex,
-                age,
-                height,
-                weight,
-                perceivedHealth,
-                perceivedMentalHealth,
-                physicalActivity,
-                smokingHabits,
-                communalBelonging,
-                lifeSatisfaction,
-                lifeStress,
-                moodStability,
-                fruitVegetableConsumption
-              })
-              submitForm({
-              sex,
-              age,
-              height,
-              weight,
-              perceivedHealth,
-              perceivedMentalHealth,
-              physicalActivity,
-              smokingHabits,
-              communalBelonging,
-              lifeSatisfaction,
-              lifeStress,
-              moodStability,
-              fruitVegetableConsumption
-            })}}
-          >
-            Submit
-          </button>
+        <div className="submission">
+          <div className="button-container">
+            <button
+              type="button"
+              className="btn btn-outline-primary active"
+              key={123123123}
+              onClick={() => {
+                submitForm({
+                  sex,
+                  age,
+                  height,
+                  weight,
+                  perceivedHealth,
+                  perceivedMentalHealth,
+                  physicalActivity,
+                  smokingHabits,
+                  communalBelonging,
+                  lifeSatisfaction,
+                  lifeStress,
+                  moodStability,
+                  fruitVegetableConsumption,
+                  bloodPressure
+                });
+              }}
+            >
+              Submit
+            </button>
+
+            <div className="form-error">{formError}</div>
+          </div>
         </div>
       </div>
       <div className="col-sm-2 side-spacer" />

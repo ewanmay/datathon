@@ -12,22 +12,27 @@ import {
   LIFE_SATISFACTION_CHANGED,
   MOOD_STABILITY_CHANGED,
   LIFE_STRESS_CHANGED,
-  FRUIT_VEGETABLE_CONSUMPTION_CHANGED
+  FRUIT_VEGETABLE_CONSUMPTION_CHANGED,
+  BLOOD_PRESSURE_CHANGED,
+  FORM_ERROR,
+  FORM_ERROR_RESET
 } from "./types";
 export const initialFormState = {
-  sex: "",
-  age: "",
+  sex: 0,
+  age: 0,
+  bloodPressure: "",
   height: "",
   weight: "",
-  physicalActivity: 0,
-  smokingHabits: "",
+  fruitVegetableConsumption: 0,
+  smokingHabits: 0,
+  formError: "",
   communalBelonging: 0,
   lifeSatisfaction: 0,
   lifeStress: 0,
   moodStability: 0,
   perceivedHealth: 0,
   perceivedMentalHealth: 0,
-  fruitVegetableConsumption: ""
+  physicalActivity: 0
 };
 
 const formReducer = (state = initialFormState, action) => {
@@ -70,6 +75,21 @@ const formReducer = (state = initialFormState, action) => {
         ...state,
         physicalActivity: action.payload
       };
+    case BLOOD_PRESSURE_CHANGED: 
+      return {
+        ...state,
+        bloodPressure: action.payload
+      }
+    case FORM_ERROR: 
+      return {
+        ...state,
+        formError: action.payload
+      }
+    case FORM_ERROR_RESET:
+      return {
+        ...state,
+        formError: ''
+      }
     default:
       return state;
   }

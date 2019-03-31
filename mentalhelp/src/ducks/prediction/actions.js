@@ -12,10 +12,20 @@ import {
   MOOD_STABILITY_CHANGED,
   LIFE_STRESS_CHANGED,
   FRUIT_VEGETABLE_CONSUMPTION_CHANGED,
-  FORM_SUBMIT_SUCCESS
+  FORM_SUBMIT_SUCCESS,
+  BLOOD_PRESSURE_CHANGED,
+  FORM_ERROR,
+  FORM_ERROR_RESET
 } from "./types";
 
-import axios from 'axios'
+import axios from "axios";
+
+export const bloodPressureChanged = bloodPressure => async dispatch => {
+  dispatch({
+    type: BLOOD_PRESSURE_CHANGED,
+    payload: bloodPressure
+  });
+};
 
 export const sexChanged = input => async dispatch => {
   dispatch({
@@ -44,7 +54,6 @@ export const weightChanged = input => async dispatch => {
     payload: input
   });
 };
-
 
 export const heightChanged = input => async dispatch => {
   dispatch({
@@ -102,7 +111,6 @@ export const perceivedMentalHealthChanged = input => async dispatch => {
   });
 };
 
-
 export const physicalActivityChanged = input => async dispatch => {
   dispatch({
     type: PHYSICAL_ACTIVITY_CHANGED,
@@ -111,33 +119,49 @@ export const physicalActivityChanged = input => async dispatch => {
 };
 
 export const formSubmit = form => async dispatch => {
+  dispatch({
+    type: FORM_ERROR_RESET
+  });
   console.log(form);
   let errorMessage = "";
-  errorMessage = !Number.isNaN(parseInt(form.weight,10)) ? "Weight is not a number" : "";
-  errorMessage = !Number.isNaN(parseInt(form.height,10)) ? "Height is not a number" : "";
-  errorMessage = !form.communalBelonging > 0 ? "Please select a communal belonging rating above 0" : "";
-  errorMessage = !form.lifeSatisfaction > 0 ? "Please select a life satisfaction rating above 0" : "";
-  errorMessage = !form.lifeStress > 0 ? "Please select a life stress rating above 0" : "";
-  errorMessage = !form.perceivedHealth > 0 ? "Please select a perceived health rating above 0" : "";
-  errorMessage = !form.perceivedMentalHealth > 0 ? "Please select a perceived mental health rating above 0" : "";
-  errorMessage = !form.perceivedMentalHealth > 0 ? "Please select a physical activity rating above 0" : "";
-  errorMessage = !form.moodStability > 0 ? "Please select a mood stability rating greater than 0" : "";
-  errorMessage = !form.age.length > 0 ? "Please select an age category" : "";
-  errorMessage = !form.smokingHabits.length > 0 ? "Please select a smoking habits category" : "";
-  errorMessage = !form.sex.length > 0 ? "Please select a gender" : "";
- 
-  
+  errorMessage = !Number.isNaN(parseInt(form.weight, 10)) && !form.weight.length > 0
+    ? "Weight is not a number"
+    : !Number.isNaN(parseInt(form.height, 10)) && !form.height.length > 0
+    ? "Height is not a number"
+    : !form.communalBelonging > 0
+    ? "Please select a communal belonging rating above 0"
+    : !form.lifeSatisfaction > 0
+    ? "Please select a life satisfaction rating above 0"
+    : !form.lifeStress > 0
+    ? "Please select a life stress rating above 0"
+    : !form.perceivedHealth > 0
+    ? "Please select a perceived health rating above 0"
+    : !form.perceivedMentalHealth > 0
+    ? "Please select a perceived mental health rating above 0"
+    : !form.perceivedMentalHealth > 0
+    ? "Please select a physical activity rating above 0"
+    : !form.moodStability > 0
+    ? "Please select a mood stability rating greater than 0"
+    : "";
 
-  axios.post('http://127.0.0.1:5000/predict', {form}).then((result) => {
-    console.log(result);
-    console.log(result.data.response[0])
-    alert(result.data.response)
-    alert(result.data.str_recc)
-  });
-  dispatch({
-    type: FORM_SUBMIT_SUCCESS
-  })
-}
+  if (errorMessage.length > 0) {
+    dispatch({
+      type: FORM_ERROR,
+      payload: errorMessage
+    });
+  } else {
+    axios.post("http://127.0.0.1:5000/predict", { form }).then(result => {
+      console.log(result.data.response[0]);
+      alert(result.data.response);
+      alert(result.data.str_recc);
+
+      dispatch({
+        type: FORM_SUBMIT_SUCCESS,
+        payload: result.data.response
+      });
+    });
+  }
+};
 
 export default {
   sexChanged,
@@ -153,5 +177,6 @@ export default {
   moodStabilityChanged,
   communalBelongingChanged,
   smokingHabitsChanged,
+  bloodPressureChanged,
   formSubmit
 };
