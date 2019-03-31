@@ -32,11 +32,15 @@ def normalize(s):
 	BMI_overw = max(BMI/25. + (1-age)*(25-23), 1)
 	BMI_youth = max(BMI/23. - (age)*(4), 1)
 	
-	smoker = 0 if s['smokingHabits'] == "Never" else 1 
+	smoker = 1
+	if s['smokingHabits'] == "Never":
+		smoker = 0.2 
+	elif s['smokingHabits'] == "Occasional":
+		smoker = .5 
 
 	fruit = int(s['fruitVegetableConsumption'])/5.
 
-	high_bp = avg_values[ref["High blood pressure"]]#s['blood_pressure']	#TODO
+	high_bp = s['blood_pressure']	#TODO
 
 	health = s['perceivedHealth'] / 100.
 
