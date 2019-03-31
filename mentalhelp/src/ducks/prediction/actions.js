@@ -123,34 +123,21 @@ export const closeModal = async dispatch => {
   dispatch({
     type: MODAL_TOGGLE,
     payload: false
-  })
-}
+  });
+};
 export const formSubmit = form => async dispatch => {
   dispatch({
     type: FORM_ERROR_RESET
   });
   console.log(form);
   let errorMessage = "";
-<<<<<<< HEAD
-  errorMessage = !Number.isNaN(parseInt(form.weight, 10)) && !form.weight.length > 0
-    ? "Weight is not a number"
-    : !Number.isNaN(parseInt(form.height, 10)) && !form.height.length > 0
-    ? "Height is not a number"
-    : !form.communalBelonging > 0
-    ? "Please select a communal belonging rating above 0"
-    : !form.lifeSatisfaction > 0
-    ? "Please select a life satisfaction rating above 0"
-    : !form.lifeStress > 0
-    ? "Please select a life stress rating above 0"
-    : !form.perceivedHealth > 0
-    ? "Please select a perceived health rating above 0"
-    : !form.physicalActivity > 0
-    ? "Please select a physical activity rating above 0"
-    : !form.moodStability > 0
-    ? "Please select a mood stability rating greater than 0"
-    : "";
+  console.log(
+    form.bloodPressure.split(","),
+    Number.isNaN(form.bloodPressure.split(",")[1]),
+    Number.isNaN(form.bloodPressure.split(",")[1]),
+    form.bloodPressure.split(",").length > 0
+  );
 
-=======
   errorMessage =
     !Number.isNaN(parseInt(form.weight, 10)) && !form.weight.length > 0
       ? "Weight is not a number"
@@ -165,14 +152,15 @@ export const formSubmit = form => async dispatch => {
       : !form.perceivedHealth > 0
       ? "Please select a perceived health rating above 0"
       : !form.perceivedMentalHealth > 0
-      ? "Please select a perceived mental health rating above 0"
-      : !form.perceivedMentalHealth > 0
       ? "Please select a physical activity rating above 0"
       : !form.moodStability > 0
       ? "Please select a mood stability rating greater than 0"
+      : !form.bloodPressure.split(",").length > 0
+        // !Number.isNaN(form.bloodPressure.split(",")[0]) &&
+        // !Number.isNaN(form.bloodPressure.split(",")[1])
+      ? "Please format blood pressure properly, such as '130,80'"
       : "";
-  
->>>>>>> origin/master
+
   if (errorMessage.length > 0) {
     dispatch({
       type: FORM_ERROR,
