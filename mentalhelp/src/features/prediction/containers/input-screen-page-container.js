@@ -1,7 +1,6 @@
 import InputFormScreen from "../components/input-screen-page";
 import predictionActions from "../../../ducks/prediction/actions";
 import { connect } from "react-redux";
-
 const mapStateToProps = ({ prediction }) => {
   const {
     sex,
