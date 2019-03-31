@@ -49,7 +49,7 @@ def reverse(inputArr, inputPlaceholder):
 	for i in range(30):
 		loss_val, grads_val = iterate([inputArrNew])
 		for ind in range(0,13):
-			if ind in [0,1,2,12,6,7]:
+			if ind in [12,6,7]:
 				continue
 			inputArrNew[0,ind] -= grads_val[0][ind] * step
 		print("iter:",i,np.mean(loss_val))

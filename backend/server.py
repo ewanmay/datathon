@@ -3,7 +3,7 @@ from flask import request
 from flask import jsonify
 from core import getPrediction
 import numpy as np
-from kernel import mentalHelp
+from kernel import mentalHelp, str_recc
 from flask_cors import CORS
 import json
 app = Flask(__name__)
@@ -24,7 +24,11 @@ def prediction():
 	if not requestJson["form"]:
 		abort(400)
 	
-	inputData = jsonify({'response' : (mentalHelp(requestJson["form"])[0]).tolist()}), 200
+	data = (mentalHelp(requestJson["form"])[0]).tolist()
+	inputData = jsonify(
+		{'response' : data,
+		'str_recc' : str_recc(data)
+		}), 200
 	#inputData.headers.add('Access-Control-Allow-Origin', 'localhost')
 	return inputData
 

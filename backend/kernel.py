@@ -38,7 +38,8 @@ print(data5.columns.values)
 print(data5.dtypes)
 data5.to_csv('./datafiles/merged.csv', index=False)
 #print(data5)
-
+def str_recc(inputData):
+	return "Get better"
 def mentalHelp(request):
 	print(request)
 
