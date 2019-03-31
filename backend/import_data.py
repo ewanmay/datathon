@@ -96,7 +96,7 @@ print(percents)
 # 	a = np.random.random_sample()
 # 	b = np.random.random_sample()
 # 	c = np.random.random_sample()
-# 	d = (a * b) + c
+# 	d = (a ^ b) ^ c
 # 	d = np.clip([d], 0,1)[0] 
 # 	x = x.append({'Sex':a,'Prevalence_x':b,'Prevalence_y':c,'Prevalence':d}, ignore_index=True)
 # 	if (d > maxd):
