@@ -65,7 +65,7 @@ def reverse(inputArr, inputPlaceholder):
 	# loss_val, grads_val = iterate([inputArr])
 	# print("Gradients:")
 	# print(-grads_val)
-	return inputArrNew-inputArr
+	return [model.predict(inputArr)[0,0], model.predict(inputArrNew)[0,0]], (inputArrNew-inputArr)
 config = tf.ConfigProto(
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
     # device_count = {'GPU': 1}
@@ -98,7 +98,7 @@ def getPrediction(inputData):
 	# (one such list for each sample in the batch)
 	global graph
 	with graph.as_default():
-		return (preds[0,0], reverse(inputData, model.input))
+		return reverse(inputData, model.input)
 
 
 

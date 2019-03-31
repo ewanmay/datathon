@@ -131,6 +131,26 @@ export const formSubmit = form => async dispatch => {
   });
   console.log(form);
   let errorMessage = "";
+<<<<<<< HEAD
+  errorMessage = !Number.isNaN(parseInt(form.weight, 10)) && !form.weight.length > 0
+    ? "Weight is not a number"
+    : !Number.isNaN(parseInt(form.height, 10)) && !form.height.length > 0
+    ? "Height is not a number"
+    : !form.communalBelonging > 0
+    ? "Please select a communal belonging rating above 0"
+    : !form.lifeSatisfaction > 0
+    ? "Please select a life satisfaction rating above 0"
+    : !form.lifeStress > 0
+    ? "Please select a life stress rating above 0"
+    : !form.perceivedHealth > 0
+    ? "Please select a perceived health rating above 0"
+    : !form.physicalActivity > 0
+    ? "Please select a physical activity rating above 0"
+    : !form.moodStability > 0
+    ? "Please select a mood stability rating greater than 0"
+    : "";
+
+=======
   errorMessage =
     !Number.isNaN(parseInt(form.weight, 10)) && !form.weight.length > 0
       ? "Weight is not a number"
@@ -152,6 +172,7 @@ export const formSubmit = form => async dispatch => {
       ? "Please select a mood stability rating greater than 0"
       : "";
   
+>>>>>>> origin/master
   if (errorMessage.length > 0) {
     dispatch({
       type: FORM_ERROR,
@@ -159,6 +180,12 @@ export const formSubmit = form => async dispatch => {
     });
   } else {
     axios.post("http://127.0.0.1:5000/predict", { form }).then(result => {
+<<<<<<< HEAD
+      console.log(result.data.prediction); // [0.56, 0.78]
+      console.log(result.data.reccomendation);  // [+0.3, -0.2, +0.02, -0.9...]
+      console.log(result.data.str_recc);  // ["Eat more!", "Lower your blood pressure!"]
+
+=======
       console.log(result.data.prediction);
       alert(result.data.reccomendation);
       alert(result.data.str_recc);
@@ -174,6 +201,7 @@ export const formSubmit = form => async dispatch => {
         type: MODAL_TOGGLE,
         payload: true
       });
+>>>>>>> origin/master
       dispatch({
         type: FORM_SUBMIT_SUCCESS,
         payload: result.data.response

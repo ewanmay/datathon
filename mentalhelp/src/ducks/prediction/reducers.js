@@ -22,12 +22,21 @@ import {
 export const initialFormState = {
   sex: 0,
   age: 0,
-  bloodPressure: "",
-  height: "",
-  weight: "",
-  fruitVegetableConsumption: 0,
-  smokingHabits: 0,
+  bloodPressure: "130,80",
+  height: "152",
+  weight: "59",
+  fruitVegetableConsumption: 2,
+  smokingHabits: 2,
   formError: "",
+<<<<<<< HEAD
+  communalBelonging: 2,
+  lifeSatisfaction: 2,
+  lifeStress: 2,
+  moodStability: 2,
+  perceivedHealth: 2,
+  perceivedMentalHealth: 2,
+  physicalActivity: 2
+=======
   communalBelonging: 0,
   lifeSatisfaction: 0,
   lifeStress: 0,
@@ -39,6 +48,7 @@ export const initialFormState = {
   improvementStrings: [],
   currentRating: 0,
   potentialRating: 0
+>>>>>>> origin/master
 };
 
 const formReducer = (state = initialFormState, action) => {
