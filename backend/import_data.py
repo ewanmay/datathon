@@ -39,7 +39,7 @@ mental_health.drop('TERMINATED',axis=1,inplace=True)
 mental_health.drop('DECIMALS',axis=1,inplace=True)
 
 #print(mental_health)
-outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'Sex', 'UOM_ID'], columns='Indicators', values='VALUE')
+outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'Sex', 'UOM'], columns='Indicators', values='VALUE')
 
 outData.drop('Arthritis (15 years and over)', axis=1, inplace=True)
 outData.drop('Asthma', axis=1, inplace=True)
@@ -58,8 +58,9 @@ outData.drop("Perceived mental health, fair or poor", axis=1,inplace=True)
 outData.drop("Perceived health, fair or poor", axis=1,inplace=True)
 
 outData = outData.dropna(axis=0);
+outData = outData.drop(index='Number', level='UOM')
 
-#outData = outData[:,0:13] + outData[:,14:-1] + outData[:,14]
+# outData = outData[:,0:13] + outData[:,14:-1] + outData[:,14]
 # outData.interpolate(axis=1);
 
 # outData.drop('REF_DATE', axis=1, inplace=True)
