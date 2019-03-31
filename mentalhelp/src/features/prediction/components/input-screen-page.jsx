@@ -45,16 +45,17 @@ const InputScreenPage = ({
 }) => {
   return (
     <div className="row">
-      <div className="col-sm-2 side-spacer" />
-
-      <div className="col-sm-8 page">
-        <Modal
+  
+    <Modal
           modalClose={modalClose}
           modalOpen={modalOpen}
           improvementStrings={improvementStrings}
           currentRating={currentRating}
           potentialRating={potentialRating}
         />
+      <div className="col-sm-2 side-spacer" />
+
+      <div className="col-sm-8 page">
         <TextInput
           onChange={heightChanged}
           question={"Please enter your height in centimeters:"}

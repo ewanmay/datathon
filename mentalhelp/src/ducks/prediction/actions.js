@@ -161,6 +161,10 @@ export const formSubmit = form => async dispatch => {
   //     ? "Please format blood pressure properly, such as '130,80'"
   //     : "";
 
+      dispatch({
+        type: MODAL_TOGGLE,
+        payload: true
+      });
   if (errorMessage.length > 0) {
     dispatch({
       type: FORM_ERROR,
@@ -168,24 +172,21 @@ export const formSubmit = form => async dispatch => {
     });
   } else {
     axios.post("http://127.0.0.1:5000/predict", { form }).then(result => {
-      console.log(result.data.prediction);
-      console.log(result.data.reccomendation);
-      console.log(result.data.str_recc);
-      alert("Your results are: " + result.data.prediction)  
-      alert("Some tips:")
-      alert(result.data.str_recc)
-      // dispatch({
-      //   type: UPDATE_MODAL_INFO,
-      //   payload: {
-      //     improvementStrings: result.data.str_recc,
-      //     currentRating: result.data.prediction[0],
-      //     potentialRating: result.data.prediction[1]
-      //   }
-      // });
-      // dispatch({
-      //   type: MODAL_TOGGLE,
-      //   payload: true
-      // });
+      console.log(result.data.prediction); // [0.56, 0.78]
+      console.log(result.data.reccomendation);  // [+0.3, -0.2, +0.02, -0.9...]
+      console.log(result.data.str_recc);  // ["Eat more!", "Lower your blood pressure!"]
+      dispatch({
+        type: UPDATE_MODAL_INFO,
+        payload: {
+          improvementStrings: result.data.str_recc,
+          currentRating: result.data.prediction[0],
+          potentialRating: result.data.prediction[1]
+        }
+      });
+      dispatch({
+        type: MODAL_TOGGLE,
+        payload: true
+      });
       dispatch({
         type: FORM_SUBMIT_SUCCESS,
         payload: result.data.response

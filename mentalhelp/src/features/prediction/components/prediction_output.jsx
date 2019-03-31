@@ -7,38 +7,27 @@ const modalBoi = ({
   modalOpen,
   modalClose
 }) => {
-	let current_place = "left: " + currentRating + '%;';
-	let potential_place = "left: " + potentialRating + '%;';
-
+  let current_place = "left: " + currentRating + "%;";
+  let potential_place = "left: " + potentialRating + "%;";
+  
+  console.log(modalOpen);
   if (modalOpen) {
     return (
-      <div class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Your Results</h5>
+      <div classNameName="modal fade" zIndex='1' tabIndex="-1" role="dialog">
+        <div classNameName="modal-dialog" role="document">
+          <div classNameName="modal-content">
+            <div classNameName="modal-header">
+              <h5 classNameName="modal-title">Your Results</h5>
               <button
                 type="button"
-                class="close"
+                classNameName="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-				<h4>What's Your Potential?</h4>
-				<div class="full-w container-fluid">
-					<div role="tooltip" class="tooltip top custom-tooltip " style={current_place}>
-						<div class="tooltip-arrow"></div>
-						<div class="tooltip-inner">You are Here</div>
-					</div>
-					<hr />
-					<div role="tooltip" class="tooltip bottom custom-tooltip " style={potential_place}>
-						<div class="tooltip-arrow"></div>
-						<div class="tooltip-inner">You Could be Here</div>
-					</div>
-				</div>
+            <div classNameName="modal-body">
               <SliderInput
                 selection={() => {}}
                 question={"Your current mental health rating:"}
@@ -47,15 +36,15 @@ const modalBoi = ({
                 unit={"/100"}
               />
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">
+            <div classNameName="modal-footer">
+              <button type="button" classNameName="btn btn-primary">
                 Save changes
               </button>
               <button
                 type="button"
-                class="btn btn-secondary"
-								data-dismiss="modal"
-								onClick={() => modalClose()}
+                classNameName="btn btn-secondary"
+                data-dismiss="modal"
+                onClick={() => modalClose()}
               >
                 Close
               </button>
@@ -64,12 +53,9 @@ const modalBoi = ({
         </div>
       </div>
     );
-	}
-	else {
-		return (
-			<div></div>
-		)
-	}
+  } else {
+    return <div />;
+  }
 };
 
 export default modalBoi;

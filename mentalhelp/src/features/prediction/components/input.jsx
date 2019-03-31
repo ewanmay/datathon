@@ -31,7 +31,9 @@ const input = ({ selection, labels, question, renderedButton }) => {
   return (
     <div className="input-container">
       <div className="input-question-text">{question}</div>
+      <div className="d-flex justify-content-between">
       {buttons}
+    </div>
     </div>
   );
 };
