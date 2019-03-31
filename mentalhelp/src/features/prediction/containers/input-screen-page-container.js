@@ -51,7 +51,8 @@ const mapDispatchToProps = dispatch => {
     weightChanged,
     heightChanged,
     lifeStressChanged,
-    bloodPressureChanged
+    bloodPressureChanged,
+    formSubmit
   } = predictionActions;
   return {
     sexChanged: sex => {
@@ -95,6 +96,9 @@ const mapDispatchToProps = dispatch => {
     },
     bloodPressureChanged: metric => {
       dispatch(bloodPressureChanged(metric))
+    },
+    submitForm: form => {
+      dispatch(formSubmit(form))
     }
 
   };

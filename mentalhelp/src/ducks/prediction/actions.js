@@ -11,11 +11,13 @@ import {
   LIFE_SATISFACTION_CHANGED,
   MOOD_STABILITY_CHANGED,
   LIFE_STRESS_CHANGED,
-  FRUIT_VEGETABLE_CONSUMPTION_CHANGED
+  FRUIT_VEGETABLE_CONSUMPTION_CHANGED,
+  FORM_SUBMIT_SUCCESS
 } from "./types";
 
+import axios from 'axios'
+
 export const sexChanged = input => async dispatch => {
-  console.log(input)
   dispatch({
     type: SEX_CHANGED,
     payload: input
@@ -59,7 +61,6 @@ export const smokingHabitsChanged = input => async dispatch => {
 };
 
 export const communalBelongingChanged = input => async dispatch => {
-  console.log(input);
   dispatch({
     type: COMMUNAL_BELONGING_CHANGED,
     payload: input
@@ -109,6 +110,30 @@ export const physicalActivityChanged = input => async dispatch => {
   });
 };
 
+export const formSubmit = form => async dispatch => {
+  console.log(form);
+  let errorMessage = "";
+  errorMessage = !form.weight.isNaN() ? "Weight is not a number" : "";
+  errorMessage = !form.height.isNaN() ? "Height is not a number" : "";
+  errorMessage = !form.communalBelonging > 0 ? "Please select a communal belonging rating above 0" : "";
+  errorMessage = !form.lifeSatisfaction > 0 ? "Please select a life satisfaction rating above 0" : "";
+  errorMessage = !form.lifeStress > 0 ? "Please select a life stress rating above 0" : "";
+  errorMessage = !form.perceivedHealth > 0 ? "Please select a perceived health rating above 0" : "";
+  errorMessage = !form.perceivedMentalHealth > 0 ? "Please select a perceived mental health rating above 0" : "";
+  errorMessage = !form.perceivedMentalHealth > 0 ? "Please select a physical activity rating above 0" : "";
+  errorMessage = !form.moodStability > 0 ? "Please select a mood stability rating greater than 0" : "";
+  errorMessage = !form.age.length > 0 ? "Please select an age category" : "";
+  errorMessage = !form.smokingHabits.length > 0 ? "Please select a smoking habits category" : "";
+  errorMessage = !form.sex.length > 0 ? "Please select a gender" : "";
+
+  
+
+  // axios.post('/api/submit', body: form)
+  // dispatch({
+    // type: FORM_SUBMIT_SUCCESS
+  // })
+}
+
 export default {
   sexChanged,
   ageChanged,
@@ -122,5 +147,6 @@ export default {
   lifeSatisfactionChanged,
   moodStabilityChanged,
   communalBelongingChanged,
-  smokingHabitsChanged
+  smokingHabitsChanged,
+  formSubmit
 };

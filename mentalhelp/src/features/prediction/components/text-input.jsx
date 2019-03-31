@@ -1,15 +1,17 @@
 import React from "react";
 
-const TextInput = ({ selection, labels, question, renderedButton }) => {
+const TextInput = ({ onChange, placeHolder, question, value }) => {
   return (
     <div className="input-container">
       <div className="input-question-text">{question}</div>
       <input
         type="text"
-        class="form-control"
-        placeholder="Username"
+        className="form-control"
+        placeholder={placeHolder}
+        value={value}
         aria-label="Username"
         aria-describedby="addon-wrapping"
+        onChange={event => onChange(event.target.value)}
       />
     </div>
   );

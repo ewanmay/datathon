@@ -3,7 +3,6 @@ import predictionActions from "../../../ducks/prediction/actions";
 import { connect } from "react-redux";
 
 const mapStateToProps = (item) => {
-console.log(item)
   const {prediction} = item;
   const {
     sex,
