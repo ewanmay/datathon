@@ -52,6 +52,6 @@ def mentalHelp(request):
 	#print('\nreccomendation:\n', reccomendation)
 
 	# format result
-	toret = np.concatenate([[[prediction]], reccomendation], axis=1)
+	toret = np.concatenate([[[prediction]], message, reccomendation], axis=1)
 	print(toret)
-	return toret
+	return toret, reccomendation, message
