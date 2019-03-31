@@ -21,7 +21,8 @@ const mapStateToProps = ({ prediction }) => {
     bloodPressure,
     improvementStrings,
     currentRating,
-    potentialRating
+    potentialRating,
+    modalOpen
   } = prediction;
   return {
     sex,
@@ -41,6 +42,7 @@ const mapStateToProps = ({ prediction }) => {
     formError,
     improvementStrings,
     currentRating,
+    modalOpen,
     potentialRating
   };
 };
