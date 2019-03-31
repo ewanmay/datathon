@@ -11,48 +11,48 @@ def sevOff(a):
 
 def str_recc(inputData):
 	#return "Get better"
-	tips = ""
+	tips = []
 	if min(inputData[1:4]) < -0.2:
-		tips += "Lose weight!\n"
+		tips.append("Lose weight!")
 	elif max(inputData[1:4]) > 0.2:
-		tips += "Gain weight!\n"
+		tips.append("Gain weight!")
 
 	if inputData[ref["Current smoker, daily or occasional"]] < -0.2:
-		tips += "Smoke Less!\n"
+		tips.append("Smoke Less!")
 	elif inputData[ref["Current smoker, daily or occasional"]] > 0.2:
-		tips += "Smoke More!\n"
+		tips.append("Smoke More!")
 
 	if inputData[ref["Fruit and vegetable consumption, 5 times or more per day"]] < -0.2:
-		tips += "Eat Fruit and Veggies Less!\n"
+		tips.append("Eat Fruit and Veggies Less!")
 	elif inputData[ref["Fruit and vegetable consumption, 5 times or more per day"]] > 0.2:
-		tips += "Eat Fruit and Veggies More!\n"
+		tips.append("Eat Fruit and Veggies More!")
 
 	if inputData[ref["High blood pressure"]] < -0.2:
-		tips += "Lower your blood pressure by doing more...!\n"
+		tips.append("Lower your blood pressure by doing more...!")
 	elif inputData[ref["High blood pressure"]] > 0.2:
-		tips += "Increase you blood pressure by doing more...!\n"
+		tips.append("Increase you blood pressure by doing more...!")
 
 	if inputData[ref["Perceived health, very good or excellent"]] < -0.2:
-		tips += "You don't need to worry about being so healthy you know...\n"
+		tips.append("You don't need to worry about being so healthy you know...")
 	elif inputData[ref["Perceived health, very good or excellent"]] > 0.2:
-		tips += "Improve your overall health!!!\n"
+		tips.append("Improve your overall health!!!")
 
 	if inputData[ref["Perceived life stress, most days quite a bit or extremely stressful"]] < -0.2:
-		tips += "Relax more and take some me time, do what makes you happy!\n"
+		tips.append("Relax more and take some me time, do what makes you happy!")
 	elif inputData[ref["Perceived life stress, most days quite a bit or extremely stressful"]] > 0.2:
-		tips += "Take life more seriously? Stop slacking off.\n"
+		tips.append("Take life more seriously? Stop slacking off.")
 
 	if min(inputData[ref["Self-reported physical activity, 150 minutes per week, adult (18 years and over)"]], inputData[ref["Self-reported physical activity, average 60 minutes per day, youth (12 to 17 years old)"]]) < -0.2:
-		tips += "Workout less?\n"
+		tips.append("Workout less?")
 	elif max(inputData[ref["Self-reported physical activity, 150 minutes per week, adult (18 years and over)"]], inputData[ref["Self-reported physical activity, average 60 minutes per day, youth (12 to 17 years old)"]]) > 0.2:
-		tips += "Get more exercise!\n"
+		tips.append("Get more exercise!")
 
 	return tips
 	
 def mentalHelp(request):
 	print(request)
 
-	newPatient = normalize( (request) )
+	newPatient = normalize(request)
 	print('\n\n#################\n\nnormalized:\n', newPatient)
 
 	prediction, reccomendation = getPrediction(np.array([newPatient]))
@@ -61,6 +61,6 @@ def mentalHelp(request):
 	#print('\nreccomendation:\n', reccomendation)
 
 	# format result
-	toret = np.concatenate([[[prediction]], message, reccomendation], axis=1)
-	print(toret)
-	return toret, reccomendation, message
+	#toret = np.concatenate([[[prediction]], reccomendation], axis=1)
+	print(prediction)
+	return prediction, reccomendation

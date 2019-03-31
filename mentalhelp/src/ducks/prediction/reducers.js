@@ -15,7 +15,9 @@ import {
   FRUIT_VEGETABLE_CONSUMPTION_CHANGED,
   BLOOD_PRESSURE_CHANGED,
   FORM_ERROR,
-  FORM_ERROR_RESET
+  FORM_ERROR_RESET,
+  UPDATE_MODAL_INFO,
+  MODAL_TOGGLE
 } from "./types";
 export const initialFormState = {
   sex: 0,
@@ -32,7 +34,11 @@ export const initialFormState = {
   moodStability: 0,
   perceivedHealth: 0,
   perceivedMentalHealth: 0,
-  physicalActivity: 0
+  physicalActivity: 0,
+  modalOpen: false,
+  improvementStrings: [],
+  currentRating: 0,
+  potentialRating: 0
 };
 
 const formReducer = (state = initialFormState, action) => {
@@ -89,6 +95,18 @@ const formReducer = (state = initialFormState, action) => {
       return {
         ...state,
         formError: ''
+      }
+    case MODAL_TOGGLE: 
+      return {
+        ...state,
+        modalOpen: action.payload
+      }
+    case UPDATE_MODAL_INFO:
+      return {
+        ...state,
+        improvementStrings: action.payload.improvementStrings,
+        potentialRating: action.payload.potentialRating,
+        currentRating: action.payload.currentRating
       }
     default:
       return state;
