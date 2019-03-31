@@ -1,0 +1,289 @@
+REF_DATE,GEO,Sex,Statistics,UOM,Creatinine (urine) (mmol/L),Ferritin  (µg/L),Parathyroid hormone (pmol/L),Potassium (urine) (mmol/L),Red blood cell folate (nmol/L),Sodium (urine) (mmol/L),Vitamin B12 (pmol/L),Vitamin C (ng/mL),Vitamin D (nmol/L)
+2009,Canada,Both sexes,10th Percentile,Nanomoles per litre (nmol/L),,,,,740.75,,,,38.233333333333334
+2009,Canada,Both sexes,25th Percentile,Nanomoles per litre (nmol/L),,,,,958.7916666666666,,,,51.30833333333333
+2009,Canada,Both sexes,50th Percentile,Nanomoles per litre (nmol/L),,,,,1235.875,,,,67.02916666666667
+2009,Canada,Both sexes,5th Percentile,Nanomoles per litre (nmol/L),,,,,622.8333333333334,,,,30.591666666666665
+2009,Canada,Both sexes,75th Percentile,Nanomoles per litre (nmol/L),,,,,1581.375,,,,84.04166666666667
+2009,Canada,Both sexes,90th Percentile,Nanomoles per litre (nmol/L),,,,,1954.1666666666667,,,,100.60000000000001
+2009,Canada,Both sexes,95th Percentile,Nanomoles per litre (nmol/L),,,,,2192.5416666666665,,,,112.78333333333335
+2009,Canada,Both sexes,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1302.4166666666667,,,,69.00833333333333
+2009,Canada,Females,10th Percentile,Nanomoles per litre (nmol/L),,,,,751.625,,,,39.72916666666666
+2009,Canada,Females,25th Percentile,Nanomoles per litre (nmol/L),,,,,964.2083333333334,,,,52.708333333333336
+2009,Canada,Females,50th Percentile,Nanomoles per litre (nmol/L),,,,,1245.3333333333333,,,,68.48749999999998
+2009,Canada,Females,5th Percentile,Nanomoles per litre (nmol/L),,,,,620.4166666666666,,,,31.925
+2009,Canada,Females,75th Percentile,Nanomoles per litre (nmol/L),,,,,1610.375,,,,85.37500000000001
+2009,Canada,Females,90th Percentile,Nanomoles per litre (nmol/L),,,,,2017.4583333333333,,,,103.16250000000001
+2009,Canada,Females,95th Percentile,Nanomoles per litre (nmol/L),,,,,2278.75,,,,115.03333333333335
+2009,Canada,Females,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1326.625,,,,70.57916666666667
+2009,Canada,Males,10th Percentile,Nanomoles per litre (nmol/L),,,,,724.0,,,,36.44166666666667
+2009,Canada,Males,25th Percentile,Nanomoles per litre (nmol/L),,,,,952.5,,,,49.90833333333331
+2009,Canada,Males,50th Percentile,Nanomoles per litre (nmol/L),,,,,1229.5833333333333,,,,65.72083333333335
+2009,Canada,Males,5th Percentile,Nanomoles per litre (nmol/L),,,,,618.625,,,,29.96666666666667
+2009,Canada,Males,75th Percentile,Nanomoles per litre (nmol/L),,,,,1551.8333333333333,,,,82.40833333333333
+2009,Canada,Males,90th Percentile,Nanomoles per litre (nmol/L),,,,,1884.0833333333333,,,,98.325
+2009,Canada,Males,95th Percentile,Nanomoles per litre (nmol/L),,,,,2109.75,,,,109.08749999999999
+2009,Canada,Males,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1277.4166666666667,,,,67.47500000000001
+2011,Canada,Both sexes,10th Percentile,Micrograms per litre (µg/L),,22.2,,,,,,,
+2011,Canada,Both sexes,10th Percentile,Nanomoles per litre (nmol/L),,,,,718.6333333333333,,,,33.236666666666665
+2011,Canada,Both sexes,25th Percentile,Micrograms per litre (µg/L),,40.45,,,,,,,
+2011,Canada,Both sexes,25th Percentile,Nanomoles per litre (nmol/L),,,,,910.6333333333333,,,,47.09
+2011,Canada,Both sexes,50th Percentile,Micrograms per litre (µg/L),,74.73333333333333,,,,,,,
+2011,Canada,Both sexes,50th Percentile,Nanomoles per litre (nmol/L),,,,,1171.1333333333334,,,,63.333333333333336
+2011,Canada,Both sexes,5th Percentile,Micrograms per litre (µg/L),,15.266666666666667,,,,,,,
+2011,Canada,Both sexes,5th Percentile,Nanomoles per litre (nmol/L),,,,,607.9333333333333,,,,25.963333333333328
+2011,Canada,Both sexes,75th Percentile,Micrograms per litre (µg/L),,132.31666666666666,,,,,,,
+2011,Canada,Both sexes,75th Percentile,Nanomoles per litre (nmol/L),,,,,1450.3333333333333,,,,79.9
+2011,Canada,Both sexes,90th Percentile,Micrograms per litre (µg/L),,213.51666666666668,,,,,,,
+2011,Canada,Both sexes,90th Percentile,Nanomoles per litre (nmol/L),,,,,1785.0333333333333,,,,98.43333333333332
+2011,Canada,Both sexes,95th Percentile,Micrograms per litre (µg/L),,274.4,,,,,,,
+2011,Canada,Both sexes,95th Percentile,Nanomoles per litre (nmol/L),,,,,2026.6,,,,111.08333333333334
+2011,Canada,Both sexes,Measure of central tendency,Micrograms per litre (µg/L),,71.15,,,,,,,
+2011,Canada,Both sexes,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1219.4333333333334,,,,65.29
+2011,Canada,Females,10th Percentile,Micrograms per litre (µg/L),,17.425925925925927,,,,,,,
+2011,Canada,Females,10th Percentile,Nanomoles per litre (nmol/L),,,,,710.4074074074074,,,,32.07037037037037
+2011,Canada,Females,25th Percentile,Micrograms per litre (µg/L),,31.185185185185187,,,,,,,
+2011,Canada,Females,25th Percentile,Nanomoles per litre (nmol/L),,,,,901.7407407407408,,,,47.418518518518525
+2011,Canada,Females,50th Percentile,Micrograms per litre (µg/L),,52.370370370370374,,,,,,,
+2011,Canada,Females,50th Percentile,Nanomoles per litre (nmol/L),,,,,1180.037037037037,,,,64.28518518518518
+2011,Canada,Females,5th Percentile,Micrograms per litre (µg/L),,12.037037037037036,,,,,,,
+2011,Canada,Females,5th Percentile,Nanomoles per litre (nmol/L),,,,,601.4444444444445,,,,24.207407407407413
+2011,Canada,Females,75th Percentile,Micrograms per litre (µg/L),,87.0925925925926,,,,,,,
+2011,Canada,Females,75th Percentile,Nanomoles per litre (nmol/L),,,,,1498.6296296296296,,,,82.22592592592592
+2011,Canada,Females,90th Percentile,Micrograms per litre (µg/L),,131.44444444444446,,,,,,,
+2011,Canada,Females,90th Percentile,Nanomoles per litre (nmol/L),,,,,1887.6296296296296,,,,100.30740740740742
+2011,Canada,Females,95th Percentile,Micrograms per litre (µg/L),,175.6851851851852,,,,,,,
+2011,Canada,Females,95th Percentile,Nanomoles per litre (nmol/L),,,,,2157.4074074074074,,,,113.38888888888889
+2011,Canada,Females,Measure of central tendency,Micrograms per litre (µg/L),,50.77777777777778,,,,,,,
+2011,Canada,Females,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1245.851851851852,,,,66.27037037037037
+2011,Canada,Males,10th Percentile,Micrograms per litre (µg/L),,44.7962962962963,,,,,,,
+2011,Canada,Males,10th Percentile,Nanomoles per litre (nmol/L),,,,,701.9629629629629,,,,31.05185185185186
+2011,Canada,Males,25th Percentile,Micrograms per litre (µg/L),,72.24074074074075,,,,,,,
+2011,Canada,Males,25th Percentile,Nanomoles per litre (nmol/L),,,,,906.0,,,,44.25555555555555
+2011,Canada,Males,50th Percentile,Micrograms per litre (µg/L),,120.98148148148148,,,,,,,
+2011,Canada,Males,50th Percentile,Nanomoles per litre (nmol/L),,,,,1170.5925925925926,,,,60.10000000000001
+2011,Canada,Males,5th Percentile,Micrograms per litre (µg/L),,31.75925925925926,,,,,,,
+2011,Canada,Males,5th Percentile,Nanomoles per litre (nmol/L),,,,,599.2592592592592,,,,24.788888888888888
+2011,Canada,Males,75th Percentile,Micrograms per litre (µg/L),,196.64814814814815,,,,,,,
+2011,Canada,Males,75th Percentile,Nanomoles per litre (nmol/L),,,,,1432.1851851851852,,,,77.04074074074073
+2011,Canada,Males,90th Percentile,Micrograms per litre (µg/L),,285.3703703703704,,,,,,,
+2011,Canada,Males,90th Percentile,Nanomoles per litre (nmol/L),,,,,1723.5925925925926,,,,94.92222222222223
+2011,Canada,Males,95th Percentile,Micrograms per litre (µg/L),,372.05555555555554,,,,,,,
+2011,Canada,Males,95th Percentile,Nanomoles per litre (nmol/L),,,,,1928.0,,,,106.6925925925926
+2011,Canada,Males,Measure of central tendency,Micrograms per litre (µg/L),,116.11111111111111,,,,,,,
+2011,Canada,Males,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1196.111111111111,,,,62.355555555555554
+2013,Canada,Both sexes,10th Percentile,Micrograms per litre (µg/L),,18.0,,,,,,,
+2013,Canada,Both sexes,10th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,4708.333333333333,
+2013,Canada,Both sexes,10th Percentile,Nanomoles per litre (nmol/L),,,,,882.7666666666667,,,,33.39333333333334
+2013,Canada,Both sexes,25th Percentile,Micrograms per litre (µg/L),,32.766666666666666,,,,,,,
+2013,Canada,Both sexes,25th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,7866.666666666667,
+2013,Canada,Both sexes,25th Percentile,Nanomoles per litre (nmol/L),,,,,1033.9333333333334,,,,45.04666666666667
+2013,Canada,Both sexes,50th Percentile,Micrograms per litre (µg/L),,61.03333333333333,,,,,,,
+2013,Canada,Both sexes,50th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,10254.166666666666,
+2013,Canada,Both sexes,50th Percentile,Nanomoles per litre (nmol/L),,,,,1231.8666666666666,,,,60.42333333333333
+2013,Canada,Both sexes,5th Percentile,Micrograms per litre (µg/L),,12.333333333333334,,,,,,,
+2013,Canada,Both sexes,5th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,3317.1428571428573,
+2013,Canada,Both sexes,5th Percentile,Nanomoles per litre (nmol/L),,,,,798.4,,,,27.17666666666667
+2013,Canada,Both sexes,75th Percentile,Micrograms per litre (µg/L),,120.66666666666667,,,,,,,
+2013,Canada,Both sexes,75th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,12375.0,
+2013,Canada,Both sexes,75th Percentile,Nanomoles per litre (nmol/L),,,,,1454.9666666666667,,,,75.57666666666667
+2013,Canada,Both sexes,90th Percentile,Micrograms per litre (µg/L),,196.66666666666666,,,,,,,
+2013,Canada,Both sexes,90th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,14458.333333333334,
+2013,Canada,Both sexes,90th Percentile,Nanomoles per litre (nmol/L),,,,,1699.1333333333334,,,,91.31
+2013,Canada,Both sexes,95th Percentile,Micrograms per litre (µg/L),,257.76666666666665,,,,,,,
+2013,Canada,Both sexes,95th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,15875.0,
+2013,Canada,Both sexes,95th Percentile,Nanomoles per litre (nmol/L),,,,,1884.3666666666666,,,,105.01666666666667
+2013,Canada,Both sexes,Measure of central tendency,Micrograms per litre (µg/L),,60.43333333333333,,,,,,,
+2013,Canada,Both sexes,Measure of central tendency,Nanograms per millilitre (ng/mL),,,,,,,,10304.166666666666,
+2013,Canada,Both sexes,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1269.9666666666667,,,,62.22
+2013,Canada,Females,10th Percentile,Micrograms per litre (µg/L),,13.851851851851851,,,,,,,
+2013,Canada,Females,10th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,6416.666666666667,
+2013,Canada,Females,10th Percentile,Nanomoles per litre (nmol/L),,,,,909.0370370370371,,,,33.63333333333332
+2013,Canada,Females,25th Percentile,Micrograms per litre (µg/L),,25.14814814814815,,,,,,,
+2013,Canada,Females,25th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,8979.166666666666,
+2013,Canada,Females,25th Percentile,Nanomoles per litre (nmol/L),,,,,1078.6296296296296,,,,45.35555555555556
+2013,Canada,Females,50th Percentile,Micrograms per litre (µg/L),,43.7037037037037,,,,,,,
+2013,Canada,Females,50th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,10866.666666666666,
+2013,Canada,Females,50th Percentile,Nanomoles per litre (nmol/L),,,,,1274.2222222222222,,,,60.88518518518517
+2013,Canada,Females,5th Percentile,Micrograms per litre (µg/L),,9.555555555555555,,,,,,,
+2013,Canada,Females,5th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,4415.238095238095,
+2013,Canada,Females,5th Percentile,Nanomoles per litre (nmol/L),,,,,824.2592592592592,,,,27.307407407407407
+2013,Canada,Females,75th Percentile,Micrograms per litre (µg/L),,73.33333333333333,,,,,,,
+2013,Canada,Females,75th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,12791.666666666666,
+2013,Canada,Females,75th Percentile,Nanomoles per litre (nmol/L),,,,,1513.7407407407406,,,,76.4925925925926
+2013,Canada,Females,90th Percentile,Micrograms per litre (µg/L),,119.18518518518519,,,,,,,
+2013,Canada,Females,90th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,15000.0,
+2013,Canada,Females,90th Percentile,Nanomoles per litre (nmol/L),,,,,1791.2962962962963,,,,96.33703703703704
+2013,Canada,Females,95th Percentile,Micrograms per litre (µg/L),,159.875,,,,,,,
+2013,Canada,Females,95th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,16250.0,
+2013,Canada,Females,95th Percentile,Nanomoles per litre (nmol/L),,,,,2018.4444444444443,,,,108.64074074074071
+2013,Canada,Females,Measure of central tendency,Micrograms per litre (µg/L),,42.148148148148145,,,,,,,
+2013,Canada,Females,Measure of central tendency,Nanograms per millilitre (ng/mL),,,,,,,,11012.5,
+2013,Canada,Females,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1320.5555555555557,,,,63.4
+2013,Canada,Males,10th Percentile,Micrograms per litre (µg/L),,35.370370370370374,,,,,,,
+2013,Canada,Males,10th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,4004.7619047619046,
+2013,Canada,Males,10th Percentile,Nanomoles per litre (nmol/L),,,,,845.1851851851852,,,,30.548148148148147
+2013,Canada,Males,25th Percentile,Micrograms per litre (µg/L),,60.18518518518518,,,,,,,
+2013,Canada,Males,25th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,6770.833333333333,
+2013,Canada,Males,25th Percentile,Nanomoles per litre (nmol/L),,,,,989.4814814814815,,,,42.58148148148149
+2013,Canada,Males,50th Percentile,Micrograms per litre (µg/L),,107.74074074074075,,,,,,,
+2013,Canada,Males,50th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,9616.666666666666,
+2013,Canada,Males,50th Percentile,Nanomoles per litre (nmol/L),,,,,1174.2962962962963,,,,58.233333333333334
+2013,Canada,Males,5th Percentile,Micrograms per litre (µg/L),,25.37037037037037,,,,,,,
+2013,Canada,Males,5th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,3393.3333333333335,
+2013,Canada,Males,5th Percentile,Nanomoles per litre (nmol/L),,,,,766.2222222222222,,,,24.82962962962963
+2013,Canada,Males,75th Percentile,Micrograms per litre (µg/L),,180.96296296296296,,,,,,,
+2013,Canada,Males,75th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,11645.833333333334,
+2013,Canada,Males,75th Percentile,Nanomoles per litre (nmol/L),,,,,1375.2962962962963,,,,73.94444444444446
+2013,Canada,Males,90th Percentile,Micrograms per litre (µg/L),,272.962962962963,,,,,,,
+2013,Canada,Males,90th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,13929.166666666666,
+2013,Canada,Males,90th Percentile,Nanomoles per litre (nmol/L),,,,,1607.2222222222222,,,,87.34814814814816
+2013,Canada,Males,95th Percentile,Micrograms per litre (µg/L),,342.0,,,,,,,
+2013,Canada,Males,95th Percentile,Nanograms per millilitre (ng/mL),,,,,,,,15208.333333333334,
+2013,Canada,Males,95th Percentile,Nanomoles per litre (nmol/L),,,,,1752.5555555555557,,,,97.64444444444443
+2013,Canada,Males,Measure of central tendency,Micrograms per litre (µg/L),,102.11111111111111,,,,,,,
+2013,Canada,Males,Measure of central tendency,Nanograms per millilitre (ng/mL),,,,,,,,9554.166666666666,
+2013,Canada,Males,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1201.4074074074074,,,,59.451851851851856
+2015,Canada,Both sexes,10th Percentile,Micrograms per litre (µg/L),,16.233333333333334,,,,,,,
+2015,Canada,Both sexes,10th Percentile,Nanomoles per litre (nmol/L),,,,,1087.1666666666667,,,,31.243333333333332
+2015,Canada,Both sexes,25th Percentile,Micrograms per litre (µg/L),,29.633333333333333,,,,,,,
+2015,Canada,Both sexes,25th Percentile,Nanomoles per litre (nmol/L),,,,,1235.0333333333333,,,,43.46333333333333
+2015,Canada,Both sexes,50th Percentile,Micrograms per litre (µg/L),,59.4,,,,,,,
+2015,Canada,Both sexes,50th Percentile,Nanomoles per litre (nmol/L),,,,,1453.7,,,,58.08000000000001
+2015,Canada,Both sexes,5th Percentile,Micrograms per litre (µg/L),,11.266666666666667,,,,,,,
+2015,Canada,Both sexes,5th Percentile,Nanomoles per litre (nmol/L),,,,,1012.7333333333333,,,,24.276666666666664
+2015,Canada,Both sexes,75th Percentile,Micrograms per litre (µg/L),,109.5,,,,,,,
+2015,Canada,Both sexes,75th Percentile,Nanomoles per litre (nmol/L),,,,,1723.8666666666666,,,,72.83999999999999
+2015,Canada,Both sexes,90th Percentile,Micrograms per litre (µg/L),,179.9,,,,,,,
+2015,Canada,Both sexes,90th Percentile,Nanomoles per litre (nmol/L),,,,,2018.0666666666666,,,,90.82333333333335
+2015,Canada,Both sexes,95th Percentile,Micrograms per litre (µg/L),,233.3,,,,,,,
+2015,Canada,Both sexes,95th Percentile,Nanomoles per litre (nmol/L),,,,,2196.4,,,,101.12333333333336
+2015,Canada,Both sexes,Measure of central tendency,Micrograms per litre (µg/L),,56.06666666666667,,,,,,,
+2015,Canada,Both sexes,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1506.6666666666667,,,,59.626666666666665
+2015,Canada,Females,10th Percentile,Micrograms per litre (µg/L),,13.333333333333334,,,,,,,
+2015,Canada,Females,10th Percentile,Nanomoles per litre (nmol/L),,,,,1100.3333333333333,,,,30.06666666666667
+2015,Canada,Females,25th Percentile,Micrograms per litre (µg/L),,23.0,,,,,,,
+2015,Canada,Females,25th Percentile,Nanomoles per litre (nmol/L),,,,,1261.2962962962963,,,,42.25925925925925
+2015,Canada,Females,50th Percentile,Micrograms per litre (µg/L),,39.55555555555556,,,,,,,
+2015,Canada,Females,50th Percentile,Nanomoles per litre (nmol/L),,,,,1482.5185185185185,,,,58.73333333333334
+2015,Canada,Females,5th Percentile,Micrograms per litre (µg/L),,9.62962962962963,,,,,,,
+2015,Canada,Females,5th Percentile,Nanomoles per litre (nmol/L),,,,,1015.3333333333334,,,,23.299999999999997
+2015,Canada,Females,75th Percentile,Micrograms per litre (µg/L),,68.22222222222223,,,,,,,
+2015,Canada,Females,75th Percentile,Nanomoles per litre (nmol/L),,,,,1763.3703703703704,,,,74.61111111111113
+2015,Canada,Females,90th Percentile,Micrograms per litre (µg/L),,109.4074074074074,,,,,,,
+2015,Canada,Females,90th Percentile,Nanomoles per litre (nmol/L),,,,,2080.962962962963,,,,93.28888888888888
+2015,Canada,Females,95th Percentile,Micrograms per litre (µg/L),,141.85185185185185,,,,,,,
+2015,Canada,Females,95th Percentile,Nanomoles per litre (nmol/L),,,,,2230.037037037037,,,,102.42592592592592
+2015,Canada,Females,Measure of central tendency,Micrograms per litre (µg/L),,39.333333333333336,,,,,,,
+2015,Canada,Females,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1537.9259259259259,,,,60.255555555555574
+2015,Canada,Males,10th Percentile,Micrograms per litre (µg/L),,34.25925925925926,,,,,,,
+2015,Canada,Males,10th Percentile,Nanomoles per litre (nmol/L),,,,,1053.851851851852,,,,29.80370370370371
+2015,Canada,Males,25th Percentile,Micrograms per litre (µg/L),,59.55555555555556,,,,,,,
+2015,Canada,Males,25th Percentile,Nanomoles per litre (nmol/L),,,,,1185.7407407407406,,,,41.903703703703705
+2015,Canada,Males,50th Percentile,Micrograms per litre (µg/L),,102.33333333333333,,,,,,,
+2015,Canada,Males,50th Percentile,Nanomoles per litre (nmol/L),,,,,1400.2592592592594,,,,56.01111111111111
+2015,Canada,Males,5th Percentile,Micrograms per litre (µg/L),,21.958333333333332,,,,,,,
+2015,Canada,Males,5th Percentile,Nanomoles per litre (nmol/L),,,,,967.1111111111111,,,,22.803703703703704
+2015,Canada,Males,75th Percentile,Micrograms per litre (µg/L),,161.5185185185185,,,,,,,
+2015,Canada,Males,75th Percentile,Nanomoles per litre (nmol/L),,,,,1653.3703703703704,,,,68.46296296296296
+2015,Canada,Males,90th Percentile,Micrograms per litre (µg/L),,245.25925925925927,,,,,,,
+2015,Canada,Males,90th Percentile,Nanomoles per litre (nmol/L),,,,,1903.851851851852,,,,85.12222222222223
+2015,Canada,Males,95th Percentile,Micrograms per litre (µg/L),,311.5925925925926,,,,,,,
+2015,Canada,Males,95th Percentile,Nanomoles per litre (nmol/L),,,,,2055.1111111111113,,,,96.28518518518518
+2015,Canada,Males,Measure of central tendency,Micrograms per litre (µg/L),,96.03703703703704,,,,,,,
+2015,Canada,Males,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1441.4444444444443,,,,56.98888888888889
+2017,Canada,Both sexes,10th Percentile,Micrograms per litre (µg/L),,16.833333333333332,,,,,,,
+2017,Canada,Both sexes,10th Percentile,Milimoles per litre,3.136666666666667,,,20.833333333333332,,38.9,,,
+2017,Canada,Both sexes,10th Percentile,Nanomoles per litre (nmol/L),,,,,946.1,,,,36.18666666666666
+2017,Canada,Both sexes,10th Percentile,Picomoles per litre,,,2.420833333333334,,,,210.53333333333333,,
+2017,Canada,Both sexes,25th Percentile,Micrograms per litre (µg/L),,29.433333333333334,,,,,,,
+2017,Canada,Both sexes,25th Percentile,Milimoles per litre,5.536666666666667,,,35.0,,69.56666666666666,,,
+2017,Canada,Both sexes,25th Percentile,Nanomoles per litre (nmol/L),,,,,1130.2666666666667,,,,49.89666666666667
+2017,Canada,Both sexes,25th Percentile,Picomoles per litre,,,3.045833333333333,,,,265.56666666666666,,
+2017,Canada,Both sexes,50th Percentile,Micrograms per litre (µg/L),,59.93333333333333,,,,,,,
+2017,Canada,Both sexes,50th Percentile,Milimoles per litre,9.46,,,58.766666666666666,,117.9,,,
+2017,Canada,Both sexes,50th Percentile,Nanomoles per litre (nmol/L),,,,,1378.8666666666666,,,,65.38666666666667
+2017,Canada,Both sexes,50th Percentile,Picomoles per litre,,,3.8250000000000006,,,,345.23333333333335,,
+2017,Canada,Both sexes,5th Percentile,Micrograms per litre (µg/L),,11.833333333333334,,,,,,,
+2017,Canada,Both sexes,5th Percentile,Milimoles per litre,2.1333333333333333,,,15.266666666666667,,26.5,,,
+2017,Canada,Both sexes,5th Percentile,Nanomoles per litre (nmol/L),,,,,846.5666666666667,,,,29.07333333333333
+2017,Canada,Both sexes,5th Percentile,Picomoles per litre,,,2.120833333333333,,,,185.06666666666666,,
+2017,Canada,Both sexes,75th Percentile,Micrograms per litre (µg/L),,108.56666666666666,,,,,,,
+2017,Canada,Both sexes,75th Percentile,Milimoles per litre,14.206666666666665,,,90.53333333333333,,168.0,,,
+2017,Canada,Both sexes,75th Percentile,Nanomoles per litre (nmol/L),,,,,1646.7,,,,81.56666666666668
+2017,Canada,Both sexes,75th Percentile,Picomoles per litre,,,4.791666666666668,,,,455.1333333333333,,
+2017,Canada,Both sexes,90th Percentile,Micrograms per litre (µg/L),,174.56666666666666,,,,,,,
+2017,Canada,Both sexes,90th Percentile,Milimoles per litre,19.066666666666674,,,119.16666666666667,,211.53333333333333,,,
+2017,Canada,Both sexes,90th Percentile,Nanomoles per litre (nmol/L),,,,,1911.3666666666666,,,,98.94
+2017,Canada,Both sexes,90th Percentile,Picomoles per litre,,,5.9916666666666645,,,,587.6666666666666,,
+2017,Canada,Both sexes,95th Percentile,Micrograms per litre (µg/L),,231.06666666666666,,,,,,,
+2017,Canada,Both sexes,95th Percentile,Milimoles per litre,22.023333333333337,,,138.16666666666666,,234.73333333333332,,,
+2017,Canada,Both sexes,95th Percentile,Nanomoles per litre (nmol/L),,,,,2072.766666666667,,,,111.97333333333331
+2017,Canada,Both sexes,95th Percentile,Picomoles per litre,,,6.733333333333333,,,,688.8,,
+2017,Canada,Both sexes,Measure of central tendency,Micrograms per litre (µg/L),,56.46666666666667,,,,,,,
+2017,Canada,Both sexes,Measure of central tendency,Milimoles per litre,8.599999999999998,,,54.333333333333336,,101.9,,,
+2017,Canada,Both sexes,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1405.7,,,,67.58666666666667
+2017,Canada,Both sexes,Measure of central tendency,Picomoles per litre,,,3.8749999999999996,,,,350.03333333333336,,
+2017,Canada,Females,10th Percentile,Micrograms per litre (µg/L),,13.222222222222221,,,,,,,
+2017,Canada,Females,10th Percentile,Milimoles per litre,2.718518518518519,,,19.22222222222222,,33.666666666666664,,,
+2017,Canada,Females,10th Percentile,Nanomoles per litre (nmol/L),,,,,944.3333333333334,,,,36.13333333333333
+2017,Canada,Females,10th Percentile,Picomoles per litre,,,2.3833333333333333,,,,196.74074074074073,,
+2017,Canada,Females,25th Percentile,Micrograms per litre (µg/L),,22.666666666666668,,,,,,,
+2017,Canada,Females,25th Percentile,Milimoles per litre,5.007407407407407,,,32.96296296296296,,60.407407407407405,,,
+2017,Canada,Females,25th Percentile,Nanomoles per litre (nmol/L),,,,,1148.888888888889,,,,50.72592592592593
+2017,Canada,Females,25th Percentile,Picomoles per litre,,,3.033333333333333,,,,247.8148148148148,,
+2017,Canada,Females,50th Percentile,Micrograms per litre (µg/L),,39.51851851851852,,,,,,,
+2017,Canada,Females,50th Percentile,Milimoles per litre,8.696296296296298,,,54.666666666666664,,105.81481481481481,,,
+2017,Canada,Females,50th Percentile,Nanomoles per litre (nmol/L),,,,,1396.851851851852,,,,66.73333333333335
+2017,Canada,Females,50th Percentile,Picomoles per litre,,,3.7624999999999997,,,,324.81481481481484,,
+2017,Canada,Females,5th Percentile,Micrograms per litre (µg/L),,9.555555555555555,,,,,,,
+2017,Canada,Females,5th Percentile,Milimoles per litre,1.9259259259259256,,,13.88888888888889,,23.703703703703702,,,
+2017,Canada,Females,5th Percentile,Nanomoles per litre (nmol/L),,,,,856.5185185185185,,,,29.381481481481483
+2017,Canada,Females,5th Percentile,Picomoles per litre,,,2.0749999999999997,,,,170.59259259259258,,
+2017,Canada,Females,75th Percentile,Micrograms per litre (µg/L),,71.14814814814815,,,,,,,
+2017,Canada,Females,75th Percentile,Milimoles per litre,13.274074074074075,,,83.74074074074075,,154.74074074074073,,,
+2017,Canada,Females,75th Percentile,Nanomoles per litre (nmol/L),,,,,1686.888888888889,,,,85.00370370370368
+2017,Canada,Females,75th Percentile,Picomoles per litre,,,4.766666666666667,,,,427.81481481481484,,
+2017,Canada,Females,90th Percentile,Micrograms per litre (µg/L),,111.07407407407408,,,,,,,
+2017,Canada,Females,90th Percentile,Milimoles per litre,18.97407407407408,,,113.37037037037037,,202.77777777777777,,,
+2017,Canada,Females,90th Percentile,Nanomoles per litre (nmol/L),,,,,1948.962962962963,,,,105.5074074074074
+2017,Canada,Females,90th Percentile,Picomoles per litre,,,5.916666666666665,,,,557.7777777777778,,
+2017,Canada,Females,95th Percentile,Micrograms per litre (µg/L),,149.62962962962962,,,,,,,
+2017,Canada,Females,95th Percentile,Milimoles per litre,22.07777777777778,,,133.1851851851852,,229.03703703703704,,,
+2017,Canada,Females,95th Percentile,Nanomoles per litre (nmol/L),,,,,2134.703703703704,,,,120.2148148148148
+2017,Canada,Females,95th Percentile,Picomoles per litre,,,6.841666666666668,,,,667.7037037037037,,
+2017,Canada,Females,Measure of central tendency,Micrograms per litre (µg/L),,39.888888888888886,,,,,,,
+2017,Canada,Females,Measure of central tendency,Milimoles per litre,7.966666666666668,,,50.51851851851852,,92.33333333333333,,,
+2017,Canada,Females,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1436.7037037037037,,,,70.13333333333333
+2017,Canada,Females,Measure of central tendency,Picomoles per litre,,,3.8166666666666664,,,,330.81481481481484,,
+2017,Canada,Males,10th Percentile,Micrograms per litre (µg/L),,33.370370370370374,,,,,,,
+2017,Canada,Males,10th Percentile,Milimoles per litre,3.9851851851851854,,,21.0,,43.44444444444444,,,
+2017,Canada,Males,10th Percentile,Nanomoles per litre (nmol/L),,,,,918.7037037037037,,,,33.718518518518515
+2017,Canada,Males,10th Percentile,Picomoles per litre,,,2.483333333333333,,,,197.88888888888889,,
+2017,Canada,Males,25th Percentile,Micrograms per litre (µg/L),,57.592592592592595,,,,,,,
+2017,Canada,Males,25th Percentile,Milimoles per litre,6.885185185185187,,,34.81481481481482,,75.44444444444444,,,
+2017,Canada,Males,25th Percentile,Nanomoles per litre (nmol/L),,,,,1081.888888888889,,,,47.388888888888886
+2017,Canada,Males,25th Percentile,Picomoles per litre,,,3.054166666666667,,,,251.55555555555554,,
+2017,Canada,Males,50th Percentile,Micrograms per litre (µg/L),,99.44444444444444,,,,,,,
+2017,Canada,Males,50th Percentile,Milimoles per litre,10.97037037037037,,,60.074074074074076,,127.33333333333333,,,
+2017,Canada,Males,50th Percentile,Nanomoles per litre (nmol/L),,,,,1323.6296296296296,,,,63.07407407407408
+2017,Canada,Males,50th Percentile,Picomoles per litre,,,3.8625000000000003,,,,322.1111111111111,,
+2017,Canada,Males,5th Percentile,Micrograms per litre (µg/L),,23.62962962962963,,,,,,,
+2017,Canada,Males,5th Percentile,Milimoles per litre,2.777777777777778,,,15.592592592592593,,28.62962962962963,,,
+2017,Canada,Males,5th Percentile,Nanomoles per litre (nmol/L),,,,,810.925925925926,,,,26.85555555555555
+2017,Canada,Males,5th Percentile,Picomoles per litre,,,2.158333333333333,,,,170.1851851851852,,
+2017,Canada,Males,75th Percentile,Micrograms per litre (µg/L),,156.4814814814815,,,,,,,
+2017,Canada,Males,75th Percentile,Milimoles per litre,16.096296296296295,,,92.14814814814815,,171.1851851851852,,,
+2017,Canada,Males,75th Percentile,Nanomoles per litre (nmol/L),,,,,1565.111111111111,,,,77.01481481481481
+2017,Canada,Males,75th Percentile,Picomoles per litre,,,4.854166666666667,,,,415.55555555555554,,
+2017,Canada,Males,90th Percentile,Micrograms per litre (µg/L),,242.77777777777777,,,,,,,
+2017,Canada,Males,90th Percentile,Milimoles per litre,20.914814814814818,,,122.18518518518519,,211.96296296296296,,,
+2017,Canada,Males,90th Percentile,Nanomoles per litre (nmol/L),,,,,1824.2592592592594,,,,92.29259259259258
+2017,Canada,Males,90th Percentile,Picomoles per litre,,,5.979166666666668,,,,537.8888888888889,,
+2017,Canada,Males,95th Percentile,Micrograms per litre (µg/L),,308.4074074074074,,,,,,,
+2017,Canada,Males,95th Percentile,Milimoles per litre,24.155555555555548,,,137.03703703703704,,232.66666666666666,,,
+2017,Canada,Males,95th Percentile,Nanomoles per litre (nmol/L),,,,,2019.4444444444443,,,,104.77037037037034
+2017,Canada,Males,95th Percentile,Picomoles per litre,,,6.620833333333331,,,,622.1851851851852,,
+2017,Canada,Males,Measure of central tendency,Micrograms per litre (µg/L),,95.0,,,,,,,
+2017,Canada,Males,Measure of central tendency,Milimoles per litre,10.2,,,55.25925925925926,,107.88888888888889,,,
+2017,Canada,Males,Measure of central tendency,Nanomoles per litre (nmol/L),,,,,1346.5925925925926,,,,63.57037037037039
+2017,Canada,Males,Measure of central tendency,Picomoles per litre,,,3.912500000000001,,,,324.14814814814815,,

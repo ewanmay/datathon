@@ -6,10 +6,10 @@
 import numpy as np
 import pandas as pd
 
-characteristics = pd.read_csv('datafiles/statscanada/health_characteristics.csv')
+#characteristics = pd.read_csv('datafiles/statscanada/health_characteristics.csv')
 
 
-satisifaction = pd.read_csv('datafiles/statscanada/life_area_satisfaction.csv')
+#satisifaction = pd.read_csv('datafiles/statscanada/life_area_satisfaction.csv')
 mental_health = pd.read_csv('datafiles/statscanada/mental_health_geo.csv')
 nutrition_ind = pd.read_csv('datafiles/statscanada/nutrition.csv')
 '''
@@ -38,8 +38,25 @@ mental_health.drop('SYMBOL',axis=1,inplace=True)
 mental_health.drop('TERMINATED',axis=1,inplace=True)
 mental_health.drop('DECIMALS',axis=1,inplace=True)
 
-#print(mental_health)
+nutrition_ind.drop('SCALAR_FACTOR',axis=1,inplace=True)
+nutrition_ind.drop('SCALAR_ID',axis=1,inplace=True)
+nutrition_ind.drop('VECTOR',axis=1,inplace=True)
+nutrition_ind.drop('COORDINATE',axis=1,inplace=True)
+nutrition_ind.drop('STATUS',axis=1,inplace=True)
+nutrition_ind.drop('SYMBOL',axis=1,inplace=True)
+nutrition_ind.drop('TERMINATED',axis=1,inplace=True)
+nutrition_ind.drop('DECIMALS',axis=1,inplace=True)
+
+mental_health = mental_health.replace('2015/2016',2015)
+# nutrition_ind = nutrition_ind.replace('Picomoles per litre','Nanomoles per litre (nmol/L)')
+# nutrition_ind = nutrition_ind.replace('Micrograms per litre (µg/L)','Nanomoles per litre (nmol/L)')
+# nutrition_ind = nutrition_ind.replace('Milimoles per litre','Nanomoles per litre (nmol/L)')
+# nutrition_ind = nutrition_ind.replace('Nanograms per millilitre (ng/mL)','Nanomoles per litre (nmol/L)')
+#nutrition_ind = nutrition_ind['2017',:]
+
+#print(mental_health)					''' 'REF_DATE' '''
 outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'Sex', 'UOM'], columns='Indicators', values='VALUE')
+nutList = nutrition_ind.pivot_table(index=['REF_DATE','GEO', 'Sex', 'Statistics', 'UOM'], columns='Measures', values='VALUE')
 
 outData.drop('Arthritis (15 years and over)', axis=1, inplace=True)
 outData.drop('Asthma', axis=1, inplace=True)
@@ -51,16 +68,20 @@ outData.drop('Diabetes', axis=1, inplace=True)
 outData.drop('Exclusive breastfeeding, at least 6 months', axis=1, inplace=True)
 outData.drop('Has a regular healthcare provider', axis=1, inplace=True)
 outData.drop('Heavy drinking', axis=1, inplace=True)
-outData.drop('High blood pressure', axis=1, inplace=True)
+#outData.drop('High blood pressure', axis=1, inplace=True)
 outData.drop('Influenza immunization in the past 12 months', axis=1, inplace=True)
 
 outData.drop("Perceived mental health, fair or poor", axis=1,inplace=True)
 outData.drop("Perceived health, fair or poor", axis=1,inplace=True)
 
-outData = outData.dropna(axis=0);
+outData = outData.dropna(axis=0)
 
 numbers = outData.drop(index='Percent', level='UOM')
 percents = outData.drop(index='Number', level='UOM')
+
+# withNutri = pd.merge(percents,nutList,on=['REF_DATE','GEO', 'Sex'])
+# withNutri = withNutri.dropna(axis='index')
+
 
 # outData = outData[:,0:13] + outData[:,14:-1] + outData[:,14]
 # outData.interpolate(axis=1);
@@ -78,8 +99,9 @@ percents = outData.drop(index='Number', level='UOM')
 # outData = outData[ [names, ['Perceived mental health, fair or poor' ,'Perceived mental health, very good or excellent']]]
 percents.to_csv('./datafiles/statscanada/newMH_percents.csv')
 numbers.to_csv('./datafiles/statscanada/newMH_numbers.csv')
+nutList.to_csv('./datafiles/statscanada/newMH_nutrition.csv')
 
-# print(percents)
+print(percents)
 
 '''
 0 	REF_DATE,
