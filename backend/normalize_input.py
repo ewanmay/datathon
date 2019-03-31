@@ -8,6 +8,7 @@ from trainer import avg_values
 from core import getPrediction
 
 names = ('sex','age','weight','height','smoker','fruit','blood_pressure','health','stress','activity','belonging')
+ages = {'Under 18':0, 'Over 18':1}
 
 def norm(a):
 	if a > 1:
@@ -22,7 +23,7 @@ def normalize(s):
 	sex = s['sex']
 
 # age is read in 2 steps -> 0 / 1 -> minor / adult
-	age = 0 if s['age'] == 'Under 18' else 1
+	age = s['age'] 
 
 	BMI = int(s['weight'])
 	BMI /= (int(s['height'])/100.)**2

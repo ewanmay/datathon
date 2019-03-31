@@ -55,7 +55,7 @@ mental_health = mental_health.replace('2015/2016',2015)
 #nutrition_ind = nutrition_ind['2017',:]
 
 #print(mental_health)					''' 'REF_DATE' '''
-outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'Sex', 'UOM'], columns='Indicators', values='VALUE')
+outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'UOM', 'Sex'], columns='Indicators', values='VALUE')
 nutList = nutrition_ind.pivot_table(index=['REF_DATE','GEO', 'Sex', 'Statistics', 'UOM'], columns='Measures', values='VALUE')
 
 outData.drop('Arthritis (15 years and over)', axis=1, inplace=True)
@@ -75,6 +75,10 @@ outData.drop("Perceived mental health, fair or poor", axis=1,inplace=True)
 outData.drop("Perceived health, fair or poor", axis=1,inplace=True)
 
 outData = outData.dropna(axis=0)
+
+outData = outData.replace('Both sexes','0.5')
+outData = outData.replace('Males','0')
+outData = outData.replace('Females','1')
 
 numbers = outData.drop(index='Percent', level='UOM')
 percents = outData.drop(index='Number', level='UOM')
