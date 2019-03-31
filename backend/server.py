@@ -24,13 +24,12 @@ def prediction():
 	if not requestJson["form"]:
 		abort(400)
 	
-	pred, recc, mess = mentalHelp(requestJson["form"])[0]
-
+	pred, recc = mentalHelp(requestJson["form"])
+	print(recc)
 	inputData = jsonify({
-			'prediction' : pred,
-			'reccomendation' : recc,
-			'message' : mess,
-			'str_recc' : str_recc(recc)
+			'prediction' : str(pred),
+			'reccomendation' : (recc[0]).tolist(),
+			'str_recc' : str_recc((recc[0]).tolist())
 		}), 200
 	#inputData.headers.add('Access-Control-Allow-Origin', 'localhost')
 	return inputData

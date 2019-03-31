@@ -151,8 +151,8 @@ export const formSubmit = form => async dispatch => {
     });
   } else {
     axios.post("http://127.0.0.1:5000/predict", { form }).then(result => {
-      console.log(result.data.response[0]);
-      alert(result.data.response);
+      console.log(result.data.prediction);
+      alert(result.data.reccomendation);
       alert(result.data.str_recc);
 
       dispatch({

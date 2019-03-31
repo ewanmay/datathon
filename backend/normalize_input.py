@@ -7,7 +7,7 @@ from core import ref
 from trainer import avg_values
 from core import getPrediction
 
-names = ('sex','age','weight','height','smoker','fruit','blood_pressure','health','stress','activity','belonging')
+names = ('sex','age','weight','height','smoker','fruit','bloodPressure','health','stress','activity','belonging')
 ages = {'Under 18':0, 'Over 18':1}
 
 def norm(a):
@@ -20,7 +20,7 @@ def norm(a):
 
 # input Series
 def normalize(s):
-	sex = s['sex']
+	sex = s['sex'] / 2
 
 # age is read in 2 steps -> 0 / 1 -> minor / adult
 	age = s['age'] 
@@ -42,15 +42,12 @@ def normalize(s):
 	else:
 		BMI_youth = avg_values[2]
 	
-	smoker = 1
-	if s['smokingHabits'] == "Never":
-		smoker = 0
-	elif s['smokingHabits'] == "Occasional":
-		smoker = .5 
+	smoker = s['smokingHabits']/2.
 
-	fruit = int(s['fruitVegetableConsumption'])/5.
+	fruit = (int(s['fruitVegetableConsumption'])+1)/5.
 
-	high_bp = s['blood_pressure']	#TODO
+	highArr = s['bloodPressure'].split(',')	#TODO
+	high_bp = ((int(highArr[0])-120)/(20) + (int(highArr[1])-80)/(10))/2
 
 	health = s['perceivedHealth'] / 100.
 
