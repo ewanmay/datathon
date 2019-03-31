@@ -17,7 +17,13 @@ const InputScreenPage = ({
   moodStability,
   fruitVegetableConsumption,
   bloodPressure,
-  formError,
+  formError,  
+  improvementStrings,
+  currentRating,
+  modalOpen,
+  potentialRating,
+
+  //functions
   bloodPressureChanged,
   sexChanged,
   ageChanged,

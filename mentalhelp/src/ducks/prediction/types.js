@@ -16,3 +16,5 @@ export const FORM_SUBMIT_SUCCESS = "form_submit_success";
 export const BLOOD_PRESSURE_CHANGED = "blood_pressure_changed";
 export const FORM_ERROR = 'form_error';
 export const FORM_ERROR_RESET = 'form_error_reset';
+export const MODAL_TOGGLE = 'modal_toggle';
+export const UPDATE_MODAL_INFO = 'update_modal_info'
