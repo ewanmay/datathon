@@ -28,9 +28,18 @@ def normalize(s):
 	BMI /= (int(s['height'])/100.)**2
 
 	print("BMI: ",BMI)
-	BMI_obese = max(BMI/30. + (1-age)*(30-26.5), 1)
-	BMI_overw = max(BMI/25. + (1-age)*(25-23), 1)
-	BMI_youth = max(BMI/23. - (age)*(4), 1)
+	# BMI_obese = min(BMI/30. + (1-age)*(30-26.5), 1)
+	# BMI_overw = min(BMI/25. + (1-age)*(25-23), 1)
+	# BMI_youth = min(BMI/23. - (age)*(4), 1)
+	BMI_obese = min(BMI/30., 1)
+	BMI_overw = min(BMI/25., 1)
+	BMI_youth = min(BMI/23., 1)
+
+	if age == 0:
+		BMI_obese = avg_values[0]
+		BMI_overw = avg_values[1]
+	else:
+		BMI_youth = avg_values[2]
 	
 	smoker = 0 if s['smokingHabits'] == "Never" else 1 
 

@@ -41,17 +41,18 @@ def reverse(inputArr, inputPlaceholder):
 
 	iterate = K.function([inputPlaceholder],[loss,grads])
 
-	step = 0.3
+	step = 0.02
 
 	inputArrNew = inputArr.copy()
 	loss_val, grads_val = (0,0)
 
-	for i in range(30):
+	for i in range(100):
 		loss_val, grads_val = iterate([inputArrNew])
 		for ind in range(0,13):
 			if ind in [12,6,7]:
 				continue
-			inputArrNew[0,ind] -= grads_val[0][ind] * step
+			new_val = inputArrNew[0,ind] - grads_val[0][ind] * step
+			inputArrNew[0,ind] = min(max(new_val, 0),1)
 		print("iter:",i,np.mean(loss_val))
 
 	print("Before:")
@@ -61,8 +62,9 @@ def reverse(inputArr, inputPlaceholder):
 	print("After:")
 	print(inputArrNew,"->",model.predict(inputArrNew))
 
-	loss_val, grads_val = iterate([inputArr])
-	print(-grads_val)
+	# loss_val, grads_val = iterate([inputArr])
+	# print("Gradients:")
+	# print(-grads_val)
 	return inputArrNew-inputArr
 config = tf.ConfigProto(
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
