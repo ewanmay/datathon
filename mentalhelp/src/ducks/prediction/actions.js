@@ -143,24 +143,16 @@ export const formSubmit = form => async dispatch => {
       ? "Weight is not a number"
       : !Number.isNaN(parseInt(form.height, 10)) && !form.height.length > 0
       ? "Height is not a number"
-      : !form.communalBelonging > 0
-      ? "Please select a communal belonging rating above 0"
-      : !form.lifeSatisfaction > 0
-      ? "Please select a life satisfaction rating above 0"
-      : !form.lifeStress > 0
-      ? "Please select a life stress rating above 0"
-      : !form.perceivedHealth > 0
-      ? "Please select a perceived health rating above 0"
-      : !form.perceivedMentalHealth > 0
-      ? "Please select a physical activity rating above 0"
-      : !form.moodStability > 0
-      ? "Please select a mood stability rating greater than 0"
       : !form.bloodPressure.split(",").length > 0
         // !Number.isNaN(form.bloodPressure.split(",")[0]) &&
         // !Number.isNaN(form.bloodPressure.split(",")[1])
       ? "Please format blood pressure properly, such as '130,80'"
       : "";
 
+      dispatch({
+        type: MODAL_TOGGLE,
+        payload: true
+      });
   if (errorMessage.length > 0) {
     dispatch({
       type: FORM_ERROR,
@@ -168,9 +160,9 @@ export const formSubmit = form => async dispatch => {
     });
   } else {
     axios.post("http://127.0.0.1:5000/predict", { form }).then(result => {
-      console.log(result.data.prediction);
-      console.log(result.data.reccomendation);
-      console.log(result.data.str_recc);
+      console.log(result.data.prediction); // [0.56, 0.78]
+      console.log(result.data.reccomendation);  // [+0.3, -0.2, +0.02, -0.9...]
+      console.log(result.data.str_recc);  // ["Eat more!", "Lower your blood pressure!"]
       dispatch({
         type: UPDATE_MODAL_INFO,
         payload: {
