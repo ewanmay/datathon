@@ -28,27 +28,18 @@ export const initialFormState = {
   fruitVegetableConsumption: 2,
   smokingHabits: 2,
   formError: "",
-<<<<<<< HEAD
+
   communalBelonging: 2,
   lifeSatisfaction: 2,
   lifeStress: 2,
   moodStability: 2,
   perceivedHealth: 2,
   perceivedMentalHealth: 2,
-  physicalActivity: 2
-=======
-  communalBelonging: 0,
-  lifeSatisfaction: 0,
-  lifeStress: 0,
-  moodStability: 0,
-  perceivedHealth: 0,
-  perceivedMentalHealth: 0,
-  physicalActivity: 0,
+  physicalActivity: 2,
   modalOpen: false,
   improvementStrings: [],
   currentRating: 0,
   potentialRating: 0
->>>>>>> origin/master
 };
 
 const formReducer = (state = initialFormState, action) => {

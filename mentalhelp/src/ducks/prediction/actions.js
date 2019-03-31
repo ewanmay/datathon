@@ -168,15 +168,9 @@ export const formSubmit = form => async dispatch => {
     });
   } else {
     axios.post("http://127.0.0.1:5000/predict", { form }).then(result => {
-<<<<<<< HEAD
-      console.log(result.data.prediction); // [0.56, 0.78]
-      console.log(result.data.reccomendation);  // [+0.3, -0.2, +0.02, -0.9...]
-      console.log(result.data.str_recc);  // ["Eat more!", "Lower your blood pressure!"]
-
-=======
       console.log(result.data.prediction);
-      alert(result.data.reccomendation);
-      alert(result.data.str_recc);
+      console.log(result.data.reccomendation);
+      console.log(result.data.str_recc);
       dispatch({
         type: UPDATE_MODAL_INFO,
         payload: {
@@ -189,7 +183,6 @@ export const formSubmit = form => async dispatch => {
         type: MODAL_TOGGLE,
         payload: true
       });
->>>>>>> origin/master
       dispatch({
         type: FORM_SUBMIT_SUCCESS,
         payload: result.data.response
