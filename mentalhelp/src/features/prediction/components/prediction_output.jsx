@@ -5,12 +5,12 @@ const modalBoi = ({
 	potentialRating,
 	improvementStrings
 }) => {
-	let mClose = () => this.setState({ modalOpen: false });
+	let current_place = "left: " + currentRating + '%;';
+	let potential_place = "left: " + potentialRating + '%;';
 
-	let curr_place = "left:"
     return (
-	    <Modal 
-	      	show={modalOpen} 
+    	if (modalOpen) {
+	    <Modal
 	        size="lg"
 	        aria-labelledby="contained-modal-title-vcenter"
 	        centered
@@ -23,20 +23,25 @@ const modalBoi = ({
 	        <Modal.Body>
 				<h4>What's Your Potential?</h4>
 				<div class="full-w container-fluid">
-					<div role="tooltip" class="tooltip top custom-tooltip " style={curr_place}>
+					<div role="tooltip" class="tooltip top custom-tooltip " style={current_place}>
 						<div class="tooltip-arrow"></div>
 						<div class="tooltip-inner">You are Here</div>
 					</div>
+					<hr />
+					<div role="tooltip" class="tooltip bottom custom-tooltip " style={potential_place}>
+						<div class="tooltip-arrow"></div>
+						<div class="tooltip-inner">You Could be Here</div>
+					</div>
 				</div>
 				<p>
-					
+
 				</p>
 	        </Modal.Body>
 	        <Modal.Footer>
 	          <Button onClick={mClose}>Close</Button>
 	        </Modal.Footer>
 	    </Modal>
-    );
+    });
 }
 
 // const prediction_modal = ({}) => {

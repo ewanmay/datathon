@@ -75,3 +75,7 @@
 .custom-tooltip.top .tooltip-arrow {
   border-top-color: #0088cc;
 }
+
+.custom-tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #0088cc;
+}
