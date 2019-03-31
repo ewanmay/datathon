@@ -43,7 +43,7 @@ def normalize(s):
 	
 	smoker = 1
 	if s['smokingHabits'] == "Never":
-		smoker = 0.2 
+		smoker = 0
 	elif s['smokingHabits'] == "Occasional":
 		smoker = .5 
 
