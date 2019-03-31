@@ -39,7 +39,7 @@ mental_health.drop('TERMINATED',axis=1,inplace=True)
 mental_health.drop('DECIMALS',axis=1,inplace=True)
 
 #print(mental_health)
-outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'Sex'], columns='Indicators', values='VALUE')
+outData = mental_health.pivot_table(index=['REF_DATE','GEO', 'Age group', 'Sex', 'UOM_ID'], columns='Indicators', values='VALUE')
 
 outData.drop('Arthritis (15 years and over)', axis=1, inplace=True)
 outData.drop('Asthma', axis=1, inplace=True)
@@ -64,8 +64,10 @@ outData = outData.dropna(axis=0);
 
 # outData = pd.merge(outData1, outData2, on=['REF_DATE','GEO', '', 'Age group'])
 
-# print(outData.columns.values)
-
+# names = outData.columns.tolist()
+# names.remove('Perceived mental health, fair or poor')
+# names.remove('Perceived mental health, very good or excellent')
+# outData = outData[ [names, ['Perceived mental health, fair or poor' ,'Perceived mental health, very good or excellent']]]
 outData.to_csv('./datafiles/statscanada/newMH.csv')
 
 print(outData)
